@@ -1,0 +1,23 @@
+.leftcolumn {
+    padding-right: 0;
+}
+.rightcolumn {
+    padding-left: 0;
+}
+
+.button {
+  border-radius: 0;
+  background-color: rgba(66, 66, 66, 1);
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: rgba(49, 73, 127, 1);
+  text-decoration: none;
+}
+
+.honeypot {
+  position: absolute;
+  left: -5000px;
+}

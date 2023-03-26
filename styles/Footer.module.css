@@ -1,0 +1,20 @@
+.backgroundwrapper {
+    background-color: rgba(189, 224, 224, 1);
+}
+
+.footer {
+    padding: 20px;
+    color: rgba(66, 66, 66, 1);
+}
+
+.socialHeading {
+    margin-top: 1em;
+}
+
+.socialIcon {
+    color: rgba(66, 66, 66, 1) !important;
+    display: block;
+    position: relative;
+    height: 30px;
+    width: 30px;
+}

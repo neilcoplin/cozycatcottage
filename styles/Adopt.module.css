@@ -1,0 +1,81 @@
+.contain {
+    position: relative;
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .uppercase {
+    text-transform: uppercase;
+  }
+  
+  .grid-picture {
+    border-color: rgba(49, 73, 127, 1);
+    border-width: 1px;
+  }
+  
+  .profileimage {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+  
+  
+  .card {
+    border: none;
+    padding: 2px;
+    border-radius: 0;
+  }
+  
+  .cardBody {
+    background-color: rgba(248, 249, 250, 1);
+    padding: 5px;
+  }
+  
+  .cardTitle {
+    position: relative;
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .cardTitle a {
+    text-decoration: none;
+  }
+  
+  .heartIconAbs {
+    color: rgba(49, 73, 127, 1);
+    display: block;
+    position: absolute;
+    top: -5px;
+    right: 0px;
+    height: 1.2em;
+    width: 1.2em;
+  }
+  
+  .heartIconFloat {
+    color: rgba(49, 73, 127, 1);
+    display: block;
+    float: left;
+    height: 1.2em;
+    width: 1.2em;
+    margin-right: .5em;
+  }
+  
+  .profileList dt {
+    background-color: rgba(248, 249, 250, 1);
+    padding: 2px 5px;
+  }
+  
+  .profileList dd {
+    margin-left: 1em;
+  }
+  
+  .filterForm {
+    margin-bottom: 1em;
+  }
+  
+  .feature h2 {
+    color: rgba(49, 73, 127, 1);
+  }
