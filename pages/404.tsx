@@ -3,7 +3,7 @@ import { Container, Image, Stack } from "react-bootstrap";
 import { useState, useEffect} from 'react'
 
 export default function Custom404(props:any) {
-  const [catSrc, setCatSrc] = useState("loading.gif");
+  const [catSrc, setCatSrc] = useState("/img/adopt-default.jpg");
 
 
   useEffect(() => {
