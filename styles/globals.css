@@ -122,12 +122,7 @@ a:hover {
 }
 
 .main ul {
-  list-style: none;
   padding-left: 15px;
-}
-
-.main ul li:before {
-  content: "- ";
 }
 
 a.btn,
@@ -167,10 +162,6 @@ a.btn-secondary:hover {
 figcaption {
   font-weight: bold;
   font-size: 130%;
-}
-
-ol {
-  list-style-type: decimal-leading-zero;
 }
 
 ol, ul {

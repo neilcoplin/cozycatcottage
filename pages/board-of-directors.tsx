@@ -101,7 +101,7 @@ export default function BoardOfDirectors(props:any) {
               <Col sm={8} md={9} xl={10}>
                 <h2>Tiffany Kinzer</h2>
                 <p className="subtitle">Trustee</p>
-                <p>Tiffany works as acting Director on Monday nights, makes follow-up calls to adopters and serves as a Trustee of the board. Originally from Lima, she moved to Columbus in 1998 and has ten cats: Jasper, Samson (CCC) Giselle (FELV+) Charlie, Memphis, Roman (CCC), Paris, Danny (FIV+) Jynxie (FIV+) and Toby (CCC/ FIV+). Tiffany also works full time for St. Jude Children&apos;s Research Hospital as a Philanthropic Advisor.</p>
+                <p>Tiffany works as acting Director on Monday nights, makes follow-up calls to adopters and serves as a Trustee of the board. Originally from Lima, she moved to Columbus in 1998 and has ten cats: Giselle, Charlie, Toby (FIV+), Paris, Stormy, Gus, Roman, Memphis, Frankie and Jaycee. Tiffany also works full time for St. Jude Children&apos;s Research Hospital as a Philanthropic Advisor.</p>
               </Col>
             </Row>
           </Container>

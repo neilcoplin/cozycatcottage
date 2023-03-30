@@ -21,7 +21,7 @@ export default function Home(props:any) {
 
             <Container fluid="md" className="center">
               <h1>Finding forever homes since 1998</h1>
-              <p><strong>Cozy Cat Cottage Adoption Center</strong> is a non-profit, 501(c)(3), no-kill organization that provides refuge, aid, and care for abandoned, injured, abused or lost cats and kittens in Central Ohio, while finding them permanent, responsible, loving homes.</p>
+              <p>Cozy Cat Cottage Adoption Center is a non-profit, 501(c)(3), no-kill organization that provides refuge, aid, and care for abandoned, injured, abused or lost cats and kittens in Central Ohio, while finding them permanent, responsible, loving homes.</p>
             </Container>
 
             <Container fluid="md" className={styles.feature}>
@@ -80,7 +80,7 @@ export default function Home(props:any) {
             </Container>
           </Stack>
           <Container fluid="true" className="dark-notice center">
-            <p>Lost or found a cat? Act fast and visit <a href="https://petfbi.org/">petfbi.org</a>.</p>
+            <p>Lost or found a cat? Act fast and visit <a href="https://petfbi.org/" target="_blank" rel="noreferrer">petfbi.org</a>.</p>
           </Container>
         </Container>
       </main>

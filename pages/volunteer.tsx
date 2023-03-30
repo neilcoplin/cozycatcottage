@@ -62,7 +62,16 @@ export default function Volunteer(props:any) {
             </Container>
           </Stack>
           <Container fluid="true" className="primary-notice center">
-            <p><strong>Have more time to give?</strong> <Link href="/foster">Fostering is a great way to volunteer and spend extra time with our kitties!</Link></p>
+            <Container fluid="md">
+              <p><strong>Have more time to give?</strong> <Link href="/foster">Fostering is a great way to volunteer and spend extra time with our kitties!</Link></p>
+            </Container>
+          </Container>
+          <Container fluid="true" className="dark-notice center">
+            <Container fluid="md">
+              <h2>We love our volunteers!</h2>
+              <p>&ldquo;I learned so much. It was one of the most rewarding and educational experiences of my life, and I made lifelong friends. CCC has an incredible community of kind, compassionate people, and I&apos;m so thankful I could be a part of it!&rdquo;</p>
+              <p>– Katja M., CCC volunteer</p>
+            </Container>
           </Container>
         </Container>
       </main>

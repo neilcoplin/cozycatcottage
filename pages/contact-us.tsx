@@ -15,7 +15,7 @@ export default function ContactUs(props:any) {
           <Image fluid src="/img/hero-image-pawsonglass.jpg" alt="Cat face closeup with paws on glass window." />
 
           <Container fluid="lg">
-            <h1 className="center">Visit Cozy Cat Cottage Adoption Center</h1>
+            <h1 className="center">Contact us</h1>
           </Container>
           <Container fluid="lg">
             <Row xs={1} md={2}>

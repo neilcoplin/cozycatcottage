@@ -59,8 +59,9 @@ export default function AdoptionList(props:{
   return (
     <>
       <Container fluid="lg" className="center">
-        <h1>Meet your new best friend.</h1>
-        <p>New cats and kittens are added to the website during the first week of the month so check back often! We recommend visiting or contacting us to confirm the availability of a particular cat or kitten.</p>
+        <h1>Adopt a cat</h1>
+        <h2>Meet your new best friend.</h2>
+        <p>We recommend visiting or contacting us to confirm the availability of a particular cat or kitten.</p>
 
         <p><strong>Ready to adopt?</strong> You must have a carrier. Cash or check only. <Link href="/adoption-process">Learn about our adoption process.</Link></p>
       </Container>

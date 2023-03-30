@@ -15,7 +15,8 @@ export default function Donate(props:any) {
             <Image fluid src="/img/hero-image-other-ways-to-give.jpg" alt="Tabby cat sleeping on a blue shelf" />
 
             <Container fluid="md" className="center">
-              <h1><strong>Let&apos;s save lives together</strong></h1>
+              <h1>Donate to Cozy Cat Cottage</h1>
+              <h2>Let&apos;s save lives together</h2>
               <p>Cozy Cat Cottage continues to work hard to be a leading force and advocate for the Central Ohio homeless cat population. Here is your chance to help!</p>
             </Container>
 
@@ -47,15 +48,12 @@ export default function Donate(props:any) {
 
             <Container fluid="md">
               <h3>Kroger Community Rewards</h3>
-              <p>Cozy Cat Cottage is proud to be a partner in the <a href="https://www.kroger.com/account/enrollCommunityRewardsNow/" target="_blank" rel="noreferrer">Kroger Community Rewards program</a>. We receive a donation each time you swipe your <strong>registered</strong> Kroger Plus Card at checkout. <Link href="/kroger-community-rewards">Learn more.</Link></p>
+              <p>Cozy Cat Cottage is proud to be a partner in the <a href="https://www.kroger.com/account/enrollCommunityRewardsNow/" target="_blank" rel="noreferrer">Kroger Community Rewards program</a>. We receive a donation each time you swipe your <strong>registered</strong> Kroger Plus Card at checkout. <Link href="/kroger-community-rewards">Learn how to sign up.</Link></p>
             </Container>
 
             <Container fluid="md">
               <h3>Donate supplies</h3>
               <p>Cozy Cat Cottage Adoption Center accepts donations of items from our <Link href="/our-wish-list">Wish List</Link> to help us provide the everyday necessities for our felines. Every time we receive donations like food, litter and cleaning supplies from our Wish List, it helps the monetary donations we receive go further in providing care and medical treatment for our kitties.</p>
-              <Container className="center">
-                <Button href="/our-wish-list" size="lg">Go to wish list</Button>
-              </Container>
             </Container>
 
             <Container fluid="md">

@@ -1,7 +1,117 @@
 import Head from 'next/head'
-import { Col, Container, Image, Row, Stack } from "react-bootstrap";
+import styles from '@/styles/Marketplace.module.css'
+import { Card, Container, Image, Row, Stack } from "react-bootstrap";
+
+type MarketplaceSponsor = {
+  name:string;
+  url:string|null;
+}
 
 export default function HolidayMarketplace(props:any) {
+  const sponsors:MarketplaceSponsor[] = [
+    {name: "Aladdin's Eatery - Powell", url: "https://www.aladdins.com/"},
+    {name: "AMF Sawmill Lanes", url: "https://www.amf.com/location/amf-sawmill-lanes"},
+    {name: "Ange's Pizza - Powell", url: "https://angespizzaonline.com/"},
+    {name: "Annex Barbershop", url: "https://www.theannexbarbershop.com/"},
+    {name: "Anthony Thomas", url: "https://www.anthony-thomas.com//"},
+    {name: "Aveda Institute Columbus - Bethel Road", url: "https://avedafi.edu/columbus/cosmetology-school?utm_source=google&utm_medium=organic&utm_campaign=gmb"},
+    {name: "Be Fit Cafe", url: "https://www.befitcafe.com/"},
+    {name: "Sharon Binkley", url: null},
+    {name: "Blarney Stone Tavern", url: "https://www.blarneystonetavern.com/drink-menu"},
+    {name: "Blowdry Cafe - Powell", url: "https://www.blowdrycafe.com/locations"},
+    {name: "Bonefish Grill - Dublin", url: "https://locations.bonefishgrill.com/ohio/dublin/5712-frantz-road"},
+    {name: "Borgata Pizza Cafe", url: "https://borgatapizzacafe.com"},
+    {name: "Rebecca Brickner - Music Instruction, 614-214-1083", url: null},
+    {name: "Rebecca Bryant", url: null},
+    {name: "Brueggers Bagels", url: "https://locations.brueggers.com/us/oh/dublin/4425-w-dublin-granville-rd"},
+    {name: "Cameron Mitchell - American Bistro", url: "https://cameronsamericanbistro.com"},
+    {name: "Cindy Capizzi", url: null},
+    {name: "Cats Only Veterinary Clinic", url: "https://catsonlyvc.com"},
+    {name: "Chili Verde Cafe - Sawmill Road", url: "https://www.chileverdecafe.com"},
+    {name: "Chili's Grill and Bar - Hamilton Road", url: "https://www.chilis.com/locations/us/ohio/columbus/hamilton-quarters?utm_source=google&utm_medium=local&utm_campaign=Chilis"},
+    {name: "Chiller Rink - Dublin", url: "https://www.thechiller.com/index.cfm?utm_source=GMBlisting&utm_medium=Organic"},
+    {name: "City BBQ - Powell", url: "https://www.citybbq.com/location"},
+    {name: "City Egg - Bethel Center", url: "https://cityeggrestaurants.com"},
+    {name: "Coaches Bar & Grill", url: "https://www.coachesbarandgrill.com"},
+    {name: "Columbus SCUBA", url: "https://columbusscuba.com/register/"},
+    {name: "Allison & John Congemi", url: null},
+    {name: "Connells Maple Lee Flowers", url: "https://www.cmlflowers.com/"},
+    {name: "Costco Polaris", url: "https://www.costco.com/warehouse-locations/columbus-oh-%20632.html/Delaware/"},
+    {name: "Sue Cox", url: null},
+    {name: "Cross My Heart (Cross Stitch)", url: "https://www.facebook.com/CrossMyHeartColumbus/"},
+    {name: "Dave & Busters", url: "https://www.daveandbusters.com/sports-bar-and-restaurant"},
+    {name: "Delaware Golf Club", url: "https://www.delawaregolfclub.com"},
+    {name: "Dublin Rocks & Minerals", url: "https://www.dublinrocksandminerals.com"},
+    {name: "Envy Skin Gallery", url: "https://envyskingallery.com/"},
+    {name: "Filling Station Bar & Grill", url: "https://envyskingallery.com"},
+    {name: "Gallo's Taproom - Powell ", url: "http://www.gallostaproom.com/powell-tap-room"},
+    {name: "Giant Eagle - Powell ", url: "http://www.gianteagle.com/stores/OH/Powell/Powell-Giant-Eagle/6527"},
+    {name: "Graeter's - Powell ", url: "http://www.graeters.com/stores/retail-stores/columbus/powell"},
+    {name: "Grandfather Clock Company", url: "http://uptownwesterville.us/grandfatherclockcompany/"},
+    {name: "Groovy Plants Ranch", url: "https://www.groovyplantsranch.com"},
+    {name: "Mary Haessig", url: null},
+    {name: "The Hills Jewelry", url: "https://www.thehillsjewelry.com"},
+    {name: "Beth Hinkle", url: null},
+    {name: "Home Depot", url: "http://www.homedepot.com/services/l/oh/powell/"},
+    {name: "Ill-Mannered Brewing Co.", url: "http://www.illmanneredbeer.com"},
+    {name: "Laura Dershaw Skincare Services ", url: "https://www.lauradershawskincare.com/"},
+    {name: "Lili Huard", url: null},
+    {name: "Barbara Hulse, L.M.T. - Massage Mi Powell", url: "https://destinyforserenity.com"},
+    {name: "Itsy Bitsy Bird Wood", url: "https://www.facebook.com/Itsy-Bitsy-Bird-101356725031271/"},
+    {name: "Jersey Mike's - Powell", url: "https://www.jerseymikes.com/2022/powell-oh"},
+    {name: "JT's Pizza, Pub & Patio", url: "https://jtspizzacolumbus.com/"},
+    {name: "Karen Keenan", url: null},
+    {name: "Kimberly's Diamond Corner ", url: "http://www.kimberlysdiamondcorner.com/"},
+    {name: "Koble Greek Italian Grill - Powell Corner", url: "http://www.koblegrill.com"},
+    {name: "Lair's Hallmark, Powell", url: "http://stores.hallmark.com/oh/powell/lairs-hallmark-shopcurbside-pick-up-available-powell-oh-003363.html"},
+    {name: "The Laughing Ogre Comics", url: "https://www.facebook.com/LaughingOgreOhio"},
+    {name: "Becky McGeary", url: null},
+    {name: "Karen Maase", url: null},
+    {name: "Matthew Benjamin Woodcraft", url: "https://www.facebook.com/people/Matthew-Benjamin-Woodcraft/100063769231919/"},
+    {name: "MCL Restaurant & Bakery - Kingsdale Center", url: "https://www.mclhomemade.com"},
+    {name: "Meijer's Lewis Center", url: "http://www.meijer.com/shopping/store-locator/143.html/"},
+    {name: "Morgan House, Shawnee Hills", url: "http://www.morganhse.com"},
+    {name: "Mozart's Cafe & Event Space", url: "https://mozartscafe.com/bakery-cafe/restaurant/"},
+    {name: "Muirfield Village Golf Club", url: "http://www.mvgc.org"},
+    {name: "Music Go Round", url: "https://www.musicgoround.com/locations/columbus-oh"},
+    {name: "Natasha Faye Photography", url: "https://www.facebook.com/people/Natasha-Faye-Photography/100063529631744/"},
+    {name: "Natural Spa Cafe", url: "https://www.thenaturalnailspa.com"},
+    {name: "Helen Newkold", url: null},
+    {name: "Ninja City Adventure Park", url: "https://www.ninjaciticolumbusoh.com"},
+    {name: "Oakland Nursery - Dublin", url: "https://www.oaklandnursery.com/page/garden-centers/dublin"},
+    {name: "Papa Giorgio's - Bethel Road", url: "https://papagiorgiosohio.com"},
+    {name: "Jennifer Parker", url: null},
+    {name: "Marcia Perry", url: null},
+    {name: "Evangelia Philippidis - Artist", url: "https://www.theartofevangelia.net"},
+    {name: "Phoenix Theaters", url: "https://www.phoenixtheatres.com"},
+    {name: "Pierceology", url: "https://www.piercology.com"},
+    {name: "Susan Pilcher", url: null},
+    {name: "Raising Cane's Powell", url: "http://www.raisingcanes.com/location/750"},
+    {name: "Marne Rapp", url: null},
+    {name: "Char Riedinger", url: null},
+    {name: "Becky Roeder", url: null},
+    {name: "Romeo's Pizza - Bethel Road", url: "https://romeospizza.com"},
+    {name: "Diane Ruck", url: null},
+    {name: "Salon Centric ", url: "https://stores.saloncentric.com/oh/columbus/2623"},
+    {name: "Scene 75 Entertainment Center", url: "https://www.scene75.com/columbus/"},
+    {name: "Scrambler's Powell", url: "https://scramblersrestaurants.com"},
+    {name: "Skyline Chili - Powell", url: "https://www.skylinechili.com"},
+    {name: "Becky and Cheryll Sprang", url: null},
+    {name: "Starbucks - Powell", url: "http://www.starbucks.com"},
+    {name: "Take Flight Ohio", url: "https://takeflightohio.com"},
+    {name: "Tomatillos", url: "https://www.tomatillosrestaurant.com"},
+    {name: "The Train Station", url: "http://www.trainstationohio.com"},
+    {name: "Tropical Smoothie Caf&eacute; - Powell", url: "http://locations.tropicalsmoothiecafe.com/oh/powell/9733-sawmill-parkway"},
+    {name: "Tropical Trends", url: "https://tropicaltrends.biz"},
+    {name: "Virtue Vegan Salon", url: "https://www.virtuevegansalon.com"},
+    {name: "Vittoria - Powell", url: "http://www.vittoriacolumbus.com"},
+    {name: "Kay Walker", url: null},
+    {name: "Whit's Frozen Custard - Powell", url: "http://whitscustard.com/locations/tag/Powell"},
+    {name: "Wildbirds Unlimited Sawmill", url: "http://columbusoh.wbu.com"},
+    {name: "Yabo's Tacos - Powell", url: "http://www.myyabos.com"}
+  ];
+
+
   return (
     <>
       <Head>
@@ -13,123 +123,23 @@ export default function HolidayMarketplace(props:any) {
           <Image fluid src="/img/hero-holiday-marketplace.jpg" alt="Collage of cat and Christmas themed items" />
 
           <Container fluid="md" className="center">
-            <h1><strong>Many thanks to the generous sponsors of our 2021 Online Holiday Marketplace Sale</strong></h1>
-            <p>Please show them your appreciation by your patronage.</p>
+            <h1>2022 Holiday Marketplace</h1>
+            <p>Cozy Cat Cottage extends its deep appreciation to these businesses and individuals that donated items to its Third Annual Holiday Marketplace Sale. Please support these businesses and let them know you chose them for their support of Cozy Cat Cottage. Thank you!</p>
           </Container>
 
           <Container fluid="md">
-            <Row xs={1} lg={3}>
-              <Col xs={10} lg={4}>
-                <p>Sally and Danny Agresta</p>
-                <p><a href="https://www.aladdins.com/" target="_blank" rel="noreferrer">Aladdin&apos;s Eatery - Powell</a></p>
-                <p><a href="https://www.animalcareunlimited.com/" target="_blank" rel="noreferrer">Animal Care Unlimited</a></p>
-                <p><a href="https://anneskitchenpowell.com/" target="_blank" rel="noreferrer">Anne&apos;s Kitchen</a></p>
-                <p><a href="https://www.aqua-tots.com/powell/" target="_blank" rel="noreferrer">Aqua-Tots Swim School - Powell</a></p>
-                <p><a href="https://ataincolumbus.com/" target="_blank" rel="noreferrer">ATA Black Belt - Powell</a></p>
-                <p><a href="https://bsmfunding.mymortgage-online.com/charliesindeldecker.html/" target="_blank" rel="noreferrer">Bayshore Mortgage Funding, Charlie Sindeldecker</a></p>
-                <p><a href="https://www.facebook.com/Matthew-Benjamin-Woodcraft-1370090529698812/" target="_blank" rel="noreferrer">Matthew Benjamin Woodcraft</a></p>
-                <p><a href="https://www.befitcafe.com/" target="_blank" rel="noreferrer">Be Fit Cafe</a></p>
-                <p>Steve Bigley</p>
-                <p><a href="https://hirefrederick.com/the-blowdry-cafe-powell/" target="_blank" rel="noreferrer">Blow Dry Caf&eacute;, Powell</a></p>
-                <p><a href="https://www.bogeyinn.com/" target="_blank" rel="noreferrer">Bogey Inn</a></p>
-                <p>Rebecca Brickner, Scioto Music Lessons</p>
-                <p>Cheryl Brown</p>
-                <p>Scott Brown</p>
-                <p>Rebecca Bryant</p>
-                <p>Marsha Campbell</p>
-                <p><a href="https://catsonlyvc.com/" target="_blank" rel="noreferrer">Cats Only Veterinary Clinic</a></p>
-                <p><a href="https://www.catdoctorcolumbus.com/" target="_blank" rel="noreferrer">The Cat Doctor</a></p>
-                <p>Diane Chakalis</p>
-                <p>Chasing Perfection Bakery</p>
-                <p>Michele Childs (for Norman Childs)</p>
-                <p><a href="https://www.citybbq.com/" target="_blank" rel="noreferrer">City BBQ – Powell</a></p>
-                <p>Cindi Clum</p>
-                <p>Michelle Corlis</p>
-                <p><a href="https://www.costco.com/warehouse-locations/columbus-oh-%20632.html/Delaware/" target="_blank" rel="noreferrer">Costco Polaris</a></p>
-                <p><a href="https://www.culvers.com/restaurants/powell/" target="_blank" rel="noreferrer">Culver&apos;s - Powell</a></p>
-                <p><a href="https://www.cyclebar.com/location/powell/" target="_blank" rel="noreferrer">CycleBar of Powell</a></p>
-                <p><a href="https://www.delawaregolfclub.com/" target="_blank" rel="noreferrer">Delaware Golf Club</a></p>
-                <p><a href="https://www.dellsicecream.com/location/powell/" target="_blank" rel="noreferrer">Dell&apos;s Homemade Ice Cream</a></p>
-                <p>Emily Denholm</p>
-                <p><a href="https://www.lauradershawskincare.com/" target="_blank" rel="noreferrer">Laura Dershaw Skincare</a></p>
-                <p><a href="https://www.dublincleaners.com/" target="_blank" rel="noreferrer">Dublin Cleaners - Dublin</a></p>
-                <p>Shar Duffy</p>
-                <p>Embellish Your Attitude</p>
-                <p>Cindy Ferrara</p>
-              </Col>
-              <Col xs={10} lg={4}>
-                <p>Paul Fuhr, That Coaster Guy</p>
-                <p><a href="https://www.fullenfinancial.com/" target="_blank" rel="noreferrer">Fullen Financial Group</a></p>
-                <p><a href="http://www.gallostaproom.com/powell-tap-room" target="_blank" rel="noreferrer">Gallo&apos;s Taproom - Powell</a></p>
-                <p><a href="http://www.gianteagle.com/stores/OH/Powell/Powell-Giant-Eagle/6527" target="_blank" rel="noreferrer">Giant Eagle - Powell</a></p>
-                <p>Earl Goldhammer</p>
-                <p><a href="http://www.graeters.com/stores/retail-stores/columbus/powell" target="_blank" rel="noreferrer">Graeter&apos;s - Powell</a></p>
-                <p><a href="http://greekexpressfamily.com/" target="_blank" rel="noreferrer">Greek Express - Powell</a></p>
-                <p>Barbara Greever</p>
-                <p><a href="http://www.salonlofts.com/crystal_bramer" target="_blank" rel="noreferrer">Hair by Crystal Bramer - Salon Lofts in Dublin</a></p>
-                <p><a href="http://www.healthypetsofohio.com/" target="_blank" rel="noreferrer">Healthy Pets of Wedgewood, Inc.</a></p>
-                <p><a href="http://www.highlinecoffeeco.com/" target="_blank" rel="noreferrer">Highline Coffee Co.</a></p>
-                <p><a href="http://www.jayhobgood.com/" target="_blank" rel="noreferrer">Jay Hobgood Hurricane Information &amp; Consultation</a></p>
-                <p><a href="http://www.homedepot.com/services/l/oh/powell" target="_blank" rel="noreferrer">Home Depot</a></p>
-                <p>Kate Hoyt</p>
-                <p><a href="http://www.illmanneredbeer.com/" target="_blank" rel="noreferrer">Ill-Mannered Brewing Co.</a></p>
-                <p>Itsy Bitsy Bird</p>
-                <p><a href="http://www.jerseymikes.com/2022/powell-oh" target="_blank" rel="noreferrer">Jersey Mike&apos;s Powell </a></p>
-                <p>JK NewLife Properties, LLC</p>
-                <p>Karen Keenan</p>
-                <p><a href="http://www.kimberlysdiamondcorner.com/" target="_blank" rel="noreferrer">Kimberly&apos;s Diamond Corner</a></p>
-                <p>Ann Kline</p>
-                <p><a href="http://www.koblegrill.com/" target="_blank" rel="noreferrer">Koble Greek Italian Grill - Powell Corner</a></p>
-                <p><a href="http://www.lafontainearchitecture.com/" target="_blank" rel="noreferrer">LaFontaine Architecture &amp; Design, Inc</a></p>
-                <p><a href="http://stores.hallmark.com/oh/powell/lairs-hallmark-shopcurbside-pick-up-available-powell-oh-003363.html" target="_blank" rel="noreferrer">Lair&apos;s Hallmark, Powell</a></p>
-                <p>Leaping Tiger Jewelry</p>
-                <p><a href="http://www.ccreations.com/linswok/" target="_blank" rel="noreferrer">Lin&apos;s Wok</a></p>
-                <p><a href="http://www.nadachannel.com/" target="_blank" rel="noreferrer">Nada Maibach</a></p>
-                <p><a href="http://www.marinerwealthadvisors.com/" target="_blank" rel="noreferrer">Mariner Wealth Advisors</a></p>
-                <p>Marybeth McDonald</p>
-                <p><a href="http://www.meijer.com/shopping/store-locator/143.html/" target="_blank" rel="noreferrer">Meijer&apos;s Lewis Center</a></p>
-                <p>Jo Milliner</p>
-                <p>Kristy Milliner</p>
-                <p><a href="http://www.morganhse.com/" target="_blank" rel="noreferrer">Morgan House, Shawnee Hills</a></p>
-                <p><a href="http://www.facebook.com/mr.bean.coffee.powell/" target="_blank" rel="noreferrer">Mr. Bean Coffee</a></p>
-                <p><a href="http://www.mvgc.org/" target="_blank" rel="noreferrer">Muirfield Village Golf Club</a></p>
-              </Col>
-              <Col xs={10} lg={4}>
-                <p><a href="http://www.muttsandco.com/" target="_blank" rel="noreferrer">Mutts and Co.</a></p>
-                <p><a href="http://nocterrabrewing.com/" target="_blank" rel="noreferrer">Nocterra Brewing Co</a></p>
-                <p><a href="http://www.ohiocryo.com/" target="_blank" rel="noreferrer">Ohio Cryo</a></p>
-                <p><a href="https://vet.osu.edu/vmc/primarycare" target="_blank" rel="noreferrer">The Ohio State University Veterinary Medical Center - The Frank Stanton Veterinary Spectrum of Care (SOC) Clinic</a></p>
-                <p><a href="http://www.pabloshavanacafe.com/" target="_blank" rel="noreferrer">Pablo&apos;s Havana Caf&eacute;</a></p>
-                <p><a href="http://www.pargolfdiscount.com/" target="_blank" rel="noreferrer">Par Golf of Columbus</a></p>
-                <p><a href="http://www.petcremationcolumbus.com/" target="_blank" rel="noreferrer">Pet Cremation Services</a></p>
-                <p><a href="https://www.petsuppliesplus.com/" target="_blank" rel="noreferrer">Pet Supplies Plus Powell</a></p>
-                <p><a href="http://www.theartofevangelia.net/" target="_blank" rel="noreferrer">Evangelia Philippides </a></p>
-                <p>Susan Pilcher</p>
-                <p><a href="http://www.pizzacottagepowell.com/" target="_blank" rel="noreferrer">Pizza Cottage in Powell</a></p>
-                <p>Cindy Phillips &amp; Anne O&apos;Connell-Null</p>
-                <p><a href="http://www.powellvillagewinery.com/" target="_blank" rel="noreferrer">Powell Village Winery</a></p>
-                <p><a href="http://www.raisingcanes.com/location/750" target="_blank" rel="noreferrer">Raising Cane&apos;s</a></p>
-                <p><a href="http://www.come2columbusohio.com/" target="_blank" rel="noreferrer">RE/MAX, Rick Wright</a></p>
-                <p><a href="http://www.riversideanimalcare.com/" target="_blank" rel="noreferrer">Riverside Drive Animal Care Center</a></p>
-                <p>Becky Roeder</p>
-                <p><a href="http://www.roostersmgc.com/locations/oh/powell/liberty-crossing-haircuts-13153.html" target="_blank" rel="noreferrer">Rooster&apos;s Men&apos;s Grooming Center</a></p>
-                <p>Diane Ruck</p>
-                <p><a href="http://www.scramblersrestaurants.com/locations/1006-powell-oh/" target="_blank" rel="noreferrer">Scramblers</a></p>
-                <p><a href="http://www.skylinechili.com/" target="_blank" rel="noreferrer">Skyline Chili - Powell</a></p>
-                <p>Becky Sprang</p>
-                <p><a href="http://www.starbucks.com/" target="_blank" rel="noreferrer">Starbucks - Powell</a></p>
-                <p><a href="http://www.facebook.com/stradersshawnee/" target="_blank" rel="noreferrer">Straders - Shawnill Hills</a></p>
-                <p>Risa Teare</p>
-                <p><a href="http://tidecleaners.com/en-us/location/3446" target="_blank" rel="noreferrer">Tide Cleaners - Powell</a></p>
-                <p><a href="http://locations.tropicalsmoothiecafe.com/oh/powell/9733-sawmill-parkway" target="_blank" rel="noreferrer">Tropical Smoothie Caf&eacute; - Powell</a></p>
-                <p><a href="http://www.vittoriacolumbus.com/" target="_blank" rel="noreferrer">Vittoria - Powell</a></p>
-                <p>Ray and Carol Ward</p>
-                <p>Scott White</p>
-                <p><a href="http://whitscustard.com/locations/tag/Powell" target="_blank" rel="noreferrer">Whit&apos;s Frozen Custard-Powell</a></p>
-                <p><a href="http://columbusoh.wbu.com/" target="_blank" rel="noreferrer">Wildbirds Unlimited Sawmill</a></p>
-                <p>Jeff Wood</p>
-                <p><a href="http://www.myyabos.com/" target="_blank" rel="noreferrer">Yabo&apos;s Tacos - Powell</a></p>
-              </Col>
+            <Row xs={1} md={2} xl={3}>
+                {sponsors.map((sponsor:MarketplaceSponsor) => 
+                  sponsor.url === null
+                  ?
+                    <Card key={sponsor.name} className={styles.card}>
+                      <Card.Text>{sponsor.name}</Card.Text>
+                    </Card>
+                  :
+                    <Card key={sponsor.name} className={styles.card}>
+                      <Card.Text><a href={sponsor.url} target="_blank" rel="noreferrer">{sponsor.name}</a></Card.Text>
+                    </Card>
+                )}
             </Row>
           </Container>
         </Stack>

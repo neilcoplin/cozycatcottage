@@ -19,7 +19,7 @@ export default function KrogerCommunityRewards(props:any) {
             </Container>
 
             <Container fluid="lg">
-              <h2>Register online at <a href="https://www.kroger.com/account/enrollCommunityRewardsNow/" target="_blank" rel="noreferrer">krogercommunityrewards.com</a></h2>
+              <h2>Register online at krogercommunityrewards.com</h2>
               <p>Please note: Kroger Community Rewards require yearly renewal that will be prompted through an email from Kroger.</p>
 
               <h3>New customers</h3>

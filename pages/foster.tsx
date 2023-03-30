@@ -46,8 +46,17 @@ export default function Foster(props:any) {
             </Container>
           </Stack>
           <Container fluid="true" className="primary-notice center">
-            <h2>Ready to foster?</h2>
-            <p>Contact us at <a href="mailto:cozycatcottageadoption@gmail.com">cozycatcottageadoption@gmail.com</a> with the subject line &ldquo;Foster Program&rdquo;. All applicants will go through our screening process.</p>
+            <Container fluid="md">
+              <h2>Ready to foster?</h2>
+              <p>Contact us at <a href="mailto:cozycatcottageadoption@gmail.com">cozycatcottageadoption@gmail.com</a> with the subject line &ldquo;Foster Program&rdquo;. All applicants will go through our screening process.</p>
+            </Container>
+          </Container>
+          <Container fluid="true" className="dark-notice center">
+            <Container fluid="md">
+              <h2>We love our foster parents!</h2>
+              <p>&ldquo;Fostering for Cozy Cat Cottage is one of my passions! It gives me an opportunity to share my love and compassion for animals. I provide homeless kitties a safe and loving environment to prepare them for adoption by socializing and caring for them. The best part is I get my kitty fix without keeping them all!&rdquo;</p>
+              <p>-Sheryl K., CCC foster parent</p>
+            </Container>
           </Container>
         </Container>
       </main>

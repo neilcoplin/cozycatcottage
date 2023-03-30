@@ -12,7 +12,8 @@ export default function HappyTails(props:any) {
       <main>
         <Stack gap={3} id="happy-tails" className="top-padding">
           <Container fluid="md" className="center">
-            <h1><strong>Happy new beginnings for special needs cats</strong></h1>
+            <h1>Happy tails</h1>
+            <h2>Happy new beginnings for special needs cats</h2>
             <p>Cozy Cat Cottage believes all cats deserve a chance, especially the ones in the direst of situations, our special needs cats. We hope you will be inspired to open your heart to a special needs cat. Below are some of our special needs cat success stories.</p>
           </Container>
 

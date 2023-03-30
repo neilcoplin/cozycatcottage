@@ -14,7 +14,7 @@ export default function AdoptionProcess(props:any) {
           <Image fluid src="/img/hero-adoption-process.jpg" alt="Newspaper images of Cindi Clum with cats." />
 
           <Container fluid="md" className="center">
-            <h1><strong>The adoption process</strong></h1>
+            <h1><strong>Adoption process</strong></h1>
             <p>When you find the feline you want to welcome into your home, it is a special moment. You are saying “yes” to a journey ahead full of unconditional love, play, training (for both cat and human alike), happy tears and sometimes sad ones too. At Cozy Cat Cottage, we believe wherever the journey takes us, our pets make us better people. Our adoption screening process is designed to ensure that each animal is placed in a responsible, loving home and with an adopter who is prepared to make a lifelong commitment.</p>
           </Container>
 

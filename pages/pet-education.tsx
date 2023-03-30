@@ -4,18 +4,18 @@ import Link from 'next/link'
 import styles from '@/styles/Home.module.css'
 import { Col, Container, Image, Row, Stack } from "react-bootstrap";
 
-export default function PetResources(props:any) {
+export default function PetEducation(props:any) {
   return (
     <>
       <Head>
-        <title>{"Pet Resources | " + props.siteTitle}</title>
+        <title>{"Pet Education | " + props.siteTitle}</title>
         <meta name="description" content="Cozy cat cottage adoption center" />
       </Head>
       <main>
-        <Container fluid="true" id="pet-resources" className="top-padding">
+        <Container fluid="true" id="pet-education" className="top-padding">
           <Stack gap={3}>
             <Container fluid="md" className="center">
-              <h1>Keep your pet happy, healthy and safe.</h1>
+              <h1>Pet Education</h1>
               <p>Whether you grew up with pets or are adopting your first one, it is important to educate yourself on animal care. Below is information that Cozy Cat Cottage believes is critical to know when owning a pet.</p>
             </Container>
 

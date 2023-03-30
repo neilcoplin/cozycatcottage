@@ -11,14 +11,7 @@ export default function Header() {
             <NavDropdown.Item href="/our-story">Our Story</NavDropdown.Item>
             <NavDropdown.Item href="/board-of-directors">Board of Directors</NavDropdown.Item>
             <NavDropdown.Item href="/contact-us">Contact Us</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href="/pet-resources">Pet Resources</NavDropdown.Item>
-            <NavDropdown.Item href="/case-against-declawing">The Case Against Declawing</NavDropdown.Item>
-            <NavDropdown.Item href="/importance-of-microchips">The Importance of Microchips</NavDropdown.Item>
-            <NavDropdown.Item href="/fiv-and-felv">FIV and FeLV</NavDropdown.Item>
-            <NavDropdown.Item href="/trap-neuter-return">Trap-Neuter-Return (TNR)</NavDropdown.Item>
-            <NavDropdown.Item href="/introducing-pets">Introducing Pets</NavDropdown.Item>
-            <NavDropdown.Item href="/safety-in-the-home">Safety in the Home</NavDropdown.Item>
+            <NavDropdown.Item href="/pet-education">Pet Education</NavDropdown.Item>
           </NavDropdown>
           <NavDropdown title="Adopt">
             <NavDropdown.Item href="/adopt">Adopt a Cat</NavDropdown.Item>
@@ -39,10 +32,10 @@ export default function Header() {
           </NavDropdown>
           <NavDropdown title="Events">
             <NavDropdown.Item href="/holiday-marketplace">Holiday Marketplace Sale</NavDropdown.Item>
-            <NavDropdown.Item href="/fundraisers">Fundraisers</NavDropdown.Item>
             <NavDropdown.Item href="/putting-for-paws">Putting for Paws</NavDropdown.Item>
+            <NavDropdown.Item href="/fundraisers">Fundraisers</NavDropdown.Item>
           </NavDropdown>
-          <Nav.Link href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=LRUGP6HJSNUKG" className="btn btn-secondary">Donate</Nav.Link>
+          <Nav.Link href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=LRUGP6HJSNUKG" className="btn btn-secondary" target="_blank" rel="noreferrer">Donate</Nav.Link>
           <Nav.Link href="/search">Search</Nav.Link>
         </Navbar.Collapse>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
