@@ -52,6 +52,7 @@ export default function Adopt(props:any) {
             specialneeds: 'Both'
           })
           setFelines(data);
+          console.log(data);
           setLoading(false);
         })
         .catch(error => {

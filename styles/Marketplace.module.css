@@ -1,35 +1,5 @@
-  .card {
-    border: none;
-    padding: 2px;
-    border-radius: 0;
-    color: rgba(49, 73, 127, 1);
-  }
-  
-  .card img {
-    border-radius: 0;
-  }
-  
-  .cardBody {
-    padding: 5px;
-    background-color: rgba(255, 255, 255, 1);
-    border: 1px solid rgba(49, 73, 127, 1);
-  }
-  
-  .card:hover .cardBody {
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(49, 73, 127, 1);
-  }
-  
-  .cardTitle {
-    position: relative;
-    display: block;
-    text-align: center;
-    margin: 0;
-    padding: .5em 0;
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-  
-  .cardTitle a {
-    text-decoration: none;
-  }
+.card {
+  border: none;
+  padding: 2px;
+  border-radius: 0;
+}
