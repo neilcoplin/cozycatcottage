@@ -2,11 +2,17 @@
 import * as AWS from 'aws-sdk';
 import * as nodemailer from 'nodemailer';
 
-AWS.config.update({
-    accessKeyId: process.env.SES_ACCESS_KEY,
-    secretAccessKey: process.env.SES_SECRET_ACCESS_KEY,
-    region: "us-east-2",
-});
+if (process.env.SES_ACCESS_KEY && process.env.SES_SECRET_ACCESS_KEY) {
+    AWS.config.update({
+        accessKeyId: process.env.SES_ACCESS_KEY,
+        secretAccessKey: process.env.SES_SECRET_ACCESS_KEY,
+        region: "us-east-2",
+    });    
+} else {
+    AWS.config.update({
+        region: "us-east-2",
+    });
+}
 AWS.config.getCredentials(function (error) {
     if (error) {
         console.log(error.stack);
@@ -63,9 +69,9 @@ export const sendEmail = async (data:any) => {
         });
         return response?.messageId
         ? { ok: true }
-        : { ok: false, msg: "Failed to send email" };
+        : { ok: false, msg: "Failed to send email. No message ID." };
     } catch (error:any) {
         console.log("ERROR", error.message);
-        return { ok: false, msg: "Failed to send email" };
+        return { ok: false, msg: error.message };
     }
 };
