@@ -47,7 +47,7 @@ export default function Footer() {
             <p className={styles.socialHeading}><strong>Connect with us</strong></p>
 
             <Stack direction="horizontal" gap={2}>
-              <a className={styles.socialIcon} href="https://www.facebook.com/groups/cozycat/?ref=bookmarks" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faFacebook} size="2xl" /></a>
+              <a className={styles.socialIcon} href="https://www.facebook.com/groups/cozycat/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faFacebook} size="2xl" /></a>
 
               <a className={styles.socialIcon} href="https://www.instagram.com/cozycatcottageac/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faInstagram} size="2xl" /></a>
 

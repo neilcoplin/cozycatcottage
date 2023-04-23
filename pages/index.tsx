@@ -24,19 +24,6 @@ export default function Home(props:any) {
               <p>Cozy Cat Cottage Adoption Center is a non-profit, 501(c)(3), no-kill organization that provides refuge, aid, and care for abandoned, injured, abused or lost cats and kittens in Central Ohio, while finding them permanent, responsible, loving homes.</p>
             </Container>
 
-            <Container fluid="md" className={styles.feature}>
-              <Row xs={1} md={2} className="center">
-                <Col xs={12} md={8} lg={9}>
-                  <h2>Cozy Cat t-shirts, tanks and sweatshirts on sale until April 3!</h2>
-                  <p>We will only be selling logo&apos;ed merchandise once a year!  Items can be shipped to you or Cozy Cat for pick up.</p>
-                  <Button href="https://modeltees.com/cozy_cat_cottage/shop/home" size="lg" className="btn btn-secondary" target="_blank">Go to Apparel Store</Button>
-                </Col>
-                <Col xs={12} md={4} lg={3} className="contain">
-                    <Image src="/img/feature-apparel.jpg" alt="Cozy Cat Cottage apparel for order: t-shirt, sweatshirt, ladies tank top, and zippered hoodie." fluid />
-                </Col>
-              </Row>
-            </Container>
-
             <Container fluid="md" className="highlight-notice center">
               <p>We are currently at full capacity. We still honor our policy of accepting any feline <strong>originally adopted from us</strong> with an appointment and all medical records.</p>
             </Container>

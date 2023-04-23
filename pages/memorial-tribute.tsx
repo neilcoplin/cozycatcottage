@@ -1,7 +1,51 @@
 import Head from 'next/head'
+import { useState } from 'react'
 import { Button, Col, Container, Form, Row, Stack } from "react-bootstrap";
+import styles from '@/styles/Home.module.css'
 
 export default function MemorialTribute(props:any) {
+  const [formData, setFormData] = useState({
+    type: "in memory of",
+    name: "",
+    amount: "0",
+    donationMethod: "Paypal",
+    fromName: "",
+    fromStreet: "",
+    fromCity: "",
+    fromState: "",
+    fromZip: "",
+    fromEmail: "",
+    fromPhone: "",
+    toName: "",
+    toStreet: "",
+    toCity: "",
+    toState: "",
+    toZip: "",
+    toEmail: "",
+    personalizedMessage: "",
+    signatureText: "",
+  });
+
+  const handleChange = (event:any) => {
+    const name = event.target.name;
+    const value = event.target.value;
+    setFormData(values => ({...values, [name]: value}));
+  }
+
+  const sendEmail = async (event:any) => {
+    event.preventDefault();
+    console.log(formData);
+    const reqOptions = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formData),
+    }
+    const response = await fetch (event.target.action, reqOptions);
+    const body = await response.json();
+    console.log(body);
+  }
   return (
     <>
       <Head>
@@ -9,7 +53,12 @@ export default function MemorialTribute(props:any) {
         <meta name="description" content="Cozy cat cottage adoption center" />
       </Head>
       <main>
-        <Form>
+        <Form action="/api/sendmail"
+        onSubmit={sendEmail}
+        method="post"
+        name="memorial-tribute-form"
+        className={styles.validate}
+        target="_blank">
           <Stack gap={3} id="memorial-tribute" className="top-padding">
             <Container fluid="lg">
               <h1 className="center">Memorial Tribute</h1>
@@ -19,22 +68,22 @@ export default function MemorialTribute(props:any) {
               <h2>Memorial information</h2>
               <Form.Group>
                 <Form.Label>This gift is</Form.Label>
-                <Form.Select id="memorial-type">
+                <Form.Select id="type" name="type" onChange={handleChange}>
                   <option>in memory of</option>
                   <option>in honor of</option>
                 </Form.Select>
               </Form.Group>
               <Form.Group>
                 <Form.Label>Name</Form.Label>
-                <Form.Control type="text" id="memorial-name" />
+                <Form.Control type="text" id="name" name="name" onChange={handleChange} />
               </Form.Group>
               <Form.Group>
                 <Form.Label>I would like to make a tribute gift of $</Form.Label>
-                <Form.Control type="text" id="memorial-amount" />
+                <Form.Control type="text" id="amount" name="amount" onChange={handleChange} />
               </Form.Group>
               <Form.Group>
                 <Form.Label>I will send my donation via</Form.Label>
-                <Form.Select id="memorial-method">
+                <Form.Select id="donationMethod" name="donationMethod" onChange={handleChange}>
                   <option>Paypal</option>
                   <option>Check</option>
                   <option>Cash</option>
@@ -45,31 +94,31 @@ export default function MemorialTribute(props:any) {
               <h2>My contact information</h2>
               <Form.Group>
                 <Form.Label>Name</Form.Label>
-                <Form.Control type="text" id="from-name" />
+                <Form.Control type="text" id="fromName" name="fromName" onChange={handleChange} />
               </Form.Group>
               <Form.Group>
                 <Form.Label>Street</Form.Label>
-                <Form.Control type="text" id="from-street" />
+                <Form.Control type="text" id="fromStreet" name="fromStreet" onChange={handleChange} />
               </Form.Group>
               <Form.Group>
                 <Form.Label>City</Form.Label>
-                <Form.Control type="text" id="from-city" />
+                <Form.Control type="text" id="fromCity" name="fromCity" onChange={handleChange} />
               </Form.Group>
               <Form.Group>
                 <Form.Label>State</Form.Label>
-                <Form.Control type="text" id="from-state" />
+                <Form.Control type="text" id="fromState" name="fromState" onChange={handleChange} />
               </Form.Group>
               <Form.Group>
                 <Form.Label>Zip</Form.Label>
-                <Form.Control type="text" id="from-zip" />
+                <Form.Control type="text" id="fromZip" name="fromZip" onChange={handleChange} />
               </Form.Group>
               <Form.Group>
                 <Form.Label>Phone</Form.Label>
-                <Form.Control type="phone" id="from-phone" />
+                <Form.Control type="phone" id="fromPhone" name="fromPhone" onChange={handleChange} />
               </Form.Group>
               <Form.Group>
                 <Form.Label>Email contact</Form.Label>
-                <Form.Control type="email" id="from-email" />
+                <Form.Control type="email" id="fromEmail" name="fromEmail" onChange={handleChange} />
               </Form.Group>
             </Container>
             <Container fluid="lg">
@@ -77,35 +126,35 @@ export default function MemorialTribute(props:any) {
               <p>If you would like us to send an email or card to the person/pet you are honoring, please include their information for the card.</p>
               <Form.Group>
                 <Form.Label>Name</Form.Label>
-                <Form.Control type="text" id="to-name" />
+                <Form.Control type="text" id="toName" name="toName" onChange={handleChange} />
               </Form.Group>
               <Form.Group>
                 <Form.Label>Street</Form.Label>
-                <Form.Control type="text" id="to-street" />
+                <Form.Control type="text" id="toStreet" name="toStreet" onChange={handleChange} />
               </Form.Group>
               <Form.Group>
                 <Form.Label>City</Form.Label>
-                <Form.Control type="text" id="to-city" />
+                <Form.Control type="text" id="toCity" name="toCity" onChange={handleChange} />
               </Form.Group>
               <Form.Group>
                 <Form.Label>State</Form.Label>
-                <Form.Control type="text" id="to-state" />
+                <Form.Control type="text" id="toState" name="toState" onChange={handleChange} />
               </Form.Group>
               <Form.Group>
                 <Form.Label>Zip</Form.Label>
-                <Form.Control type="phone" id="to-zip" />
+                <Form.Control type="phone" id="toZip" name="toZip" onChange={handleChange} />
               </Form.Group>
               <Form.Group>
                 <Form.Label>Email contact</Form.Label>
-                <Form.Control type="email" id="to-email" />
+                <Form.Control type="email" id="toEmail" name="toEmail" onChange={handleChange} />
               </Form.Group>
               <Form.Group>
                 <Form.Label>Add personalized message (up to 60 characters)</Form.Label>
-                <Form.Control as="textarea" id="personalized-message" />
+                <Form.Control as="textarea" id="personalizedMessage" name="personalizedMessage" onChange={handleChange} />
               </Form.Group>
               <Form.Group>
                 <Form.Label>Signature for card (up to 60 characters)</Form.Label>
-                <Form.Control as="textarea" id="signature-text" />
+                <Form.Control as="textarea" id="signatureText" name="signatureText" onChange={handleChange} />
               </Form.Group>
               <Form.Group>
                 <Form.Control type="submit" id="submit" value="Send" className="btn btn-secondary" />
