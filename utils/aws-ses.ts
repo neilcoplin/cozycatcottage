@@ -69,9 +69,9 @@ export const sendEmail = async (data:any) => {
         });
         return response?.messageId
         ? { ok: true }
-        : { ok: false, msg: "Failed to send email. No message ID." };
+        : { ok: false, msg: "Failed to send. No message ID in server response." };
     } catch (error:any) {
         console.log("ERROR", error.message);
-        return { ok: false, msg: error.message };
+        return { ok: false, msg: "Failed to send." };
     }
 };

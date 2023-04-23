@@ -2,6 +2,9 @@ import Head from 'next/head'
 import { useState } from 'react'
 import { Button, Col, Container, Form, Row, Stack } from "react-bootstrap";
 import styles from '@/styles/Home.module.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCheck, faX, faPaw, faSpinner } from '@fortawesome/free-solid-svg-icons'
+import '@fortawesome/fontawesome-svg-core/styles.css'
 
 export default function MemorialTribute(props:any) {
   const [formData, setFormData] = useState({
@@ -25,6 +28,7 @@ export default function MemorialTribute(props:any) {
     personalizedMessage: "",
     signatureText: "",
   });
+  const [loadingState, setLoadingState] = useState("none");
 
   const handleChange = (event:any) => {
     const name = event.target.name;
@@ -42,10 +46,56 @@ export default function MemorialTribute(props:any) {
       },
       body: JSON.stringify(formData),
     }
-    const response = await fetch (event.target.action, reqOptions);
-    const body = await response.json();
-    console.log(body);
+
+    // Set loading indicators
+    setLoadingState("loading");
+
+    fetch (event.target.action, reqOptions)
+      .then(response => {
+        if (response.ok) {
+          setLoadingState("success");
+          return response;
+        }
+        throw response;
+      })
+      .catch(error => {
+        console.error("Submitting form: ", error);
+        setLoadingState("error");
+      });
   }
+
+  // Control the loading div at the bottom of the form based on submission state
+  let loadingMessage = "";
+  let loadingIcon = <FontAwesomeIcon icon={faPaw} size="2xl" color='#ffffff' />;
+  let loadingClass = styles.formUnsubmitted;
+  switch (loadingState) {
+    case "loading": {
+      loadingMessage = " Sending your request...";
+      loadingIcon = <FontAwesomeIcon icon={faSpinner} spin size="2xl" />;
+      loadingClass = styles.formLoading;
+      break;
+    }
+    case "success": {
+      loadingMessage = " Your tribute has been submitted.  Please follow the instructions below for sending in your donation.";
+      loadingIcon = <FontAwesomeIcon icon={faCheck} size="2xl" />;
+      loadingClass = styles.formSuccess;
+      break;
+    }
+    case "error": {
+      loadingMessage = " An error occurred when trying to submit the form.";
+      loadingIcon = <FontAwesomeIcon icon={faX} size="2xl" />;
+      loadingClass = styles.formError;
+      break;
+    }
+    case "none":
+    default: {
+      loadingMessage = "";
+      loadingIcon = <FontAwesomeIcon icon={faPaw} size="2xl" color='#ffffff' />;
+      loadingClass = styles.formUnsubmitted;
+      break;
+    }
+  }
+
   return (
     <>
       <Head>
@@ -65,100 +115,110 @@ export default function MemorialTribute(props:any) {
               <p>To request a memorial tribute, please fill out the form below.  Instructions for sending in your donation are located below the form to complete your request.</p>
             </Container>
             <Container fluid="lg">
-              <h2>Memorial information</h2>
-              <Form.Group>
-                <Form.Label>This gift is</Form.Label>
-                <Form.Select id="type" name="type" onChange={handleChange}>
-                  <option>in memory of</option>
-                  <option>in honor of</option>
-                </Form.Select>
-              </Form.Group>
-              <Form.Group>
-                <Form.Label>Name</Form.Label>
-                <Form.Control type="text" id="name" name="name" onChange={handleChange} />
-              </Form.Group>
-              <Form.Group>
-                <Form.Label>I would like to make a tribute gift of $</Form.Label>
-                <Form.Control type="text" id="amount" name="amount" onChange={handleChange} />
-              </Form.Group>
-              <Form.Group>
-                <Form.Label>I will send my donation via</Form.Label>
-                <Form.Select id="donationMethod" name="donationMethod" onChange={handleChange}>
-                  <option>Paypal</option>
-                  <option>Check</option>
-                  <option>Cash</option>
-                </Form.Select>
-              </Form.Group>
+              <Stack gap={3} className="top-padding">
+                <h2>Memorial information</h2>
+                <Form.Group>
+                  <Form.Label>This gift is</Form.Label>
+                  <Form.Select id="type" name="type" onChange={handleChange}>
+                    <option>in memory of</option>
+                    <option>in honor of</option>
+                  </Form.Select>
+                </Form.Group>
+                <Form.Group>
+                  <Form.Label>Name</Form.Label>
+                  <Form.Control type="text" id="name" name="name" onChange={handleChange} />
+                </Form.Group>
+                <Form.Group>
+                  <Form.Label>I would like to make a tribute gift of $</Form.Label>
+                  <Form.Control type="text" id="amount" name="amount" onChange={handleChange} />
+                </Form.Group>
+                <Form.Group>
+                  <Form.Label>I will send my donation via</Form.Label>
+                  <Form.Select id="donationMethod" name="donationMethod" onChange={handleChange}>
+                    <option>Paypal</option>
+                    <option>Check</option>
+                    <option>Cash</option>
+                  </Form.Select>
+                </Form.Group>
+              </Stack>
             </Container>
             <Container fluid="lg">
-              <h2>My contact information</h2>
-              <Form.Group>
-                <Form.Label>Name</Form.Label>
-                <Form.Control type="text" id="fromName" name="fromName" onChange={handleChange} />
-              </Form.Group>
-              <Form.Group>
-                <Form.Label>Street</Form.Label>
-                <Form.Control type="text" id="fromStreet" name="fromStreet" onChange={handleChange} />
-              </Form.Group>
-              <Form.Group>
-                <Form.Label>City</Form.Label>
-                <Form.Control type="text" id="fromCity" name="fromCity" onChange={handleChange} />
-              </Form.Group>
-              <Form.Group>
-                <Form.Label>State</Form.Label>
-                <Form.Control type="text" id="fromState" name="fromState" onChange={handleChange} />
-              </Form.Group>
-              <Form.Group>
-                <Form.Label>Zip</Form.Label>
-                <Form.Control type="text" id="fromZip" name="fromZip" onChange={handleChange} />
-              </Form.Group>
-              <Form.Group>
-                <Form.Label>Phone</Form.Label>
-                <Form.Control type="phone" id="fromPhone" name="fromPhone" onChange={handleChange} />
-              </Form.Group>
-              <Form.Group>
-                <Form.Label>Email contact</Form.Label>
-                <Form.Control type="email" id="fromEmail" name="fromEmail" onChange={handleChange} />
-              </Form.Group>
+              <Stack gap={3} className="top-padding">
+                <h2>My contact information</h2>
+                <Form.Group>
+                  <Form.Label>Name</Form.Label>
+                  <Form.Control type="text" id="fromName" name="fromName" onChange={handleChange} />
+                </Form.Group>
+                <Form.Group>
+                  <Form.Label>Street</Form.Label>
+                  <Form.Control type="text" id="fromStreet" name="fromStreet" onChange={handleChange} />
+                </Form.Group>
+                <Form.Group>
+                  <Form.Label>City</Form.Label>
+                  <Form.Control type="text" id="fromCity" name="fromCity" onChange={handleChange} />
+                </Form.Group>
+                <Form.Group>
+                  <Form.Label>State</Form.Label>
+                  <Form.Control type="text" id="fromState" name="fromState" onChange={handleChange} />
+                </Form.Group>
+                <Form.Group>
+                  <Form.Label>Zip</Form.Label>
+                  <Form.Control type="text" id="fromZip" name="fromZip" onChange={handleChange} />
+                </Form.Group>
+                <Form.Group>
+                  <Form.Label>Phone</Form.Label>
+                  <Form.Control type="phone" id="fromPhone" name="fromPhone" onChange={handleChange} />
+                </Form.Group>
+                <Form.Group>
+                  <Form.Label>Email contact</Form.Label>
+                  <Form.Control type="email" id="fromEmail" name="fromEmail" onChange={handleChange} />
+                </Form.Group>
+              </Stack>
             </Container>
             <Container fluid="lg">
-              <h2>Honoree contact information</h2>
-              <p>If you would like us to send an email or card to the person/pet you are honoring, please include their information for the card.</p>
-              <Form.Group>
-                <Form.Label>Name</Form.Label>
-                <Form.Control type="text" id="toName" name="toName" onChange={handleChange} />
-              </Form.Group>
-              <Form.Group>
-                <Form.Label>Street</Form.Label>
-                <Form.Control type="text" id="toStreet" name="toStreet" onChange={handleChange} />
-              </Form.Group>
-              <Form.Group>
-                <Form.Label>City</Form.Label>
-                <Form.Control type="text" id="toCity" name="toCity" onChange={handleChange} />
-              </Form.Group>
-              <Form.Group>
-                <Form.Label>State</Form.Label>
-                <Form.Control type="text" id="toState" name="toState" onChange={handleChange} />
-              </Form.Group>
-              <Form.Group>
-                <Form.Label>Zip</Form.Label>
-                <Form.Control type="phone" id="toZip" name="toZip" onChange={handleChange} />
-              </Form.Group>
-              <Form.Group>
-                <Form.Label>Email contact</Form.Label>
-                <Form.Control type="email" id="toEmail" name="toEmail" onChange={handleChange} />
-              </Form.Group>
-              <Form.Group>
-                <Form.Label>Add personalized message (up to 60 characters)</Form.Label>
-                <Form.Control as="textarea" id="personalizedMessage" name="personalizedMessage" onChange={handleChange} />
-              </Form.Group>
-              <Form.Group>
-                <Form.Label>Signature for card (up to 60 characters)</Form.Label>
-                <Form.Control as="textarea" id="signatureText" name="signatureText" onChange={handleChange} />
-              </Form.Group>
-              <Form.Group>
-                <Form.Control type="submit" id="submit" value="Send" className="btn btn-secondary" />
-              </Form.Group>
+              <Stack gap={3} className="top-padding">
+                <h2>Honoree contact information</h2>
+                <p>If you would like us to send an email or card to the person/pet you are honoring, please include their information for the card.</p>
+                <Form.Group>
+                  <Form.Label>Name</Form.Label>
+                  <Form.Control type="text" id="toName" name="toName" onChange={handleChange} />
+                </Form.Group>
+                <Form.Group>
+                  <Form.Label>Street</Form.Label>
+                  <Form.Control type="text" id="toStreet" name="toStreet" onChange={handleChange} />
+                </Form.Group>
+                <Form.Group>
+                  <Form.Label>City</Form.Label>
+                  <Form.Control type="text" id="toCity" name="toCity" onChange={handleChange} />
+                </Form.Group>
+                <Form.Group>
+                  <Form.Label>State</Form.Label>
+                  <Form.Control type="text" id="toState" name="toState" onChange={handleChange} />
+                </Form.Group>
+                <Form.Group>
+                  <Form.Label>Zip</Form.Label>
+                  <Form.Control type="phone" id="toZip" name="toZip" onChange={handleChange} />
+                </Form.Group>
+                <Form.Group>
+                  <Form.Label>Email contact</Form.Label>
+                  <Form.Control type="email" id="toEmail" name="toEmail" onChange={handleChange} />
+                </Form.Group>
+                <Form.Group>
+                  <Form.Label>Add personalized message (up to 60 characters)</Form.Label>
+                  <Form.Control as="textarea" id="personalizedMessage" name="personalizedMessage" onChange={handleChange} />
+                </Form.Group>
+                <Form.Group>
+                  <Form.Label>Signature for card (up to 60 characters)</Form.Label>
+                  <Form.Control as="textarea" id="signatureText" name="signatureText" onChange={handleChange} />
+                </Form.Group>
+                <Form.Group>
+                  <Form.Control type="submit" id="submit" value="Send" className="btn btn-secondary" />
+                </Form.Group>
+              </Stack>
+            </Container>
+            <Container id="loading-div" className={loadingClass}>
+              {loadingIcon}
+              {loadingMessage}
             </Container>
             <Container fluid="lg">
               <h2>Send in your donation</h2>

@@ -89,3 +89,11 @@
   color: rgba(49, 73, 127, 1);
   font-weight: bold;
 }
+
+.formSuccess {
+  background-color: rgba(252, 248, 209, 1);
+}
+
+.formError {
+  background-color: rgba(235, 246, 247, 1);
+}

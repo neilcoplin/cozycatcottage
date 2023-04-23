@@ -77,3 +77,17 @@ Once a change has been previewed and approved, a pull request from the `developm
 
 Development site URL: TBD
 Live site URL: TBD
+
+## Credentials
+
+All credentials needed for the site are kept in environment variables in the AWS Amplify studio console.  To use these in local development, you'll need to copy them down to a `.env` file in the root directory of the project.  This file will not be included in source control commits, and credentails should never be added to source control if they are sensitive in any nature.  Though something like a Google Analytics ID is fine, since it will always be exposed to the client in the final build anyway.  Currently, credentials are only being used for sending email on the tribute form via AWS SES.
+
+The credentials are placed into the production system through a customized build script found at [https://docs.aws.amazon.com/amplify/latest/userguide/ssr-environment-variables.html](https://docs.aws.amazon.com/amplify/latest/userguide/ssr-environment-variables.html).
+
+### Local .env example
+
+```ini
+.env
+SES_ACCESS_KEY=
+SES_SECRET_ACCESS_KEY=
+```

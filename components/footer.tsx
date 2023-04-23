@@ -1,7 +1,7 @@
 import React from 'react';
 import { Col, Container, Row, Stack } from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTwitter, faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons'
+import { faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons'
 
 import MailingList from './mailinglist';
 
