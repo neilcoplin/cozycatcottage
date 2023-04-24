@@ -99,7 +99,7 @@ export default function MemorialTribute(props:any) {
   return (
     <>
       <Head>
-        <title>{"Memorial Tribute | " + props.siteTitle}</title>
+        <title>{"Memorial or Honor Tribute | " + props.siteTitle}</title>
         <meta name="description" content="Cozy cat cottage adoption center" />
       </Head>
       <main>

@@ -111,6 +111,8 @@ export default function AdoptionProfile(props:{
               <dd>{birthDate.getMonth() + "/" + birthDate.getDate() + "/" + birthDate.getFullYear()}</dd>
               <dt>{feline.ANIMALTYPEID == 11 ? 'Returned to shelter on' : 'Shelter intake date'}:</dt>
               <dd>{intakeDate.getMonth() + "/" + intakeDate.getDate() + "/" + intakeDate.getFullYear()}</dd>
+              <dt>Declawed:</dt>
+              <dd>{feline.DECLAWED == 1 ? 'Yes' : 'No'}</dd>
               {feline.HASSPECIALNEEDS || feline.FLVRESULT != 1
                 ? <><dt>Special Needs:</dt>
                 <dd className="contain">Yes <span className={styles.heartIconFloat}>

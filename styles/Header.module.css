@@ -11,12 +11,7 @@
     }
 }
 
-.header .navbar-toggler {
+.navToggler {
     margin-left: 20px;
-    margin-right: 0px;
-}
-
-.header .navbar-toggler.collapsed {
     margin-right: 20px;
-    margin-left: 0px;
 }

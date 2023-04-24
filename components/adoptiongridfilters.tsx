@@ -83,9 +83,27 @@ export default function AdoptionGridFilters(props:{
           </Form.Select>
         </InputGroup></Col>
         <Col><InputGroup>
+          <InputGroup.Text>Declawed</InputGroup.Text>
+          <Form.Select 
+              aria-label="Filter by declawed"
+              id='age'
+              name="declawed"
+              onChange={function (event:BaseSyntheticEvent) {
+                handleFilterChange({
+                    ...props.filterState,
+                    declawed: event.target.value
+                });
+              }}
+          >
+            <option value='Both'>Both</option>
+            <option value='Yes'>Yes</option>
+            <option value='No'>No</option>
+          </Form.Select>
+        </InputGroup></Col>
+        <Col><InputGroup>
           <InputGroup.Text>Special Needs</InputGroup.Text>
           <Form.Select 
-              aria-label="Filter by age"
+              aria-label="Filter by special needs"
               id='age'
               name="specialneeds"
               onChange={function (event:BaseSyntheticEvent) {

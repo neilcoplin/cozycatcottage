@@ -2,7 +2,7 @@ import Head from 'next/head'
 // import Image from 'next/image'
 import Link from 'next/link'
 // import styles from '@/styles/Home.module.css'
-import { Button, Col, Container, Image, Row, Stack } from "react-bootstrap";
+import { Col, Container, Image, Row, Stack } from "react-bootstrap";
 import MailingList from '../components/mailinglist';
 
 export default function ContactUs(props:any) {
@@ -21,7 +21,7 @@ export default function ContactUs(props:any) {
           </Container>
           <Container fluid="lg">
             <Row xs={1} md={2}>
-              <Col xs={12} md={3}>
+              <Col xs={12} md={4}>
                 <Row xs={1} sm={2} md={1}>
                   <Col>
                     <h2>Visit us</h2>
@@ -54,7 +54,7 @@ export default function ContactUs(props:any) {
                   title="Google map of Cozy Cat Cottage"
                 />
               </Col>
-              <Col xs={12} md={9}>
+              <Col xs={12} md={8}>
                 <h2>Ways to connect</h2>
                 <p><strong>Due to high call volume we are unable to return messages.</strong>  Please email <a href="mailto:cozycatcottageadoption@gmail.com">cozycatcottageadoption@gmail.com</a> or post your question or comments on our <a href="https://www.facebook.com/groups/cozycat/" target="_blank" rel="noreferrer">Facebook page</a>. Our admins and our members are very active and re-spond quickly. You will need to request to join the Facebook group before you can post. You can also follow Cozy Cat Cottage on <a href="https://www.instagram.com/cozycatcottageac/" target="_blank" rel="noreferrer">Instagram</a>!</p>
 

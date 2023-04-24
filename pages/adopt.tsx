@@ -14,6 +14,7 @@ export default function Adopt(props:any) {
     const initialFilterState : AdoptionListControls = {
       age: 'All',
       color: 'Any',
+      declawed: 'Both',
       sex: 'All',
       sort: 'Name',
       specialneeds: 'Both'
@@ -47,6 +48,7 @@ export default function Adopt(props:any) {
           data = filterFelines(data, {
             age: 'All',
             color: 'Any',
+            declawed: 'Both',
             sex: 'All',
             sort: 'Name',
             specialneeds: 'Both'
@@ -112,6 +114,17 @@ function filterFelines (felines:ShelterManagerAnimal[], filterState:any) {
   if (filterState.color !== 'Any') {
     felines = felines.filter(
       (item: { BASECOLOURNAME: string }) => filterState.color.includes(item.BASECOLOURNAME)
+    );
+  }
+  if (filterState.declawed === 'Yes') {
+    // DECLAWED is true
+    felines = felines.filter(
+      (item: { DECLAWED: number }) => item.DECLAWED
+    );
+  } else if (filterState.declawed === 'No') {
+    // DECLAWED is not true
+    felines = felines.filter(
+      (item: { DECLAWED: number }) => !item.DECLAWED
     );
   }
   if (filterState.specialneeds === 'Yes') {

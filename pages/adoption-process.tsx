@@ -21,7 +21,7 @@ export default function AdoptionProcess(props:any) {
           <Container fluid="md">
             <Row xs={1} md={2}>
               <Col md={7} lg={8}>
-                <h2>Adoption process:</h2>
+                <h2>It&apos;s a simple process:</h2>
                 <h3>Fill out an application in person, at the shelter (required). Adopters must be 21 or older.</h3>
                 <p>This document provides us with general information about you and other pets you have in your home. The application review process may be completed same-day or within up to 72 hours. We require applications to be filled out in person, at the shelter.</p>
 

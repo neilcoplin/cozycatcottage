@@ -4,6 +4,9 @@
 .rightcolumn {
     padding-left: 0;
 }
+.validate {
+  text-align: left;
+}
 
 .button {
   border-radius: 0;
