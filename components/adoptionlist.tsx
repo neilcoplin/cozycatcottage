@@ -1,7 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
-import { Container, Row } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
 import AdoptionGrid from './adoptiongrid'
+import AdoptionGridFilters from './adoptiongridfilters'
+import styles from '@/styles/Adopt.module.css'
 
 import { AdoptionListControls } from '@/types/adoptionlistcontrols'
 import { ShelterManagerAnimal } from '@/types/sheltermanageranimal'
@@ -15,15 +17,16 @@ export default function AdoptionList(props:{
   filterFelines:any;
   isLoading:boolean;
 }) {
-  let displayString;
+  let gridString;
+  let controlString;
   let sexOptions: string[] = [];
   let colorOptions: string[] = [];
   let ageOptions: string[] = [];
 
   if (props.isLoading) {
-    displayString = <Row><p>Wrangling the adoptable cats...</p></Row>
+    gridString = <Row><p>Wrangling the adoptable cats...</p></Row>
   } else if (!props.felines || !props.allFelines) {
-    displayString = <Row><p>An error occurred while fetching the cats.</p></Row>
+    gridString = <Row><p>An error occurred while fetching the cats.</p></Row>
   } else {
 
     for (let f = 0; f < props.allFelines.length; f++) {
@@ -44,9 +47,17 @@ export default function AdoptionList(props:{
     ageOptions.sort();
     colorOptions.sort();
 
-    displayString = <AdoptionGrid 
+    gridString = <AdoptionGrid 
       allFelines={props.allFelines}
       felines={props.felines}
+      setFelines={props.setFelines}
+      filterFelines={props.filterFelines}
+      filterState={props.filterState}
+      setFilterState={props.setFilterState}
+    />
+
+    controlString = <AdoptionGridFilters
+      allFelines={props.allFelines}
       setFelines={props.setFelines}
       filterFelines={props.filterFelines}
       filterState={props.filterState}
@@ -58,16 +69,23 @@ export default function AdoptionList(props:{
   }
   return (
     <>
-      <Container fluid="lg" className="center">
+      <Container fluid="lg" className='center'>
         <h1>Adopt a cat</h1>
-        <h2>Meet your new best friend.</h2>
-        <p>We recommend visiting or contacting us to confirm the availability of a particular cat or kitten.</p>
+        <Row sm={1} md={2}>
+          <Col sm={12} md={8}>
+            <h2>Meet your new best friend.</h2>
+            <p>We recommend visiting or contacting us to confirm the availability of a particular cat or kitten.</p>
 
-        <p><strong>Ready to adopt?</strong> You must have a carrier. Cash or check only. <Link href="/adoption-process">Learn about our adoption process.</Link></p>
+            <p className={styles.readyToAdopt}><strong>Ready to adopt?</strong> You must have a carrier. Cash or check only. <Link href="/adoption-process">Learn about our adoption process.</Link></p>
+          </Col>
+          <Col sm={12} md={4} className='left'>
+            {controlString}
+          </Col>
+        </Row>
       </Container>
 
       <Container fluid="lg">
-        {displayString}
+        {gridString}
       </Container>
     </>
   );

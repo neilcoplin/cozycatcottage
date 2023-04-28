@@ -50,6 +50,10 @@ h3 {
   text-align: center;
 }
 
+.left {
+  text-align: left;
+}
+
 .main .vstack {
   padding-bottom: 20px;
 }

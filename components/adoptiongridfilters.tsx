@@ -1,5 +1,5 @@
 import React, { BaseSyntheticEvent } from 'react';
-import { Col, Form, InputGroup, Row } from "react-bootstrap";
+import { Form, InputGroup, Stack } from "react-bootstrap";
 import styles from '@/styles/Home.module.css'
 
 import { AdoptionListControls } from '@/types/adoptionlistcontrols'
@@ -26,8 +26,9 @@ export default function AdoptionGridFilters(props:{
 
   return (
     <Form className={styles.filterForm}>
-      <Row xs={1} sm={2} lg={4}>
-        <Col><InputGroup>
+      <Stack gap={1} direction='vertical'>
+        <h3>Sort and Filter</h3>
+        <InputGroup>
           <InputGroup.Text>Sort order</InputGroup.Text>
           <Form.Select 
               aria-label="Sort order"
@@ -43,8 +44,8 @@ export default function AdoptionGridFilters(props:{
             <option value='Name'>Name</option>
             <option value='Date Posted'>Date Posted</option>
           </Form.Select>
-        </InputGroup></Col>
-        <Col><InputGroup>
+        </InputGroup>
+        <InputGroup>
           <InputGroup.Text>Sex</InputGroup.Text>
           <Form.Select 
               aria-label="Filter by sex"
@@ -62,8 +63,8 @@ export default function AdoptionGridFilters(props:{
               <option key={"sex-"+sex} value={sex}>{sex}</option>
             )}
           </Form.Select>
-        </InputGroup></Col>
-        <Col><InputGroup>
+        </InputGroup>
+        <InputGroup>
           <InputGroup.Text>Age</InputGroup.Text>
           <Form.Select 
               aria-label="Filter by age"
@@ -81,8 +82,8 @@ export default function AdoptionGridFilters(props:{
               <option key={"age-"+age} value={age}>{age}</option>
             )}
           </Form.Select>
-        </InputGroup></Col>
-        <Col><InputGroup>
+        </InputGroup>
+        <InputGroup>
           <InputGroup.Text>Declawed</InputGroup.Text>
           <Form.Select 
               aria-label="Filter by declawed"
@@ -99,8 +100,8 @@ export default function AdoptionGridFilters(props:{
             <option value='Yes'>Yes</option>
             <option value='No'>No</option>
           </Form.Select>
-        </InputGroup></Col>
-        <Col><InputGroup>
+        </InputGroup>
+        <InputGroup>
           <InputGroup.Text>Special Needs</InputGroup.Text>
           <Form.Select 
               aria-label="Filter by special needs"
@@ -117,8 +118,8 @@ export default function AdoptionGridFilters(props:{
             <option value='Yes'>Yes</option>
             <option value='No'>No</option>
           </Form.Select>
-        </InputGroup></Col>
-        {/*<Col><InputGroup>
+        </InputGroup>
+        {/*<InputGroup>
           <InputGroup.Text>Color</InputGroup.Text>
           <Form.Select 
               aria-label="Filter by color"
@@ -136,8 +137,8 @@ export default function AdoptionGridFilters(props:{
               <option key={"color-"+color} value={color}>{color}</option>
             )}
           </Form.Select>
-        </InputGroup></Col>*/}
-      </Row>
+        </InputGroup>*/}
+      </Stack>
     </Form>
   );
 }
