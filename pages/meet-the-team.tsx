@@ -1,17 +1,18 @@
 import Head from 'next/head'
 import { Col, Container, Image, Row, Stack } from "react-bootstrap";
 
-export default function BoardOfDirectors(props:any) {
+export default function MeetTheTeam(props:any) {
   return (
     <>
       <Head>
-        <title>{"Board of Directors | " + props.siteTitle}</title>
+        <title>{"Meet the Team | " + props.siteTitle}</title>
         <meta name="description" content="Cozy cat cottage adoption center" />
       </Head>
       <main>
-        <Stack gap={3} id="board-of-directors">
+        <Stack gap={3} id="meet-the-team">
           <Container fluid="md" className="top-padding">
-            <h1>Board of Directors</h1>
+            <h1>Meet the Team</h1>
+            <h2>Board of Directors</h2>
             <p>The Cozy Cat Cottage Board of Directors is comprised of an Executive Director and six volunteers who are driven by their passion for animals welfare. Its members are involved in all facets of the organization from day-to-day cleaning to running off-site events. The Board meets quarterly to discuss the direction and management of the organization&apos;s mission.</p>
           </Container>
             
@@ -102,6 +103,22 @@ export default function BoardOfDirectors(props:any) {
                 <h2>Tiffany Kinzer</h2>
                 <p className="subtitle">Trustee</p>
                 <p>Tiffany works as acting Director on Monday nights, makes follow-up calls to adopters and serves as a Trustee of the board. Originally from Lima, she moved to Columbus in 1998 and has ten cats: Giselle, Charlie, Toby (FIV+), Paris, Stormy, Gus, Roman, Memphis, Frankie and Jaycee. Tiffany also works full time for St. Jude Children&apos;s Research Hospital as a Philanthropic Advisor.</p>
+              </Col>
+            </Row>
+          </Container>
+
+          <Container fluid="md">
+            <Row xs={1} md={2}>
+              <Col sm={4} md={3} xl={2}>
+              </Col>
+              <Col sm={8} md={9} xl={10}>
+                <h2>Medical Team</h2>
+                <ul>
+                  <li>Amy Smerecky</li>
+                  <li>Jesse Howe</li>
+                  <li>Kathy Hyatt</li>
+                  <li>Renene Penwell</li>
+                </ul>
               </Col>
             </Row>
           </Container>
