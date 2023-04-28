@@ -1,7 +1,7 @@
 import Head from 'next/head'
 // import Image from 'next/image'
 import Link from 'next/link'
-// import styles from '@/styles/Home.module.css'
+import styles from '@/styles/Home.module.css'
 import { Col, Container, Image, Row, Stack } from "react-bootstrap";
 import MailingList from '../components/mailinglist';
 
@@ -23,7 +23,15 @@ export default function ContactUs(props:any) {
             <Row xs={1} md={2}>
               <Col xs={12} md={4}>
                 <Row xs={1} sm={2} md={1}>
-                  <Col>
+                  <Col className={styles.bottomMargin}>
+                    <h2>Hours</h2>
+                    <p><strong>Weekdays:</strong> 10am - 2pm, 5:30pm - 7:30pm<br />
+                    <strong>Saturday:</strong> 11:00am - 3:00pm<br />
+                    <strong>Sunday:</strong> 1:30pm - 4:30pm</p>
+
+                    <p>* Tuesday evening reserved for <Link href="/book-buddies">Book Buddies Reading Program</Link> only</p>
+                  </Col>
+                  <Col className={styles.bottomMargin}>
                     <h2>Visit us</h2>
                     <p>10344 Sawmill Road<br />
                     Powell, Ohio 43065<br />
@@ -35,14 +43,6 @@ export default function ContactUs(props:any) {
                     <p>Cozy Cat Cottage Adoption Center<br />
                     P.O. Box 283<br />
                     Powell, Ohio 43065-0283</p>
-                  </Col>
-                  <Col>
-                    <h2>Hours</h2>
-                    <p><strong>Weekdays:</strong> 10am - 2pm, 5:30pm - 7:30pm<br />
-                    <strong>Saturday:</strong> 11:00am - 3:00pm<br />
-                    <strong>Sunday:</strong> 1:30pm - 4:30pm</p>
-
-                    <p>* Tuesday evening reserved for <Link href="/book-buddies">Book Buddies Reading Program</Link> only</p>
                   </Col>
                 </Row>
 
