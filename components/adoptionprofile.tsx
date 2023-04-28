@@ -6,6 +6,26 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
 import { ShelterManagerAnimal } from '@/types/sheltermanageranimal';
 
+function normalizeLocation(locationName:string) {
+  switch (locationName) {
+    case 'Adoption Floor': {
+      return <span>Cozy Cat Cottage Adoption Floor</span>;
+    }
+    case 'Retailer::Pet Supplies Plus Powell': {
+      return <a href='https://goo.gl/maps/ZwPtK932gTtgsmxY9' target='_blank' rel='noreferrer'>Pet Supplies Plus, 9848 Brewster Ln, Powell, OH 43065</a>;
+    }
+    case 'Retailer::PetSmart Sawmill': {
+      return <a href='https://goo.gl/maps/j2UmAZGeynLrou4FA' target='_blank' rel='noreferrer'>PetSmart, 6010 Sawmill Rd, Dublin, OH 43017</a>;
+    }
+    case 'Retailer::Petco Graceland':  {
+      return <a href='https://goo.gl/maps/naJ384jGscLYL9fu5' target='_blank' rel='noreferrer'>Petco, 5030 N High St, Columbus, OH 43214 </a>;
+    }
+    default: {
+      return <span>{locationName}</span>;
+    }
+  }
+}
+
 export default function AdoptionProfile(props:{
   felines:Array<ShelterManagerAnimal>|null;
   isLoading:boolean;
@@ -120,6 +140,8 @@ export default function AdoptionProfile(props:{
                   </span></dd></>
                 : <></>
               }
+              <dt>Location:</dt>
+              <dd>{normalizeLocation(feline.DISPLAYLOCATION)}</dd>
             </dl>
             {sponsorCare}
           </Col>
