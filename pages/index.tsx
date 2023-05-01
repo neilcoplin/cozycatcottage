@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import styles from '@/styles/Home.module.css'
-import { Button, Card, Col, Container, Image, Row, Stack } from "react-bootstrap";
+import { Button, Card, Container, Image, Row, Stack } from "react-bootstrap";
+import FeatureP4P2023 from '../components/feature-p4p2023';
 
 export default function Home(props:any) {
   return (
@@ -23,6 +24,8 @@ export default function Home(props:any) {
               <h1>Finding forever homes since 1998</h1>
               <p>Cozy Cat Cottage Adoption Center is a non-profit, 501(c)(3), no-kill organization that provides refuge, aid, and care for abandoned, injured, abused or lost cats and kittens in Central Ohio, while finding them permanent, responsible, loving homes.</p>
             </Container>
+
+            <FeatureP4P2023 />
 
             <Container fluid="md" className="highlight-notice center">
               <p>We are currently at full capacity. We still honor our policy of accepting any feline <strong>originally adopted from us</strong> with an appointment and all medical records.</p>

@@ -1,0 +1,53 @@
+.PuttingForPaws2023 {
+    background-color: rgba(11, 55, 12, 1);
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+    /* Constrain the max size of the feature due to the 4-up layout */
+    .PuttingForPaws2023 {
+        max-width: 1070px !important;
+    }
+}
+
+.PuttingForPaws2023 a {
+    color: rgba(255, 255, 255, 1);
+}
+
+.PuttingForPaws2023 a.buttonBrown {
+    background-color: rgba(94, 54, 29, 1);
+    border-color: rgba(94, 54, 29, 1);
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+
+.PuttingForPaws2023 a.buttonBrown:hover {
+    text-decoration: underline;
+}
+
+.orangeText {
+    color: rgba(255, 138, 28, 1);
+}
+
+.divider {
+    color: rgba(255, 255, 255, 1);
+    width: 96%;
+    margin-left: 2%;
+}
+
+.noPadding {
+    padding: 0;
+}
+
+.headerPadding {
+    padding-top: 1em;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.centered4Up {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
