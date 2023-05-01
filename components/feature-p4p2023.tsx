@@ -8,7 +8,7 @@ export default function FeatureP4P2023() {
     <Container className={styles.PuttingForPaws2023} fluid="sm">
       <Row className={styles.headerPadding}>
         <h2>Putting for Paws</h2>
-        <p>Our <a href="https://www.cozycatgolf.org" target="_blank" rel="noreferrer">Putting for Paws Website</a> launches May 1st for both golfers and non-golfers. Sign up to play golf, enter 12 cash raffles, buy tickets for a Florida vacation, sponsor a hole or cart. 100% of proceeds will be used for the care of our feline residents. Help us to Protect Their Journey.</p>
+        <p>Our <a href="https://www.cozycatgolf.org" target="_blank" rel="noreferrer">Putting for Paws Website</a> launches May 1st for both golfers and non-golfers. Sign up to play golf, enter 12 cash raffles, buy raffle tickets for a Florida vacation, 18-holes of golf, sponsor a hole or cart. 100% of proceeds will be used for the care of our feline residents. Help us to Protect Their Journey.</p>
         <hr className={styles.divider} />
       </Row>
       <Row xs={1} lg={2}>
@@ -17,10 +17,10 @@ export default function FeatureP4P2023() {
           <p>Safari Golf Club, Powell, OH<br />
             $80 per golfer<br />
             Scramble/Shotgun: 2:00pm<br />
-            18-Holes, cart, range balls, dinner & cash prizes for contents winners<br />
+            18-Holes, cart, range balls, dinner & cash prizes for contest winners<br />
             ($20 for dinner only)<br />
             <strong>Sign-up by June 6th</strong></p>
-          <p className={styles.orangeText}>Event Sponsor: Healthy Pets of Wedgewood in Powell<br />
+          <p className={styles.sponsor}>Event Sponsor: Healthy Pets of Wedgewood in Powell<br />
             Dinner Sponsor: OSU Veterinary Medical Center</p>
         </Col>
         <Col className={styles.noPadding}>
