@@ -21,8 +21,8 @@ AWS.config.getCredentials(function (error) {
 const ses = new AWS.SES({ apiVersion: "2010-12-01" });
 
 // change this to the "from" email that you want
-const fromAddress = "neil.coplin@gmail.com";
-const toAddress = "neil.coplin@gmail.com";
+const fromAddress = "cozycatcottageadoption@gmail.com";
+const toAddress = "cccthanksyou@yahoo.com";
 
 // Create a transporter of nodemailer
 const transporter = nodemailer.createTransport({
