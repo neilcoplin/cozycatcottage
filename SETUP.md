@@ -27,6 +27,8 @@ Prior to completing this step, you'll need to make sure you have access to the G
 1. Keep the default `cozycatcottage` app name, build settings and service account.
 1. Confirm the settings and deploy the site.
 
+Completing this will set a webhook in the project that deploys code over to the specified AWS resources on push events in GitHub.
+
 ## 3. Set up dev site
 
 Set up a development site that is deployed off of the development branch.  This will then allow for stakeholders to preview changes prior to them going live.
@@ -34,6 +36,7 @@ Set up a development site that is deployed off of the development branch.  This 
 1. Go to the Amplify console and into the `cozycatcottage` site.
 1. Click on the `Connect branch` button.
 1. Select the `development` branch from the dropdown list.
+1. Save and deploy the branch.
 
 ## 4. Put the IAM user in the Amplify environment
 
@@ -64,7 +67,7 @@ You'll need someone that has access to the `cozycatcottageadoption@gmail.com` ad
 1. Have someone who has access to that email address forward you the confirmation email.
 1. Click the link in the email to confirm it.
 
-## 6. Set up the domain
+## 6. Set up the domain(s)
 
 Transferring the domain will depend on where it is currently registered.  Follow instructions in the AWS Amplifiy console to set up the domain appropriately.  Note that you will need to perform this for each domain that Cozy Cat Cottage owns.  You may wish to do it for a less important domain first and leave the primary one to last.
 
@@ -73,6 +76,14 @@ Transferring the domain will depend on where it is currently registered.  Follow
 - cozycatcottage.net
 - cozycatcottage.info
 
+Current instructions for setting up a GoDaddy hosted domain are at https://docs.aws.amazon.com/amplify/latest/userguide/to-add-a-custom-domain-managed-by-godaddy.html.
+
 1. Go to the AWS Amplify console.
 1. Click on `Domain management`.
 1. Click `Add domain`.
+1. Enter the domain to set up (i.e. `cozycatcottage.org`) and click `Configure Domain`.
+1. Add another subdomain for `development` that points to the `development` site.  All other subdomains will point to the `main` site.  Ensure the setup redirect to use the `www` version of the site checkbox is checked.
+1. Save the domain to create the SSL certificates for that domain.
+1. Click on the actions -> View DNS records for that domain to see what DNS entries should be created.
+1. Go to the GoDaddy domain registration and add DNS records for CNAME to verify ownership of the site as well as establish subdomain routing to the hosting site.  These are currently listed as steps 1 and 3.  Step 2 may be skipped as GoDaddy does not support it.
+1. Wait for DNS records to update and site ownership to be verified.  Note that while domain ownership can be verified independently, domain activation cannot complete until all subdomains have a corresponding CNAME record.
