@@ -20,7 +20,7 @@ AWS.config.getCredentials(function (error) {
 });
 const ses = new AWS.SES({ apiVersion: "2010-12-01" });
 
-// change this to the "from" email that you want
+// Both of these addresses need to be verified identities in SES
 const fromAddress = "cozycatcottageadoption@gmail.com";
 const toAddress = "cccthanksyou@yahoo.com";
 
@@ -72,6 +72,17 @@ export const sendEmail = async (data:any) => {
         : { ok: false, msg: "Failed to send. No message ID in server response." };
     } catch (error:any) {
         console.log("ERROR", error.message);
-        return { ok: false, msg: "Failed to send." };
+        if (process.env.BRANCH && process.env.BRANCH !== 'main') {
+            return {
+                ok: false, 
+                msg: "Failed to send.",
+                error: error
+            };
+        } else {
+            return {
+                ok: false, 
+                msg: "Failed to send."
+            };
+        }
     }
 };

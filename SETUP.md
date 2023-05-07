@@ -55,15 +55,19 @@ We'll need to generate security credentials for the script that sends the email 
     - SES_ACCESS_KEY
     - SES_SECRET_ACCESS_KEY
 
+It's also probably useful at this time to set up the `BRANCH` variable equal to `feature` with an override on it for both the `main` branch to set this to `main` and `development` branch set to `development`.
+
 You'll probably also want to place these in your local .env file at this time too for local development setup if that isn't already done.
 
 ## 5. Authorize the SES identity
 
-You'll need someone that has access to the `cozycatcottageadoption@gmail.com` address in order to confirm setup.  This step is so the site will be able to send emails from that particular address.  If new forms are built that requrie other email from addresses, this can done for them as well.
+You'll need someone that has access to the `cozycatcottageadoption@gmail.com` and `cccthanksyou@yahoo.com` addresses in order to confirm setup.  This step is so the site will be able to send emails from that particular address.  If new forms are built that requrie other email from addresses, this can done for them as well.
 
 1. Go to the SES console.
 1. Click `Create identity`.
 1. Select an email address and enter `cozycatcottageadoption@gmail.com`.
+1. Repeat steps for `cccthanksyou@yahoo.com`.
+    - If you wish to set up your email as a temporary tester email for forms, repeat the steps again with your own email at this time.
 1. Have someone who has access to that email address forward you the confirmation email.
 1. Click the link in the email to confirm it.
 

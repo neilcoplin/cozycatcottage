@@ -52,7 +52,7 @@ export default function MemorialTribute(props:any) {
 
     fetch (event.target.action, reqOptions)
       .then(response => {
-        if (response.ok) {
+        if (response.ok === true) {
           setLoadingState("success");
           return response;
         }

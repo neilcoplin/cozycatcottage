@@ -6,7 +6,7 @@ frontend:
         - npm install
     build:
       commands:
-        - env | grep -e SES_ACCESS_KEY -e SES_SECRET_ACCESS_KEY >> .env.production
+        - env | grep -e SES_ACCESS_KEY -e SES_SECRET_ACCESS_KEY -e BRANCH >> .env.production
         - npm run build
   artifacts:
     baseDirectory: .next
