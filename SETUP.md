@@ -24,7 +24,7 @@ Prior to completing this step, you'll need to make sure you have access to the G
 1. Get started with `Amplify Hosting`.
 1. Choose `GitHub` as a source, and sign in to GitHub.
 1. Choose the `neilcoplin/cozycatcottage` repository and `main` branch.
-1. Keep the default `cozycatcottage` app name, build settings and service account.
+1. Keep the default `cozycatcottage` app name and service account.  The build setting should be imported automatically from `/amplify.yml`, though should include an additional line for importing Amplify environment variables in the build process.  If not, add this line from `/amplify.yml`.
 1. Confirm the settings and deploy the site.
 
 Completing this will set a webhook in the project that deploys code over to the specified AWS resources on push events in GitHub.
