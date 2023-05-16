@@ -11,7 +11,7 @@ export default function FeatureGarageSale() {
         <Col className={styles.center} xs={12} md={8}>
           <h2>Cozy Cat Cottage Garage Sale</h2>
           <p><strong>When: Saturday, June 3, 2023 from 9:00am to 3:00pm</strong></p>
-          <p>The garage sale will take place behind the adoption center in the parking lot. This is event is successful thanks to the many items donated by Cozy Cat supporters. We can sell a wide variety of items including collectibles, antiques, home d&eacute;cor, housewares, electronics, DVD's, games, toys, tools, lawn equipment, etc. (no clothing or extra-large furniture, please). We ask that items be in working order and in good condition.</p>
+          <p>The garage sale will take place behind the adoption center in the parking lot. This is event is successful thanks to the many items donated by Cozy Cat supporters. We can sell a wide variety of items including collectibles, antiques, home d&eacute;cor, housewares, electronics, DVD&apos;s, games, toys, tools, lawn equipment, etc. (no clothing or extra-large furniture, please). We ask that items be in working order and in good condition.</p>
         </Col>
         <Col xs={12} md={4}>
           {/*<Image fluid src="/img/feature-garage-sale.png" alt="Brown cat on a sidewalk with a sign attached reading: Garage sale! Follow me!" />*/}
