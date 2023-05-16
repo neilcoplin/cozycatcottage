@@ -1,3 +1,9 @@
+.GarageSale {
+    background-color: rgba(235, 246, 247, 1);
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
 .PuttingForPaws2023 {
     background-color: rgba(11, 55, 12, 1);
     color: rgba(255, 255, 255, 1);
@@ -49,6 +55,11 @@ p.sponsor {
     padding-top: 1em;
     padding-right: 1em;
     padding-left: 1em;
+}
+
+
+.center {
+    text-align: center;
 }
 
 .centered4Up {
