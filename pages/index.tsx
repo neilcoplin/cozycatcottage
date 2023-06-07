@@ -3,7 +3,6 @@ import Link from 'next/link'
 import styles from '@/styles/Home.module.css'
 import { Button, Card, Container, Image, Row, Stack } from "react-bootstrap";
 import FeatureP4P2023 from '../components/feature-p4p2023';
-import FeatureGarageSale from '../components/feature-garage-sale';
 
 export default function Home(props:any) {
   return (
@@ -27,8 +26,6 @@ export default function Home(props:any) {
             </Container>
 
             <FeatureP4P2023 />
-
-            <FeatureGarageSale />
 
             <Container fluid="md" className="highlight-notice center">
               <p>We are currently at full capacity. We still honor our policy of accepting any feline <strong>originally adopted from us</strong> with an appointment and all medical records.</p>
