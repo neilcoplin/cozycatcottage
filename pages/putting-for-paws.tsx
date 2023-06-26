@@ -33,7 +33,7 @@ export default function PuttingForPaws(props:any) {
                     </p>
                   </Col>
                   <Col sm={6}>
-                    <h2>Dinner Sponsors</h2>
+                    <h2>Dinner Sponsor</h2>
                     <p><Image fluid src="/img/osu-vmc-logo.png" alt="The Ohio State University Veterinary Medical Center" /></p>
                     
                     <p><b>Frank Stanton Spectrum of Care Clinic (Primary Care)</b><br />
