@@ -24,7 +24,7 @@ export default function Fundraisers(props:any) {
               <Row xs={1} sm={2}>
                 <Col sm={12} md={8}>
                   <h2>Putting for Paws</h2>
-                  <p>Calling all golfers to attend our <a href="https://www.cozycatgolf.org/" target="_blank" rel="noreferrer">annual golf outing virtually or in-person</a>, generously sponsored by <a href="http://www.come2columbusohio.com/" target="_blank" rel="noreferrer">Rick Wright - RE/MAX Affiliates</a>.</p>
+                  <p>Calling all golfers to attend our <a href="https://www.cozycatgolf.org/" target="_blank" rel="noreferrer">annual golf outing virtually or in-person</a>.</p>
 
                   <h2>Kitten Showers</h2>
                   <p>Traditionally held in the spring at the beginning of &ldquo;kitten season&rdquo;, Kitten Showers raise much-needed funds and supplies necessary to care for our neonatal kittens and critically sick or injured kittens and mama cats. Refreshments are served and you might catch a glimpse of newborn kittens! Check our <a href="https://www.facebook.com/groups/cozycat/?ref=bookmarks" target="_blank" rel="noreferrer">Facebook page</a> or make sure you&apos;re on our email list to stay up to date on dates for the next Kitten Shower.</p>
