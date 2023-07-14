@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import styles from '@/styles/Home.module.css'
-import { Button, Card, Container, Image, Row, Stack } from "react-bootstrap";
+import { Button, Card, Col, Container, Image, Row, Stack } from "react-bootstrap";
 
 export default function Home(props:any) {
   return (
@@ -49,13 +49,29 @@ export default function Home(props:any) {
               </Row>
             </Container>
 
-            <Container fluid="lg" className="center">
+            <Container fluid="lg" className="center bottomMargin">
               <h2 className={styles.bold}>Recommended times to call</h2>
               <p>We are available to answer calls in the evenings Monday through Friday from 5:30pm to 7:30pm, Saturday from 11:00am to 3:00pm and Sunday from 1:30pm to 4:30pm.</p>
               
               <Button href="/contact-us" size="lg">Contact us</Button>
             </Container>
           </Stack>
+
+          <Container fluid="true" className="teal-notice no-padding">
+            <Container fluid="lg">
+              <Row xs={1} sm={2}>
+                <Col xs={12} sm={8} md={9} className="top-padding bottom-padding">
+                  <h2 className={styles.bold}>Thank you to our 2023 business sponsors!</h2>
+                  <p>Please support these businesses and let them know you chose them because they support Cozy Cat Cottage.</p>
+                  
+                  <Button href="https://online.flippingbook.com/view/357463952/" size="lg" target="_blank" rel="noreferrer" className="btn-teal">View business sponsor directory</Button>
+                </Col>
+                <Col xs={12} sm={4} md={3}>
+                  <Image fluid src="/img/thankyou-businesses.png" alt="Thank you!" />
+                </Col>
+              </Row>
+            </Container>
+          </Container>
           <Container fluid="true" className="dark-notice center">
             <p><strong>Lost a cat or found one?</strong> Quick action brings the best results for a successful reunion. Visit <a href="https://petfbi.org/" target="_blank" rel="noreferrer">petfbi.org</a> to post a report or search for a lost pet.</p>
           </Container>
