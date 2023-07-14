@@ -53,7 +53,7 @@ export default function Volunteer(props:any) {
             </Container>
             <Container fluid="lg">
               <h1>Volunteer orientation &amp; refresher training</h1>
-              <p>Orientations are held twice a month (excluding holidays) on the first and third Saturday of each month at 10am BY <span className={styles.uppercase}>appointment only</span>. Volunteers must complete orientation before beginning service. Please contact Jeanie at <a href="mailto:volunteersforcozycatcottage@gmail.com">volunteersforcozycatcottage@gmail.com</a> to sign up.</p>
+              <p>Orientations are held twice a month (excluding holidays) on the first and third Saturday of each month at 10am BY <span className={styles.uppercase}>appointment only</span>. Volunteers must complete orientation before beginning service. Please contact Jeanie at <a href="mailto:jeby@cozycatcottage.org">jeby@cozycatcottage.org</a> to sign up.</p>
 
               <p>Please download and bring the completed volunteer form with you to orientation.</p>
 
