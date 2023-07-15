@@ -95,6 +95,32 @@ h3 {
   color: rgba(255, 255, 255, 1);
 }
 
+.teal-notice {
+  background-color: rgba(73, 121, 131, 1);
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.teal-notice a,
+.teal-notice a:visited,
+.teal-notice p,
+.teal-notice h1,
+.teal-notice h2,
+.teal-notice h3 {
+  color: rgba(255, 255, 255, 1);
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.top-padding {
+  padding-top: 1em;
+}
+
+.bottom-padding {
+  padding-bottom: 1em;
+}
+
 .main p,
 .main li {
   font-size: 18px;
@@ -163,6 +189,20 @@ a.btn-secondary:hover {
   text-decoration: none;
 }
 
+a.btn-teal {
+  background-color: rgba(73, 121, 131, 1);
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  border: 2px solid rgba(255, 255, 255, 1);
+}
+
+a.btn-teal:hover {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(73, 121, 131, 1);
+  text-decoration: none;
+  border: 2px solid rgba(73, 121, 131, 1);
+}
+
 figcaption {
   font-weight: bold;
   font-size: 130%;
@@ -176,6 +216,10 @@ ol, ul {
 
 .paragraph li {
   margin-bottom: 20px;
+}
+
+.bottomMargin {
+  margin-bottom: 1em;
 }
 
 .contain {
