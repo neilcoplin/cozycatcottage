@@ -67,3 +67,44 @@ p.sponsor {
     padding-top: 1em;
     padding-bottom: 1em;
 }
+
+p.largeParagraph {
+    font-size: 1.6em;
+}
+
+.FeatureMatchingDonationDrive .brownText {
+    color: rgba(156, 101, 7, 1);
+}
+
+.FeatureMatchingDonationDrive {
+    background: rgba(248, 249, 250, 1);
+}
+
+.FeatureMatchingDonationDrive h2 {
+    border-bottom: 7px solid rgba(156, 101, 7, 1);
+    padding-bottom: .5em;
+    font-weight: bold;
+}
+
+.FeatureMatchingDonationDrive img {
+    border: 7px solid rgba(156, 101, 7, 1);
+    margin-bottom: .5em;
+}
+
+.FeatureMatchingDonationDrive a.buttonOrange {
+    background-color: rgba(156, 101, 7, 1);
+    border-color: rgba(156, 101, 7, 1);
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.FeatureMatchingDonationDrive a.buttonOrange:hover {
+    text-decoration: underline;
+}
+
+.FeatureMatchingDonationDrive .captionText {
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+}
