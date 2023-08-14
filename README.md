@@ -100,3 +100,7 @@ Periodically, package dependencies should be updated to ensure that they are bei
 cd /path/to/cozycatcottage/
 pnpm update
 ```
+
+## Deployment
+
+The front-end resources for the site are deployed to AWS in a S3 bucket are specific to Amplify with NextJS sites.  These are not deployed into a S3 bucket created in the CozyCatCottage AWS account and are instead part of the AWS CDN (CloudFront) to better push that content closer to those that are requesting it.  So when a site is deployed, you will not see individual resources created for the front-end of the site and the only reference to it is through the Amplify console.
