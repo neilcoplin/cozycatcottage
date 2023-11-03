@@ -1,8 +1,59 @@
+/**
+ *  General feature styles
+ */
+
+.orangeText {
+    color: rgba(255, 138, 28, 1);
+}
+
+p.sponsor {
+    color: rgba(255, 138, 28, 1);
+    font-size: 20px;
+}
+
+.divider {
+    color: rgba(255, 255, 255, 1);
+    width: 96%;
+    margin-left: 2%;
+}
+
+.noPadding {
+    padding: 0;
+}
+
+.headerPadding {
+    padding-top: 1em;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.center {
+    text-align: center;
+}
+
+.centered4Up {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+p.largeParagraph {
+    font-size: 1.6em;
+}
+
+/**
+ *  Feature: Garage Sale
+ */
+
 .GarageSale {
     background-color: rgba(235, 246, 247, 1);
     padding-top: 1em;
     padding-bottom: 1em;
 }
+
+/**
+ *  Feature: Putting for Paws
+ */
 
 .PuttingForPaws2023 {
     background-color: rgba(11, 55, 12, 1);
@@ -32,45 +83,9 @@
     text-decoration: underline;
 }
 
-.orangeText {
-    color: rgba(255, 138, 28, 1);
-}
-
-p.sponsor {
-    color: rgba(255, 138, 28, 1);
-    font-size: 20px;
-}
-
-.divider {
-    color: rgba(255, 255, 255, 1);
-    width: 96%;
-    margin-left: 2%;
-}
-
-.noPadding {
-    padding: 0;
-}
-
-.headerPadding {
-    padding-top: 1em;
-    padding-right: 1em;
-    padding-left: 1em;
-}
-
-
-.center {
-    text-align: center;
-}
-
-.centered4Up {
-    text-align: center;
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-
-p.largeParagraph {
-    font-size: 1.6em;
-}
+/**
+ *  Feature: Matching Donation Drive
+ */
 
 .FeatureMatchingDonationDrive .brownText {
     color: rgba(156, 101, 7, 1);
@@ -107,4 +122,39 @@ p.largeParagraph {
     padding-left: 40px;
     padding-right: 40px;
     text-align: center;
+}
+
+/**
+ *  Feature: Holiday Marketplace
+ */
+
+.FeatureHolidayMarketplace {
+    background: rgba(235, 246, 247, 1);
+}
+
+.FeatureHolidayMarketplace .largeParagraph {
+    color: rgba(123, 5, 39, 1);
+    border-bottom: 3px solid rgba(123, 5, 39, 1);
+    padding-bottom: 0;
+    margin-bottom: 10px;
+}
+
+.FeatureHolidayMarketplace h2 {
+    color: rgba(123, 5, 39, 1);
+    padding-bottom: .5em;
+    font-weight: bold;
+}
+
+.FeatureHolidayMarketplace img {
+    border: 7px solid rgba(123, 5, 39, 1);
+    margin-bottom: .5em;
+}
+
+.FeatureHolidayMarketplace a {
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.FeatureHolidayMarketplace a:hover {
+    text-decoration: underline;
 }
