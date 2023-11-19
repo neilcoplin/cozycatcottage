@@ -19,6 +19,12 @@ export default function Home(props:any) {
               </Container>
             </Container> */}
 
+            <Container className="highlight-notice" fluid="true">
+                <Container fluid="lg">
+                <p>We will be closed Thursday, November 23rd and Friday, November 24th in observance of Thanksgiving. Normal hours return Saturday, November 25th.  Thank you for your ongoing support.</p>
+              </Container>
+            </Container>
+
             <Container fluid="md" className="center top-padding">
               <h1>Finding forever homes since 1998</h1>
               <p>Cozy Cat Cottage Adoption Center is a non-profit, 501(c)(3), no-kill organization that provides refuge, aid, and care for abandoned, injured, abused or lost cats and kittens in Central Ohio, while finding them permanent, responsible, loving homes.</p>
