@@ -19,11 +19,11 @@ export default function Home(props:any) {
               </Container>
             </Container> */}
 
-            <Container className="highlight-notice" fluid="true">
+            {/* <Container className="highlight-notice" fluid="true">
                 <Container fluid="lg">
-                <p>We will be closed Sunday, December 24th and Monday, December 25th in observance of Christmas. Normal hours return Saturday, December 26th.  Thank you for your ongoing support.</p>
+                <p>We will be closed Sunday, December 24th and Monday, December 25th in observance of Christmas. Normal hours return Tuesday, December 26th.  Thank you for your ongoing support.</p>
               </Container>
-            </Container>
+            </Container> */}
 
             <Container fluid="md" className="center top-padding">
               <h1>Finding forever homes since 1998</h1>
