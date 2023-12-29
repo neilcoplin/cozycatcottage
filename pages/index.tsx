@@ -1,7 +1,9 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import styles from '@/styles/Home.module.css'
+import ClosureNotice from '@/components/closure-notice';
 import { Button, Card, Col, Container, Image, Row, Stack } from "react-bootstrap";
+
 
 export default function Home(props:any) {
   return (
@@ -19,11 +21,10 @@ export default function Home(props:any) {
               </Container>
             </Container> */}
 
-            {/* <Container className="highlight-notice" fluid="true">
-                <Container fluid="lg">
-                <p>We will be closed Sunday, December 24th and Monday, December 25th in observance of Christmas. Normal hours return Tuesday, December 26th.  Thank you for your ongoing support.</p>
-              </Container>
-            </Container> */}
+            <ClosureNotice
+              message="We will be closed Sunday, December 31st and Monday, January 1st in observance of the new year. Normal hours return Tuesday, January 2nd.  Thank you for your ongoing support."
+              untilDatestring="2024-01-02"
+            />
 
             <Container fluid="md" className="center top-padding">
               <h1>Finding forever homes since 1998</h1>
