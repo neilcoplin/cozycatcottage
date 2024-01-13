@@ -83,7 +83,7 @@ export default function AdoptionProfile(props:{
     for (let i = 1; i <= feline.WEBSITEIMAGECOUNT; i++) {
       images.push(
         <Carousel.Item key={'profile-image-'+i}>
-          <Image src={baseImageUrl + feline.ID + "&seq=" + i} alt={"Picture of " + feline.ANIMALNAME} />
+          <Image src={baseImageUrl + feline.ID + "&seq=" + i} alt={"Picture of " + feline.ANIMALNAME} className={styles.profileimage} />
         </Carousel.Item>
     );
     }

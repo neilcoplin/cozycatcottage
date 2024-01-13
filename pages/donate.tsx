@@ -24,14 +24,15 @@ export default function Donate(props:any) {
               <Row xs={1} md={2}>
                 <Col>
                   <h2>Financial Support</h2>
+                  <p>Our costs preparing 200 cats and kittens for adoption in 2023.</p>
                   <ul>
-                    <li>$25 - FELV/FIV/heartworm test for two cats</li>
-                    <li>$50 - Spays one female</li>
-                    <li>$75 - Seven bags of cat food</li>
-                    <li>$100 - First set of Distemper vaccines for 50 cats</li>
-                    <li>$200 - Rabies vaccine for 125 cats</li>
-                    <li>$400 - Two month supply of long-acting antibiotic</li>
-                    <li>$500 - Revolution for 54 cats</li>
+                    <li>$300 - Rabies vaccinations</li>
+                    <li>$700 - Microchips</li>
+                    <li>$1,200 - Distemper &amp; 3 age-appropriate vaccinations</li>
+                    <li>$1,300 - Leukemia vaccinations (Set of 2)</li>
+                    <li>$3,200 - FeLV/FIV/Heartworm tests</li>
+                    <li>$7,000 - Neuters for male cats or kittens ($35 per cat)</li>
+                    <li>$13,000 - Spays for female cats or kittens ($65 per cat)</li>
                   </ul>
 
                   <p><Link href="/tribute">Make your donation a memorial gift</Link></p>
