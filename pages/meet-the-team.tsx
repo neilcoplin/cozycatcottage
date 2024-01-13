@@ -115,7 +115,6 @@ export default function MeetTheTeam(props:any) {
                 <h2>Medical Team</h2>
                 <ul>
                   <li>Amy Smerecky</li>
-                  <li>Jesse Howe</li>
                   <li>Kathy Hyatt</li>
                   <li>Renene Penwell</li>
                 </ul>

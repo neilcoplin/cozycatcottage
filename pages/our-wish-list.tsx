@@ -30,15 +30,16 @@ export default function OurWishList(props:any) {
                     <li>33 gallon or larger trash bags</li>
                     <li>HE (high-efficiency) laundry soap packets</li>
                     <li>Clorox bleach, <strong>unscented only</strong> and must say <strong>99% disinfectant</strong></li>
+                    <li>Mr. Clean (yellow) antibacterial cleaner</li>
                   </ul>
                 </Col>
                 <Col sm={6} md={4}>
                   <h2>Food &amp; litter</h2>
                   <ul>
-                    <li>Dry: Purina Pro Plan, Purina Complete (blue bag), and Purina Kitten Chow (yellow bag)</li>
+                    <li>Dry: Purina Pro Plan, Purina Complete (blue bag), Purina Kitten Chow (yellow bag) and Purina Kitten Chow Naturals</li>
                     <li>Gerber strained chicken baby food (for sick kittens)</li>
                     <li>KMR liquid nursing formula</li>
-                    <li>Litter: Tidy Cat or Fresh Step (scooping) and any type of non-clumping clay litter</li>
+                    <li>Litter: Tidy Cat or Fresh Step (scooping) and any brand of <strong>non-clumping</strong> clay litter</li>
                   </ul>
                 </Col>
                 <Col sm={6} md={4}>

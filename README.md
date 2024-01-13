@@ -16,7 +16,7 @@ Here is a list of things you'll need to know about in order to make updates to t
 - [CSS](https://www.w3schools.com/css/) - Stylesheets for making the site look like it should.
 - [Typescript](https://www.typescriptlang.org/) - Javascript with additional syntax for controlling variable types.
 - [Next.js](https://nextjs.org/) - [Next.js documentation](https://nextjs.org/docs) and [Next.js tutorials](https://nextjs.org/learn) are good places to start.
-- [React-Boostrap](https://react-bootstrap.github.io/getting-started/introduction/) - A react implementation of Twitter Boostrap with predefined react components.
+- [React-Boostrap](https://react-bootstrap.github.io/docs/getting-started/introduction) - A react implementation of Twitter Boostrap with predefined react components.
 - [MailChimp](https://mailchimp.com/) - Used for the mailing list.  The form for the signup is managed in the administration pages of this.
 - [AWS](https://aws.amazon.com/) - Amazon Web Services is where the site is hosted.
     - [AWS Amplify](https://aws.amazon.com/amplify/) - A deployment tool that hooks up to our GitHub project repository to do automated deployment when commits happen to the project.
