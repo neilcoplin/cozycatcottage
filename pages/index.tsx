@@ -68,10 +68,10 @@ export default function Home(props:any) {
             <Container fluid="lg">
               <Row xs={1} sm={2}>
                 <Col xs={12} sm={8} md={9} className="top-padding bottom-padding">
-                  <h2 className={styles.bold}>Thank you to our 2023 business sponsors!</h2>
+                  <h2 className={styles.bold}>Thank you to our 2024 business sponsors!</h2>
                   <p>Please support these businesses and let them know you chose them because they support Cozy Cat Cottage.</p>
                   
-                  <Button href="https://online.flippingbook.com/view/357463952/" size="lg" target="_blank" rel="noreferrer" className="btn-teal">View business sponsor directory</Button>
+                  <Button href="/files/CozyCatCottage_BusinessSponsors_2024Q1.pdf" size="lg" target="_blank" rel="noreferrer" className="btn-teal">View business sponsor directory</Button>
                 </Col>
                 <Col xs={12} sm={4} md={3}>
                   <Image fluid src="/img/thankyou-businesses.png" alt="Thank you!" />
