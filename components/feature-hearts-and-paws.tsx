@@ -2,10 +2,16 @@ import { Button, Col, Container, Image, Row } from 'react-bootstrap'
 
 import styles from '@/styles/Feature.module.css'
 
-export default function FeatureHeartsAndPaws() {
+export default function FeatureHeartsAndPaws(props: {
+  untilDatestring:string;
+}) {
   
+  let now = new Date();
+  let untilDate = new Date(props.untilDatestring)
+
+  const className = now < untilDate ? styles.FeatureHeartsAndPaws : "hidden";
   return (
-    <Container className={styles.FeatureHeartsAndPaws} fluid="sm">
+    <Container className={className} fluid="sm">
     <Row xs={1} lg={2} className={styles.headerPadding}>
       <Col className={styles.center}>
         <h2>Cozy Cat Cottage<br />Hearts &amp; Paws Fundraiser</h2>
