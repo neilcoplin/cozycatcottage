@@ -158,3 +158,38 @@ p.largeParagraph {
 .FeatureHolidayMarketplace a:hover {
     text-decoration: underline;
 }
+
+/**
+ *  Feature: Hearts and Paws
+ */
+
+.FeatureHeartsAndPaws {
+    background: rgba(123, 17, 17, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.FeatureHeartsAndPaws .largeParagraph {
+    padding-bottom: 0;
+    margin-bottom: 10px;
+}
+
+.FeatureHeartsAndPaws h2 {
+    font-weight: bold;
+}
+
+.FeatureHeartsAndPaws a.buttonPink {
+    background-color: rgba(251, 233, 246, 1);
+    border-color: rgba(251, 233, 246, 1);
+    color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.FeatureHeartsAndPaws a.buttonPink:hover {
+    text-decoration: underline;
+}
+.FeatureHeartsAndPaws img {
+    border: 7px solid rgba(123, 17, 17, 1);
+    width: 100%;
+    padding-bottom: 1em;
+}
