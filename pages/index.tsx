@@ -22,8 +22,8 @@ export default function Home(props:any) {
             </Container> */}
 
             <ClosureNotice
-              message="We will be closed Sunday, December 31st and Monday, January 1st in observance of the new year. Normal hours return Tuesday, January 2nd.  Thank you for your ongoing support."
-              untilDatestring="2024-01-02"
+              message="We will be closed Sunday, March 31st in observance of Easter. Normal hours return Monday, April 1st.  Thank you for your ongoing support."
+              untilDatestring="2024-04-01"
             />
 
             <Container fluid="md" className="center top-padding">
