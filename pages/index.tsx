@@ -21,10 +21,10 @@ export default function Home(props:any) {
               </Container>
             </Container> */}
 
-            <ClosureNotice
+            {/* <ClosureNotice
               message="We will be closed Sunday, March 31st in observance of Easter. Normal hours return Monday, April 1st.  Thank you for your ongoing support."
               untilDatestring="2024-04-01"
-            />
+          /> */}
 
             <Container fluid="md" className="center top-padding">
               <h1>Finding forever homes since 1998</h1>
@@ -71,7 +71,7 @@ export default function Home(props:any) {
                   <h2 className={styles.bold}>Thank you to our 2024 business sponsors!</h2>
                   <p>Please support these businesses and let them know you chose them because they support Cozy Cat Cottage.</p>
                   
-                  <Button href="/files/CozyCatCottage_BusinessSponsors_2024Q1.pdf" size="lg" target="_blank" rel="noreferrer" className="btn-teal">View business sponsor directory</Button>
+                  <Button href="https://online.flippingbook.com/view/123341731/" size="lg" target="_blank" rel="noreferrer" className="btn-teal">View business sponsor directory</Button>
                 </Col>
                 <Col xs={12} sm={4} md={3}>
                   <Image fluid src="/img/thankyou-businesses.png" alt="Thank you!" />
