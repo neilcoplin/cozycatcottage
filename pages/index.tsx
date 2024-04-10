@@ -21,10 +21,10 @@ export default function Home(props:any) {
               </Container>
             </Container> */}
 
-            <ClosureNotice
+            {/* <ClosureNotice
               message="We will be closed Sunday, March 31st in observance of Easter. Normal hours return Monday, April 1st.  Thank you for your ongoing support."
               untilDatestring="2024-04-01"
-            />
+          /> */}
 
             <Container fluid="md" className="center top-padding">
               <h1>Finding forever homes since 1998</h1>
