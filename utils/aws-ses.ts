@@ -21,8 +21,8 @@ AWS.config.getCredentials(function (error) {
 const ses = new AWS.SES({ apiVersion: "2010-12-01" });
 
 // Both of these addresses need to be verified identities in SES
-const fromAddress = "cccthanksyou@yahoo.com";
-const toAddress = "cozycatcottageadoption@gmail.com";
+const fromAddress = "cozycatcottageadoption@gmail.com";
+const toAddress = "cccthanksyou@yahoo.com";
 
 // Create a transporter of nodemailer
 const transporter = nodemailer.createTransport({
