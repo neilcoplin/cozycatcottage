@@ -3,7 +3,7 @@ import Link from 'next/link'
 import styles from '@/styles/Home.module.css'
 import ClosureNotice from '@/components/closure-notice';
 import { Button, Card, Col, Container, Image, Row, Stack } from "react-bootstrap";
-import FeatureHeartsAndPaws from '@/components/feature-hearts-and-paws';
+import FeatureP4P2024 from '@/components/feature-p4p2024';
 
 export default function Home(props:any) {
   return (
@@ -21,10 +21,12 @@ export default function Home(props:any) {
               </Container>
             </Container> */}
 
-            {/* <ClosureNotice
-              message="We will be closed Sunday, March 31st in observance of Easter. Normal hours return Monday, April 1st.  Thank you for your ongoing support."
-              untilDatestring="2024-04-01"
-          /> */}
+            <ClosureNotice
+              message="We will be closed Sunday, May 12th in observance of Mother's Day. Normal hours return Monday, May 13th.  Thank you for your ongoing support."
+              untilDatestring="2024-05-13"
+          />
+
+            <FeatureP4P2024 />
 
             <Container fluid="md" className="center top-padding">
               <h1>Finding forever homes since 1998</h1>
