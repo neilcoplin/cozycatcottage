@@ -21,10 +21,10 @@ export default function Home(props:any) {
               </Container>
             </Container> */}
 
-            <ClosureNotice
+            {/* <ClosureNotice
               message="We will be closed Sunday, May 12th in observance of Mother's Day. Normal hours return Monday, May 13th.  Thank you for your ongoing support."
               untilDatestring="2024-05-13"
-          />
+          /> */}
 
             <FeatureP4P2024 />
 
