@@ -1,9 +1,8 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import styles from '@/styles/Home.module.css'
-import ClosureNotice from '@/components/closure-notice';
+// import ClosureNotice from '@/components/closure-notice';
 import { Button, Card, Col, Container, Image, Row, Stack } from "react-bootstrap";
-import FeatureP4P2024 from '@/components/feature-p4p2024';
 
 export default function Home(props:any) {
   return (
@@ -21,12 +20,10 @@ export default function Home(props:any) {
               </Container>
             </Container> */}
 
-            <ClosureNotice
+            {/* <ClosureNotice
               message="We will be closed Monday, May 27th in observance of Memorial Day. Normal hours return Tuesday, May 28th.  Thank you for your ongoing support."
-              untilDatestring="2024-05-28"
-          />
+          /> */}
 
-            <FeatureP4P2024 />
 
             <Container fluid="md" className="center top-padding">
               <h1>Finding forever homes since 1998</h1>
