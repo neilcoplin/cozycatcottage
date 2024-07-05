@@ -116,7 +116,7 @@ export default function PuttingForPaws(props:any) {
                   </Col>
                   <Col sm={6} className={styles.sponsorCategory}>
                     <h3>Realtors</h3>
-                    <p>Best Corporate Real State<br />
+                    <p>Best Corporate Real Estate<br />
                     <a href="https://www.bestcorporaterealestate.com/" target="_blank" rel="noreferrer">bestcorporaterealestate.com</a></p>
                     <p>Rick Wright RE/MAX Affiliates<br />
                     <a href="https://www.rickwright1.com/" target="_blank" rel="noreferrer">rickwright1.com</a></p>
