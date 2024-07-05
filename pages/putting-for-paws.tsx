@@ -107,42 +107,42 @@ export default function PuttingForPaws(props:any) {
                   <Col sm={6} className={styles.sponsorCategory}>
                     <h3>Pet Sitting Services</h3>
                     <p>Char&apos;s Cat Sitting<br />
-                    <a href="http://www.sit4pet.com/">sit4pet.com</a></p>
+                    <a href="http://www.sit4pet.com/" target="_blank" rel="noreferrer">sit4pet.com</a></p>
                   </Col>
                   <Col sm={6} className={styles.sponsorCategory}>
                     <h3>Petfood and Supplies</h3>
                     <p>Hollywood Feed<br />
-                    <a href="https://www.hollywoodfeed.com/">hollywoodfeed.com</a></p>
+                    <a href="https://www.hollywoodfeed.com/" target="_blank" rel="noreferrer">hollywoodfeed.com</a></p>
                   </Col>
                   <Col sm={6} className={styles.sponsorCategory}>
                     <h3>Realtors</h3>
                     <p>Best Corporate Real State<br />
-                    <a href="https://www.bestcorporaterealestate.com/">bestcorporaterealestate.com</a></p>
+                    <a href="https://www.bestcorporaterealestate.com/" target="_blank" rel="noreferrer">bestcorporaterealestate.com</a></p>
                     <p>Rick Wright RE/MAX Affiliates<br />
-                    <a href="https://www.rickwright1.com/">rickwright1.com</a></p>
+                    <a href="https://www.rickwright1.com/" target="_blank" rel="noreferrer">rickwright1.com</a></p>
                   </Col>
                   <Col sm={6} className={styles.sponsorCategory}>
                     <h3>Veterinary Services</h3>
                     <p>Animal Care Unlimited<br />
-                    <a href="https://www.animalcareunlimited.com/">animalcareunlimited.com</a></p>
+                    <a href="https://www.animalcareunlimited.com/" target="_blank" rel="noreferrer">animalcareunlimited.com</a></p>
                     <p>Animal Hospital of Shawnee Hills<br />
-                    <a href="https://shawneehillsvet.com/">shawneehillsvet.com</a></p>
+                    <a href="https://shawneehillsvet.com/" target="_blank" rel="noreferrer">shawneehillsvet.com</a></p>
                     <p>Best Friends Veterinary Hospital<br />
-                    <a href="https://bestfriendsvethospital.com/">bestfriendsvethospital.com</a></p>
+                    <a href="https://bestfriendsvethospital.com/" target="_blank" rel="noreferrer">bestfriendsvethospital.com</a></p>
                     <p>The Cat Doctor<br />
-                    <a href="http://www.catdoctorcolumbus.com/">catdoctorcolumbus.com</a></p>
+                    <a href="http://www.catdoctorcolumbus.com/" target="_blank" rel="noreferrer">catdoctorcolumbus.com</a></p>
                     <p>Faithful Friends Veterinary Clinic<br />
-                    <a href="https://faithfulfriendsvetclinic.com/">faithfulfriendsvetclinic.com</a></p>
+                    <a href="https://faithfulfriendsvetclinic.com/" target="_blank" rel="noreferrer">faithfulfriendsvetclinic.com</a></p>
                     <p>Good Life Veterinary Care<br />
-                    <a href="https://goodlifevetcare.com/">goodlifevetcare.com</a></p>
+                    <a href="https://goodlifevetcare.com/" target="_blank" rel="noreferrer">goodlifevetcare.com</a></p>
                     <p>Linworth Animal Hospital<br />
-                    <a href="https://www.linworthanimalhospital.com/">linworthanimalhospital.com</a></p>
+                    <a href="https://www.linworthanimalhospital.com/" target="_blank" rel="noreferrer">linworthanimalhospital.com</a></p>
                     <p>Riverside Drive Animal Care Center<br />
-                    <a href="https://www.thrivepetcare.com/locations/ohio/dublin/riverside-drive-animal-care-center">thrivepetcare.com/locations/ohio/dublin/riverside-drive-animal-care-center</a></p>
+                    <a href="https://www.thrivepetcare.com/locations/ohio/dublin/riverside-drive-animal-care-center" target="_blank" rel="noreferrer">thrivepetcare.com/locations/ohio/dublin/riverside-drive-animal-care-center</a></p>
                     <p>VCA Sawmill Animal Hospital<br />
-                    <a href="https://vcahospitals.com/sawmill">vcahospitals.com/sawmill</a></p>
+                    <a href="https://vcahospitals.com/sawmill" target="_blank" rel="noreferrer">vcahospitals.com/sawmill</a></p>
                     <p>Veterinary Specialty Emergency Hospital (COVE) <br />
-                    <a href="https://covepetcare.com/">covepetcare.com</a></p>
+                    <a href="https://covepetcare.com/" target="_blank" rel="noreferrer">covepetcare.com</a></p>
                   </Col>
 
                 </Row>
