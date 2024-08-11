@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import styles from '@/styles/Home.module.css'
-// import ClosureNotice from '@/components/closure-notice';
+import FeatureMatchingDonationDrive from '@/components/feature-matching-donation-drive';
 import { Button, Card, Col, Container, Image, Row, Stack } from "react-bootstrap";
 
 export default function Home(props:any) {
@@ -33,6 +33,8 @@ export default function Home(props:any) {
             <Container fluid="md" className="highlight-notice center">
               <p>We are currently at full capacity. We still honor our policy of accepting any feline <strong>originally adopted from us</strong> with an appointment and all medical records.</p>
             </Container>
+
+            <FeatureMatchingDonationDrive />
 
             <Container fluid="lg">
               <Row xs={1} sm={2}>
