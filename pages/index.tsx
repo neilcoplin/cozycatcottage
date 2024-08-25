@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import styles from '@/styles/Home.module.css'
-import FeatureMatchingDonationDrive from '@/components/feature-matching-donation-drive';
 import { Button, Card, Col, Container, Image, Row, Stack } from "react-bootstrap";
+import ClosureNoticeWithPicture from "../components/closure-notice-with-picture"
 
 export default function Home(props:any) {
   return (
@@ -20,10 +20,11 @@ export default function Home(props:any) {
               </Container>
             </Container> */}
 
-            {/* <ClosureNotice
-              message="We will be closed Monday, May 27th in observance of Memorial Day. Normal hours return Tuesday, May 28th.  Thank you for your ongoing support."
-          /> */}
-
+            <ClosureNoticeWithPicture
+              message="Cozy Cat Cottage will be closed on Sunday, September 1st and Monday, September 2nd in honor of Labor Day. We still need our morning volunteers. We thank all of your for your ongoing support of our mission to Protect the Journey of Those Without a Voice."
+              imagePath="/img/labor-day.jpg"
+              altText="Happy Labor Day!"
+            />
 
             <Container fluid="md" className="center top-padding">
               <h1>Finding forever homes since 1998</h1>
@@ -33,8 +34,6 @@ export default function Home(props:any) {
             <Container fluid="md" className="highlight-notice center">
               <p>We are currently at full capacity. We still honor our policy of accepting any feline <strong>originally adopted from us</strong> with an appointment and all medical records.</p>
             </Container>
-
-            <FeatureMatchingDonationDrive />
 
             <Container fluid="lg">
               <Row xs={1} sm={2}>
