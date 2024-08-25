@@ -226,3 +226,7 @@ ol, ul {
   position: relative;
   display: block;
 }
+
+.closure img {
+  max-width: 360px;
+}
