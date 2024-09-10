@@ -20,11 +20,11 @@ export default function Home(props:any) {
               </Container>
             </Container> */}
 
-            <ClosureNoticeWithPicture
+            {/* <ClosureNoticeWithPicture
               message="Cozy Cat Cottage will be closed on Sunday, September 1st and Monday, September 2nd in honor of Labor Day. We still need our morning volunteers. We thank all of your for your ongoing support of our mission to Protect the Journey of Those Without a Voice."
               imagePath="/img/labor-day.jpg"
               altText="Happy Labor Day!"
-            />
+            /> */}
 
             <Container fluid="md" className="center top-padding">
               <h1>Finding forever homes since 1998</h1>
