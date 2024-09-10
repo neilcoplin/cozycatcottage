@@ -94,6 +94,7 @@ export default function MeetTheTeam(props:any) {
             </Row>
           </Container>
             
+          {/* Temporarily commenting this out until we have a replacement
           <Container fluid="md">
             <Row xs={1} md={2}>
               <Col sm={4} md={3} xl={2}>
@@ -106,6 +107,7 @@ export default function MeetTheTeam(props:any) {
               </Col>
             </Row>
           </Container>
+          */}
 
           <Container fluid="md">
             <Row xs={1} md={2}>
