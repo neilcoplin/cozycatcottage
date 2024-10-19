@@ -160,6 +160,45 @@ p.largeParagraph {
 }
 
 /**
+ *  Feature: Holiday Shopping
+ */
+
+ .FeatureHolidayShopping {
+    background: rgba(126, 22, 20, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.FeatureHolidayShopping .largeParagraph {
+    color: rgba(255, 255, 255, 1);
+    border-bottom: 3px solid rgba(255, 255, 255, 1);
+    padding-bottom: 0;
+    margin-bottom: 10px;
+}
+
+.FeatureHolidayShopping h2 {
+    color: rgba(255, 255, 255, 1);
+    padding-bottom: .5em;
+    font-weight: bold;
+}
+
+.FeatureHolidayShopping img, 
+.FeatureHolidayShopping p:last-child {
+    margin-bottom: 1em;
+}
+
+.FeatureHolidayShopping a {
+    text-decoration: none;
+    margin-bottom: 1em;
+    color: rgba(123, 5, 39, 1);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.FeatureHolidayShopping a:hover {
+    color: rgba(123, 5, 39, 1);
+    text-decoration: underline;
+}
+
+/**
  *  Feature: Hearts and Paws
  */
 

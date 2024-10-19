@@ -116,9 +116,13 @@ export default function MeetTheTeam(props:any) {
               <Col sm={8} md={9} xl={10}>
                 <h2>Medical Team</h2>
                 <ul>
-                  <li>Amy Smerecky</li>
+                  <li>Amy Smerecky, Head</li>
+                  <li>Emma Waldron</li>
+                  <li>Kassidy Williams</li>
                   <li>Kathy Hyatt</li>
-                  <li>Renene Penwell</li>
+                  <li>Meryl Lu</li>
+                  <li>Madison Bell</li>
+                  <li>Tracy Craine</li>
                 </ul>
               </Col>
             </Row>
