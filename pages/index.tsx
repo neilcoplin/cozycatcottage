@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import styles from '@/styles/Home.module.css'
 import { Button, Card, Col, Container, Image, Row, Stack } from "react-bootstrap";
-import ClosureNotice from "../components/closure-notice"
+// import ClosureNotice from "../components/closure-notice"
 import FeatureHolidayShoppingExtended from "../components/feature-holiday-shopping-extended"
 
 export default function Home(props:any) {
@@ -21,9 +21,9 @@ export default function Home(props:any) {
               </Container>
             </Container> */}
 
-            <ClosureNotice
+            {/* <ClosureNotice
               message="We will be closed Thursday, November 28th and Friday, November 29th in observance of Thanksgiving.  Regular hours return Saturday November 30th."
-            />
+            /> */}
 
             <Container fluid="md" className="center top-padding">
               <h1>Finding forever homes since 1998</h1>
