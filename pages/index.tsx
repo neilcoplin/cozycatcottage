@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Link from 'next/link'
 import styles from '@/styles/Home.module.css'
 import { Button, Card, Col, Container, Image, Row, Stack } from "react-bootstrap";
-import ClosureNotice from "../components/closure-notice"
 
 export default function Home(props:any) {
   return (
@@ -20,9 +19,9 @@ export default function Home(props:any) {
               </Container>
             </Container> */}
 
-            <ClosureNotice
+            {/* <ClosureNotice
               message="Cozy Cat Cottage will be closed Tuesday, December 24th and Wednesday December 25th.  We will also be closed Tuesday, December 31st and Wednesday, January 1st."
-            />
+            /> */}
 
             <Container fluid="md" className="center top-padding">
               <h1>Finding forever homes since 1998</h1>
@@ -66,10 +65,10 @@ export default function Home(props:any) {
             <Container fluid="lg">
               <Row xs={1} sm={2}>
                 <Col xs={12} sm={8} md={9} className="top-padding bottom-padding">
-                  <h2 className={styles.bold}>Thank you to our 2024 business sponsors!</h2>
+                  <h2 className={styles.bold}>Thank you to our 2025 business sponsors!</h2>
                   <p>Please support these businesses and let them know you chose them because they support Cozy Cat Cottage.</p>
                   
-                  <Button href="https://online.flippingbook.com/view/1065888935/" size="lg" target="_blank" rel="noreferrer" className="btn-teal">View business sponsor directory</Button>
+                  <Button href="https://online.flippingbook.com/view/673408783/" size="lg" target="_blank" rel="noreferrer" className="btn-teal">View business sponsor directory</Button>
                 </Col>
                 <Col xs={12} sm={4} md={3}>
                   <Image fluid src="/img/thankyou-businesses.png" alt="Thank you!" />
