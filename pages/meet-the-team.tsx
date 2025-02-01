@@ -54,6 +54,18 @@ export default function MeetTheTeam(props:any) {
             </Row>
           </Container>
             
+            <Container fluid="md">
+              <Row xs={1} md={2}>
+                <Col sm={4} md={3} xl={2}>
+                  {/* <Image fluid src="/img/board-becky-sprang.jpg" alt="Photo of Becky Sprang" /> */}
+                </Col>
+                <Col sm={8} md={9} xl={10}>
+                  <h2>Becky Sprang</h2>
+                  <p className="subtitle">Treasurer</p>
+                </Col>
+              </Row>
+            </Container>
+            
           <Container fluid="md">
             <Row xs={1} md={2}>
               <Col sm={4} md={3} xl={2}>
@@ -92,18 +104,6 @@ export default function MeetTheTeam(props:any) {
               </Col>
             </Row>
           </Container>
-            
-          <Container fluid="md">
-            <Row xs={1} md={2}>
-              <Col sm={4} md={3} xl={2}>
-                {/* <Image fluid src="/img/board-becky-sprang.jpg" alt="Photo of Becky Sprang" /> */}
-              </Col>
-              <Col sm={8} md={9} xl={10}>
-                <h2>Becky Sprang</h2>
-                <p className="subtitle">Trustee</p>
-              </Col>
-            </Row>
-          </Container>
           
           <Container fluid="md">
             <Row xs={1} md={2}>
@@ -112,7 +112,6 @@ export default function MeetTheTeam(props:any) {
               <Col sm={8} md={9} xl={10}>
                 <h2>Medical Team</h2>
                 <ul>
-                  <li>Amy Smerecky, Head</li>
                   <li>Emma Waldron</li>
                   <li>Kassidy Williams</li>
                   <li>Kathy Hyatt</li>
