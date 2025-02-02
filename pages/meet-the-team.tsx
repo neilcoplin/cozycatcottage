@@ -19,12 +19,11 @@ export default function MeetTheTeam(props:any) {
           <Container fluid="md">
             <Row xs={1} sm={2}>
               <Col sm={4} md={3} xl={2}>
-                <Image fluid src="/img/board-cindi-clum.jpg" alt="Photo of Cindi Clum" />
+                {/*<Image fluid src="/img/board-amy-smerecky.jpg" alt="Photo of Amy Smerecky" />*/}
               </Col>
               <Col sm={8} md={9} xl={10}>
-                <h2>Cynthia (Cindi) Clum-Oppenheimer</h2>
-                <p className="subtitle">Co-Founder, Executive Director</p>
-                <p>Cindi co-founded Cozy Cat Cottage (CCC) in 1998 has dedicated her life to serving as the Executive Director. She lives in Powell with eight cats, all adopted from CCC (Briar, Aires, Aristotle, Apollo, Aphrodite, Athena, Xena and Cochise) and one very large dog named Titan who spends his time with her at the shelter.</p>
+                <h2>Amy Smerecky</h2>
+                <p className="subtitle">Executive Director</p>
               </Col>
             </Row>
           </Container>
@@ -55,18 +54,17 @@ export default function MeetTheTeam(props:any) {
             </Row>
           </Container>
             
-          <Container fluid="md">
-            <Row xs={1} md={2}>
-              <Col sm={4} md={3} xl={2}>
-                <Image fluid src="/img/board-barb-hulse.jpg" alt="Photo of Barb Hulse" />
-              </Col>
-              <Col sm={8} md={9} xl={10}>
-                <h2>Barb Hulse</h2>
-                <p className="subtitle">Director, Secretary</p>
-                <p>Barb simultaneously serves as Director and Board Secretary. Originally from Cincinnati, she now lives in Marion and works as a licensed massage therapist. Barb has adopted 4 cats from CCC and also has 2 Quarter Horses, Super and Paris whom she shows at local Quarter Horse shows.</p>
-              </Col>
-            </Row>
-          </Container>
+            <Container fluid="md">
+              <Row xs={1} md={2}>
+                <Col sm={4} md={3} xl={2}>
+                  {/* <Image fluid src="/img/board-becky-sprang.jpg" alt="Photo of Becky Sprang" /> */}
+                </Col>
+                <Col sm={8} md={9} xl={10}>
+                  <h2>Becky Sprang</h2>
+                  <p className="subtitle">Treasurer</p>
+                </Col>
+              </Row>
+            </Container>
             
           <Container fluid="md">
             <Row xs={1} md={2}>
@@ -94,7 +92,6 @@ export default function MeetTheTeam(props:any) {
             </Row>
           </Container>
             
-          {/* Temporarily commenting this out until we have a replacement
           <Container fluid="md">
             <Row xs={1} md={2}>
               <Col sm={4} md={3} xl={2}>
@@ -107,8 +104,7 @@ export default function MeetTheTeam(props:any) {
               </Col>
             </Row>
           </Container>
-          */}
-
+          
           <Container fluid="md">
             <Row xs={1} md={2}>
               <Col sm={4} md={3} xl={2}>
@@ -116,7 +112,6 @@ export default function MeetTheTeam(props:any) {
               <Col sm={8} md={9} xl={10}>
                 <h2>Medical Team</h2>
                 <ul>
-                  <li>Amy Smerecky, Head</li>
                   <li>Emma Waldron</li>
                   <li>Kassidy Williams</li>
                   <li>Kathy Hyatt</li>
