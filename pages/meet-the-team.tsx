@@ -57,7 +57,7 @@ export default function MeetTheTeam(props:any) {
             <Container fluid="md">
               <Row xs={1} md={2}>
                 <Col sm={4} md={3} xl={2}>
-                  {/* <Image fluid src="/img/board-becky-sprang.jpg" alt="Photo of Becky Sprang" /> */}
+                  <Image fluid src="/img/board-becky-sprang.jpg" alt="Photo of Becky Sprang" />
                 </Col>
                 <Col sm={8} md={9} xl={10}>
                   <h2>Becky Sprang</h2>
