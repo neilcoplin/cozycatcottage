@@ -102,7 +102,7 @@ export default function AdoptionProfile(props:{
   
   if (feline.HASSPECIALNEEDS == 1) {
     sponsorCare = <Container fluid="md" className="center top-padding">
-      <Button href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LRUGP6HJSNUKG" size="lg" className='btn btn-secondary'>Sponsor My Care</Button>
+      <Button href="https://www.paypal.com/us/fundraiser/charity/1803839" size="lg" className='btn btn-secondary'>Sponsor My Care</Button>
     </Container>
   }
 

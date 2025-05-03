@@ -12,7 +12,7 @@ export default function FeatureHolidayShoppingExtended() {
           <p>Five Great Raffles - Drawings December 7th at 7pm<br />
           100% of Proceeds Support the Care of Our Shelter Felines</p>
           <Button href="https://www.cozycatcottagesale.com/raffle-tickets" size="lg" className="btn-secondary" target="_blank" rel="noreferrer">Purchase Raffle Tickets Here Thru December 7th</Button>
-          <Button href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=LRUGP6HJSNUKG" size="lg" className="btn-secondary" target="_blank" rel="noreferrer">Donations Appreciated</Button>
+          <Button href="https://www.paypal.com/us/fundraiser/charity/1803839" size="lg" className="btn-secondary" target="_blank" rel="noreferrer">Donations Appreciated</Button>
         </Col>
         <Col className={styles.center}>
           <Image fluid src="/img/feature-holiday-shopping-kitten.png" alt="A kitten under a Christmas tree with three presents." />
