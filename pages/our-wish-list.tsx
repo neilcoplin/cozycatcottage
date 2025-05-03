@@ -53,7 +53,7 @@ export default function OurWishList(props:any) {
             </Container>
           </Stack>
           <Container fluid="true" className="dark-notice center">
-            <p><strong>Your financial support saves lives.</strong> <Link href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=LRUGP6HJSNUKG" target="_blank" rel="noreferrer">Donate through PayPal</Link></p>
+            <p><strong>Your financial support saves lives.</strong> <Link href="https://www.paypal.com/us/fundraiser/charity/1803839" target="_blank" rel="noreferrer">Donate through PayPal</Link></p>
           </Container>
         </Container>
       </main>

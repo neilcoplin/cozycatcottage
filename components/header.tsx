@@ -36,7 +36,7 @@ export default function Header() {
             <NavDropdown.Item href="/meet-the-team">Meet the Team</NavDropdown.Item>
             <NavDropdown.Item href="/pet-education">Pet Education</NavDropdown.Item>
           </NavDropdown>
-          <Nav.Link href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=LRUGP6HJSNUKG" className="btn btn-secondary" target="_blank" rel="noreferrer">Donate</Nav.Link>
+          <Nav.Link href="https://www.paypal.com/us/fundraiser/charity/1803839" className="btn btn-secondary" target="_blank" rel="noreferrer">Donate</Nav.Link>
           {/*<Nav.Link href="/search">Search</Nav.Link>*/}
         </Navbar.Collapse>
       </Navbar>

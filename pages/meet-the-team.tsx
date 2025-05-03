@@ -24,6 +24,7 @@ export default function MeetTheTeam(props:any) {
               <Col sm={8} md={9} xl={10}>
                 <h2>Amy Smerecky</h2>
                 <p className="subtitle">Executive Director</p>
+                <p></p>
               </Col>
             </Row>
           </Container>
@@ -44,12 +45,12 @@ export default function MeetTheTeam(props:any) {
           <Container fluid="md">
             <Row xs={1} md={2}>
               <Col sm={4} md={3} xl={2}>
-                <Image fluid src="/img/board-ann-kline.jpg" alt="Photo of Ann Kline" />
+                {/*<Image fluid src="/img/board-beth-hinkle.jpg" alt="Photo of Beth Hinkle" />*/}
               </Col>
               <Col sm={8} md={9} xl={10}>
-                <h2>Ann Kline</h2>
-                <p className="subtitle">Vice President</p>
-                <p>Ann serves as Vice President and lives in Powell with her 4 FIV+ cats, all adopted from CCC. When she is not working tirelessly at the shelter, she enjoys playing golf and spending time with her grandsons.</p>
+                <h2>Beth Hinkle</h2>
+                <p className="subtitle">Secretary</p>
+                <p>Beth serves as Secretary and as an adoption counselor on Saturdays and Thursdays. She is also one of the Grant writers for Cozy Cat Cottage. She, most recently moved here from Pittsburgh, PA in 2013 and since then she has lived in the Columbus area. She has 4 cats, all from CCC. When not at the shelter, she spends her time crafting for her LLC, friends and CCC.</p>
               </Col>
             </Row>
           </Container>
@@ -62,6 +63,7 @@ export default function MeetTheTeam(props:any) {
                 <Col sm={8} md={9} xl={10}>
                   <h2>Becky Sprang</h2>
                   <p className="subtitle">Treasurer</p>
+                  <p></p>
                 </Col>
               </Row>
             </Container>
@@ -82,25 +84,12 @@ export default function MeetTheTeam(props:any) {
           <Container fluid="md">
             <Row xs={1} md={2}>
               <Col sm={4} md={3} xl={2}>
-                <Image fluid src="/img/board-sandy-chiaramonte.jpg" alt="Photo of Sandy Chiaramonte" />
-              </Col>
-              <Col sm={8} md={9} xl={10}>
-                <h2>Sandy Chiaramonte</h2>
-                <p className="subtitle">Trustee</p>
-                <p>Sandy serves as a Trustee and does follow-up vet calls and assists with community programming for Cozy Cat Cottage. She resides in Powell and has four cats (two from CCC) and one dog. Sandy also spends time managing her property in southeastern Ohio for the purpose of wildlife habitat and nature appreciation.</p>
-              </Col>
-            </Row>
-          </Container>
-            
-          <Container fluid="md">
-            <Row xs={1} md={2}>
-              <Col sm={4} md={3} xl={2}>
                 <Image fluid src="/img/board-tiffany-kinzer.jpg" alt="Photo of Tiffany Kinzer" />
               </Col>
               <Col sm={8} md={9} xl={10}>
                 <h2>Tiffany Kinzer</h2>
                 <p className="subtitle">Trustee</p>
-                <p>Tiffany works as acting Director on Monday nights, makes follow-up calls to adopters and serves as a Trustee of the board. Originally from Lima, she moved to Columbus in 1998 and has ten cats: Giselle, Charlie, Toby (FIV+), Paris, Stormy, Gus, Roman, Memphis, Frankie and Jaycee. Tiffany also works full time for St. Jude Children&apos;s Research Hospital as a Philanthropic Advisor.</p>
+                <p>Tiffany works as acting Director on Monday nights, makes follow-up calls to adopters and serves as a Trustee of the board. Originally from Lima, she moved to Columbus in 1998 and has twelve cats: Toby (FIV +), Frankie, Roman, Memphis, Paris, Stormy, Gus, Ellie (FIV +), CeCe, Henry, Niko and Mary. Tiffany also works full time for St. Jude Children&apos;s Research Hospital as a Philanthropic Advisor.</p>
               </Col>
             </Row>
           </Container>
@@ -112,12 +101,11 @@ export default function MeetTheTeam(props:any) {
               <Col sm={8} md={9} xl={10}>
                 <h2>Medical Team</h2>
                 <ul>
-                  <li>Emma Waldron</li>
-                  <li>Kassidy Williams</li>
-                  <li>Kathy Hyatt</li>
-                  <li>Meryl Lu</li>
                   <li>Madison Bell</li>
                   <li>Tracy Craine</li>
+                  <li>Meryl Lu</li>
+                  <li>Emma Waldron</li>
+                  <li>Kassidy Williams</li>
                 </ul>
               </Col>
             </Row>

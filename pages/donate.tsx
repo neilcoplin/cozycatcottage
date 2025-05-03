@@ -44,7 +44,7 @@ export default function Donate(props:any) {
             </Container>
 
             <Container fluid="md" className="center top-padding">
-              <Button href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LRUGP6HJSNUKG" size="lg">Donate through Paypal</Button>
+              <Button href="https://www.paypal.com/us/fundraiser/charity/1803839" size="lg">Donate through Paypal</Button>
             </Container>
 
             <Container fluid="md">
