@@ -42,7 +42,7 @@ export default function FeatureP4P2025() {
             Pet pic gallery & sponsor promotions<br />
             <strong>The first raffle is June 1st</strong></p>
 
-            <Button href="https://www.cozycatgolf.org" size="lg" className={styles.buttonBrown}>Visit<br />www.cozycatgolf.org<br />to sign up</Button>
+            <Button href="https://www.cozycatgolf.com" size="lg" className={styles.buttonBrown}>Visit<br />www.cozycatgolf.com<br />to sign up</Button>
         </Col>
       </Row>
     </Container>
