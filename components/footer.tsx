@@ -31,11 +31,11 @@ export default function Footer() {
           </Col>
           <Col>
             <p><strong>Hours</strong><br />
-            Weekdays: 10am - 2pm, 5:30pm - 7:30pm<br />
+            Weekdays: 10am - 2pm, 5:30pm - 7:30pm<sup>*</sup><br />
             Saturday: 11:00am - 3:00pm<br />
             Sunday: 1:30pm - 4:30pm</p>
 
-            <p>* Tuesday evening reserved for <Link href="/book-buddies">Book Buddies Reading Program</Link> only</p>
+            <p><sup>*</sup>Tuesday evening reserved for <Link href="/book-buddies">Book Buddies Reading Program</Link> only</p>
             <p className={styles.socialHeading}><strong>Connect with us</strong></p>
 
             <Stack direction="horizontal" gap={2}>

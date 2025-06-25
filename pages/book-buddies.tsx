@@ -17,7 +17,7 @@ export default function BookBuddies(props:any) {
           <Stack gap={3} className="top-padding">
             <Container fluid="lg" className="center">
               <h1>Book Buddies Reading Program Tuesday Evenings Only</h1>
-              <p>The Book Buddies Program is a great way for kids to practice their reading, while also showing some love to the felines waiting for their forever home.</p>
+              <p>The Book Buddies Program is a great way for kids to practice their reading, while also showing some love to the felines waiting for their forever home. Children must be at least six years of age to participate. </p>
 
               <p>Two reading times with one child/one adult: 6:00-6:30pm and 6:30-7:00pm. You must reserve a time by emailing: <a href="mailto:bookbuddies@cozycatcottage.org">bookbuddies@cozycatcottage.org</a>. You will receive a confirmation by email.</p>
 
