@@ -42,6 +42,19 @@ export default function MeetTheTeam(props:any) {
             </Row>
           </Container>
             
+            <Container fluid="md">
+              <Row xs={1} md={2}>
+                <Col sm={4} md={3} xl={2}>
+                  <Image fluid src="/img/board-tiffany-kinzer.jpg" alt="Photo of Tiffany Kinzer" />
+                </Col>
+                <Col sm={8} md={9} xl={10}>
+                  <h2>Tiffany Kinzer</h2>
+                  <p className="subtitle">Vice President</p>
+                  <p>Tiffany works as acting Director on Monday nights, makes follow-up calls to adopters and serves as a Trustee of the board. Originally from Lima, she moved to Columbus in 1998 and has twelve cats: Toby (FIV +), Frankie, Roman, Memphis, Paris, Stormy, Gus, Ellie (FIV +), CeCe, Henry, Niko and Mary. Tiffany also works full time for St. Jude Children&apos;s Research Hospital as a Philanthropic Advisor.</p>
+                </Col>
+              </Row>
+            </Container>
+            
           <Container fluid="md">
             <Row xs={1} md={2}>
               <Col sm={4} md={3} xl={2}>
@@ -77,19 +90,6 @@ export default function MeetTheTeam(props:any) {
                 <h2>Jeannie Beyer Loynes</h2>
                 <p className="subtitle">Trustee</p>
                 <p>Jeannie serves as a Trustee and works with the medical team on Tuesdays, Wednesday, Fridays and Sundays. Originally from Dallas, Texas, she currently resides in Worthington with 8 cats. George, Sebastian, Scarlett Grace and Hope (hospice foster) are from CCC, Boots, Mickey and Levi were strays and Chloe Belle is from CHA.</p>
-              </Col>
-            </Row>
-          </Container>
-            
-          <Container fluid="md">
-            <Row xs={1} md={2}>
-              <Col sm={4} md={3} xl={2}>
-                <Image fluid src="/img/board-tiffany-kinzer.jpg" alt="Photo of Tiffany Kinzer" />
-              </Col>
-              <Col sm={8} md={9} xl={10}>
-                <h2>Tiffany Kinzer</h2>
-                <p className="subtitle">Trustee</p>
-                <p>Tiffany works as acting Director on Monday nights, makes follow-up calls to adopters and serves as a Trustee of the board. Originally from Lima, she moved to Columbus in 1998 and has twelve cats: Toby (FIV +), Frankie, Roman, Memphis, Paris, Stormy, Gus, Ellie (FIV +), CeCe, Henry, Niko and Mary. Tiffany also works full time for St. Jude Children&apos;s Research Hospital as a Philanthropic Advisor.</p>
               </Col>
             </Row>
           </Container>
