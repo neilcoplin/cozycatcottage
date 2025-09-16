@@ -24,6 +24,9 @@ const ses = new AWS.SES({ apiVersion: "2010-12-01" });
 const fromAddress = process.env.MEMORIAL_FROM_EMAIL;
 const toAddress = process.env.MEMORIAL_TO_EMAIL;
 
+// Conditionally add an additional prefix to the message
+const testPrefix = process.env.BRANCH === 'production' ? '' : '[TEST MESSAGE] ';
+
 // Create a transporter of nodemailer
 const transporter = nodemailer.createTransport({
     SES: ses,
@@ -33,7 +36,7 @@ export const sendEmail = async (data:any) => {
         const response = await transporter.sendMail({
         from: fromAddress,
         to: toAddress,
-        subject: "Memorial Tribute/Honoring Request",
+        subject: testPrefix+"Memorial Tribute/Honoring Request",
         html: `
         <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
         <html>
@@ -41,7 +44,7 @@ export const sendEmail = async (data:any) => {
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         </head>
         <body>
-        <h1>Memorial Tribute/Honoring Request</h1>
+        <h1>`+testPrefix+`Memorial Tribute/Honoring Request</h1>
         <p>Gift `+data.type+`: `+data.name+`<br />
         Amount: $`+data.amount+` via `+data.donationMethod+`</p>
 
