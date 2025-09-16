@@ -6,11 +6,11 @@ if (process.env.SES_ACCESS_KEY && process.env.SES_SECRET_ACCESS_KEY) {
     AWS.config.update({
         accessKeyId: process.env.SES_ACCESS_KEY,
         secretAccessKey: process.env.SES_SECRET_ACCESS_KEY,
-        region: "us-east-2",
+        region: process.env.REGION,
     });    
 } else {
     AWS.config.update({
-        region: "us-east-2",
+        region: process.env.REGION,
     });
 }
 AWS.config.getCredentials(function (error) {
@@ -21,8 +21,8 @@ AWS.config.getCredentials(function (error) {
 const ses = new AWS.SES({ apiVersion: "2010-12-01" });
 
 // Both of these addresses need to be verified identities in SES
-const fromAddress = "amy@cozycatcottage.org";
-const toAddress = "cccthanksyou@yahoo.com";
+const fromAddress = process.env.MEMORIAL_FROM_EMAIL;
+const toAddress = process.env.MEMORIAL_TO_EMAIL;
 
 // Create a transporter of nodemailer
 const transporter = nodemailer.createTransport({
