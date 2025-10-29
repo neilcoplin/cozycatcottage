@@ -8,11 +8,10 @@ export default function FeatureHolidayShopping() {
     <Container className={styles.FeatureHolidayShopping} fluid="sm">
       <Row xs={1} lg={2} className={styles.headerPadding}>
         <Col className={styles.center}>
-          <h2>Holiday Shopping</h2>
-          <p>Open October 30th to November 15th<br />
-          Raffle sales through November 22nd</p>
-          <Button href="https://www.cozycatcottagesale.com" size="lg" className="btn-secondary" target="_blank" rel="noreferrer">www.cozycatcottagesale.com</Button>
-          <p>Shop Early - Save Money - Discounted Prices<br />
+          <h2>2025 Holiday Shopping</h2>
+          <p>Open October 30th to November 15th</p>
+          <Button href="https://www.cozycatsanta.com" size="lg" className="btn-secondary" target="_blank" rel="noreferrer">www.cozycatsanta.com</Button>
+          <p>Save Time &amp; Money - Discounted Prices<br />
           Fast Drive-Thru Pickup</p>
           <p>100% of proceeds support Cozy Cat Cottage</p>
         </Col>
