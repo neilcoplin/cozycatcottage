@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import styles from '@/styles/Home.module.css'
 import { Button, Card, Col, Container, Image, Row, Stack } from "react-bootstrap";
+import FeatureHolidayShopping from '@/components/feature-holiday-shopping';
 
 export default function Home(props:any) {
   return (
@@ -24,6 +25,7 @@ export default function Home(props:any) {
             /> */}
 
             {/* Add features here */}
+            <FeatureHolidayShopping />
 
             <Container fluid="md" className="center top-padding">
               <h1>Finding forever homes since 1998</h1>
