@@ -72,7 +72,7 @@ export default function Home(props:any) {
                   <h2 className={styles.bold}>Thank you to our 2025 business sponsors!</h2>
                   <p>Please support these businesses and let them know you chose them because they support Cozy Cat Cottage.</p>
                   
-                  <Button href="https://online.flippingbook.com/view/11067248/" size="lg" target="_blank" rel="noreferrer" className="btn-teal">View business sponsor directory</Button>
+                  <Button href="https://online.flippingbook.com/view/817040004/" size="lg" target="_blank" rel="noreferrer" className="btn-teal">View business sponsor directory</Button>
                 </Col>
                 <Col xs={12} sm={4} md={3}>
                   <Image fluid src="/img/thankyou-businesses.png" alt="Thank you!" />
