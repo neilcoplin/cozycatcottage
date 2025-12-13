@@ -2,8 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import styles from '@/styles/Home.module.css'
 import { Button, Card, Col, Container, Image, Row, Stack } from "react-bootstrap";
-import FeatureHolidayShopping from '@/components/feature-holiday-shopping';
-import ClosureNotice from '@/components/closure-notice';
+// import ClosureNotice from '@/components/closure-notice';
 
 export default function Home(props:any) {
   return (
@@ -21,16 +20,11 @@ export default function Home(props:any) {
               </Container>
             </Container> */}
 
-            <ClosureNotice
-              message="Cozy Cat Cottage will be closed Thursday, November 27th and Friday, November 28th."
-            />
-
             {/* <ClosureNotice
               message="Cozy Cat Cottage will be closed Wednesday, December 24th and Thursday December 25th.  We will also be closed Wednesday, December 31st and Thursday, January 1st."
             /> */}
 
             {/* Add features here */}
-            <FeatureHolidayShopping />
 
             <Container fluid="md" className="center top-padding">
               <h1>Finding forever homes since 1998</h1>
