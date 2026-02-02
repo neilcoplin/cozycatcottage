@@ -24,21 +24,6 @@ export default function Home(props:any) {
               message="Message goes here."
             /> */}
 
-            {/* Using ClosureNotice content directly due to html structure in message. */}
-            <Container className="highlight-notice" fluid="true">
-                  <Container fluid="lg">
-                    <p>Cozy Cat Cottage will be observing reduced hours during the holidays on:</p>
-                    <ul>
-                      <li><b>Tuesday, December 23rd</b>: 10am - 2pm; last day applications will be accepted &amp; approved before Christmas.</li>
-                      <li><b>Wednesday, December 24th</b>: 10am - 2pm; <b>pick up only</b> for approved adoptions.  No applications.</li>
-                      <li><b>Thursday, December 25th</b>: Closed</li>
-                      <li><b>Friday, December 26th</b>: Closed</li>
-                      <li><b>Wednesday, December 31st</b>: 10am - 2pm</li>
-                      <li><b>Thursday, January 1st</b>: Closed</li>
-                    </ul>
-              </Container>
-            </Container>
-
             {/* Add features here */}
 
             <Container fluid="md" className="center top-padding">
