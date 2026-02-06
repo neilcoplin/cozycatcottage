@@ -35,7 +35,7 @@ export default function AdoptionProcess(props:any) {
                 <p>If approval is granted by either the Managing Director on staff or our Executive Director, you have the option to complete the adoption then or place a deposit on the feline for a short period of time. The deposit is half of the adoption fee and allows new owners the opportunity to gather supplies for their new family member.</p>
 
                 <h3>Pay Adoption Fees</h3>
-                <p>The adoption fee covers the cost of spaying/neutering, two physicals by a vet, FELV/FIV tests, age-appropriate vaccinations (including FRCP, FELV, and Rabies), and treatment for fleas and worms (if needed). Additionally, a $10 microchip registration fee applies to all adoptions.</p>
+                <p>The adoption fee covers the cost of spaying/neutering, two physicals by a vet, FELV/FIV tests, age-appropriate vaccinations (including FRCP, FELV, and Rabies), treatment for fleas and worms (if needed) and a microchip registration.</p>
 
                 <ul>
                   <li>Kittens &amp; Teenagers up to One Year: $120.00</li>
