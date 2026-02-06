@@ -38,8 +38,8 @@ export default function AdoptionProcess(props:any) {
                 <p>The adoption fee covers the cost of spaying/neutering, two physicals by a vet, FELV/FIV tests, age-appropriate vaccinations (including FRCP, FELV, and Rabies), and treatment for fleas and worms (if needed). Additionally, a $10 microchip registration fee applies to all adoptions.</p>
 
                 <ul>
-                  <li>Kittens &amp; Teenagers up to One Year: $90.00</li>
-                  <li>Cats Over One Year: $80.00</li>
+                  <li>Kittens &amp; Teenagers up to One Year: $120.00</li>
+                  <li>Cats Over One Year: $90.00</li>
                 </ul>
 
                 <p><strong>We accept payment for adoption fees in cash or check.</strong></p>
