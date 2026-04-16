@@ -25,7 +25,7 @@ export default function Footer() {
               P.O. Box 283<br />
               Powell,&nbsp;Ohio 43065-0283</p>
 
-            <p><a href="mailto:cozycatcottageadoption@gmail.com">Email us</a><br />
+            <p><a href="mailto:information@cozycatcottage.org">Email us</a><br />
               <a href="tel:+16143368510">614.336.8510</a><br />
               614.336.8515 (fax)</p>
           </Col>

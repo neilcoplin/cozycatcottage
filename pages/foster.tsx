@@ -15,7 +15,14 @@ export default function Foster(props:any) {
           <Stack gap={3} className="top-padding">
             <Container fluid="lg" className="center">
               <h1>Become a foster parent</h1>
-              <p>Foster families help by caring for felines in their own homes until they are ready to begin their journey at our adoption center. Foster parents can choose between having kittens born in your home or welcoming a mama and her babies shortly after birth. They commit to caring for mom and her kittens for 8 to 10 weeks after the babies are born.</p>
+              <p>Foster families help by caring for felines in their own homes until they are ready to begin their journey at our adoption center. Foster parents can choose between:</p>
+              <ul>
+                <li>Having kittens born in your home.</li>
+                <li>Welcoming a mama and her babies shortly after birth.</li>
+                <li>Welcoming a litter of orphans without a mama.</li>
+                <li>Bottle feeding neonates.</li>
+              </ul>
+              <p>Foster parents commit to caring for mom and her kittens for 8 to 10 weeks after the babies are born.</p>
             </Container>
 
             <Container fluid="lg">
@@ -33,6 +40,7 @@ export default function Foster(props:any) {
                   <ul>
                     <li>A supply of food and litter for mom and her babies.</li>
                     <li>Advice and support available 24/7 for the duration of foster care.</li>
+                    <li>Medications (if needed)</li>
                     <li>Medical attention as needed.</li>
                   </ul>
                 </Col>
@@ -48,7 +56,7 @@ export default function Foster(props:any) {
           <Container fluid="true" className="primary-notice center">
             <Container fluid="md">
               <h2>Ready to foster?</h2>
-              <p>Contact us at <a href="mailto:cozycatcottageadoption@gmail.com">cozycatcottageadoption@gmail.com</a> with the subject line &ldquo;Foster Program&rdquo;. All applicants will go through our screening process.</p>
+              <p>Contact us at <a href="mailto:information@cozycatcottage.org">information@cozycatcottage.org</a> with the subject line &ldquo;Foster Program&rdquo;. All applicants will go through our screening process.</p>
             </Container>
           </Container>
           <Container fluid="true" className="dark-notice center">

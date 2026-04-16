@@ -16,7 +16,7 @@ export default function Home(props:any) {
           <Stack gap={3}>
             {/* <Container className="highlight-notice" fluid="true">
                 <Container fluid="lg">
-                <p>Visitors must use our hand sanitizer upon entering the shelter. We reserve the right to limit the number of visitors at any given time. <strong>General questions?</strong> Email <a href="mailto:cozycatcottageadoption@gmail.com">cozycatcottageadoption@gmail.com</a></p>
+                <p>Visitors must use our hand sanitizer upon entering the shelter. We reserve the right to limit the number of visitors at any given time. <strong>General questions?</strong> Email <a href="mailto:information@cozycatcottage.org">information@cozycatcottage.org</a></p>
               </Container>
             </Container> */}
 
@@ -58,7 +58,16 @@ export default function Home(props:any) {
 
             <Container fluid="lg" className="center bottomMargin">
               <h2 className={styles.bold}>Recommended times to call</h2>
-              <p>We are available to answer calls in the evenings Monday through Friday from 5:30pm to 7:30pm, Saturday from 11:00am to 3:00pm and Sunday from 1:30pm to 4:30pm.</p>
+              <p>We are available to answer calls in during the following hours</p>
+              <p>
+                <b>Monday</b>: 10am to 2pm, 5:30pm to 7:30pm<br/>
+                <b>Tuesday</b>: 10am to 2pm<br/>
+                <b>Wednesday</b>: 10am to 2pm, 5:30pm to 7:30pm<br/>
+                <b>Thursday</b>: 10am to 2pm, 5:30pm to 7:30pm<br/>
+                <b>Friday</b>: 10am to 2pm, 5:30pm to 7:30pm<br/>
+                <b>Saturday</b>: 11am to 3pm<br/>
+                <b>Sunday</b>: 1:30pm to 4:30pm<br/>
+              </p>
               
               <Button href="/contact-us" size="lg">Contact us</Button>
             </Container>
