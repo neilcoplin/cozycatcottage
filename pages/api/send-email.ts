@@ -5,7 +5,7 @@ export default async function POST(req: Request) {
   const body = JSON.parse(req.body?.toString() || "{}");
 
   const client = new SESClient({
-    region: process.env.REGION,
+    region: process.env.AWS_REGION,
     credentials: {
       accessKeyId: process.env.SES_ACCESS_KEY!,
       secretAccessKey: process.env.SES_SECRET_ACCESS_KEY!
@@ -13,7 +13,7 @@ export default async function POST(req: Request) {
   });
 
   // Conditionally add an additional prefix to the message
-  const testPrefix = process.env.BRANCH === 'main' ? '' : '[TEST MESSAGE] ';
+  const testPrefix = process.env.AWS_BRANCH === 'main' ? '' : '[TEST MESSAGE] ';
 
   const emailSubject = testPrefix + "Memorial Tribute/Honoring Request: " + body.type + " - " + body.name;
   const emailBody = `<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
