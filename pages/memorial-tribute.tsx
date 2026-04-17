@@ -7,7 +7,7 @@ import { faCheck, faX, faPaw, faSpinner } from '@fortawesome/free-solid-svg-icon
 import '@fortawesome/fontawesome-svg-core/styles.css'
 
 export default function MemorialTribute(props:any) {
-  const [formData, setFormData] = useState({
+  const [form, setForm] = useState({
     type: "in memory of",
     name: "",
     amount: "0",
@@ -28,47 +28,30 @@ export default function MemorialTribute(props:any) {
     personalizedMessage: "",
     signatureText: "",
   });
-  const [loadingState, setLoadingState] = useState("none");
+  const [status, setStatus] = useState("none");
 
-  const handleChange = (event:any) => {
-    const name = event.target.name;
-    const value = event.target.value;
-    setFormData(values => ({...values, [name]: value}));
-  }
+  const handleChange = (e: any) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
 
-  const sendEmail = async (event:any) => {
-    event.preventDefault();
-    console.log(formData);
-    const reqOptions = {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(formData),
-    }
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
+    setStatus("loading");
 
-    // Set loading indicators
-    setLoadingState("loading");
+    const res = await fetch("/api/send-email", {
+      method: "POST",
+      body: JSON.stringify(form)
+    });
 
-    fetch (event.target.action, reqOptions)
-      .then(response => {
-        if (response.ok === true) {
-          setLoadingState("success");
-          return response;
-        }
-        throw response;
-      })
-      .catch(error => {
-        console.error("Submitting form: ", error);
-        setLoadingState("error");
-      });
-  }
+    if (res.ok) setStatus("success");
+    else setStatus("error");
+  };
 
   // Control the loading div at the bottom of the form based on submission state
   let loadingMessage = "";
   let loadingIcon = <FontAwesomeIcon icon={faPaw} size="2xl" color='#ffffff' />;
   let loadingClass = styles.formUnsubmitted;
-  switch (loadingState) {
+  switch (status) {
     case "loading": {
       loadingMessage = " Sending your request...";
       loadingIcon = <FontAwesomeIcon icon={faSpinner} spin size="2xl" />;
@@ -104,7 +87,7 @@ export default function MemorialTribute(props:any) {
       </Head>
       <main>
         <Form action="/api/sendmail"
-        onSubmit={sendEmail}
+        onSubmit={handleSubmit}
         method="post"
         name="memorial-tribute-form"
         className={styles.validate}

@@ -9,22 +9,21 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@aws-sdk/client-ses": "^3.1031.0",
     "@fortawesome/fontawesome-free": "^6.7.2",
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-brands-svg-icons": "^6.7.2",
     "@fortawesome/free-regular-svg-icons": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
-    "@fortawesome/react-fontawesome": "^3.1.1",
+    "@fortawesome/react-fontawesome": "^3.3.0",
     "@popperjs/core": "^2.11.8",
     "@types/gtag.js": "^0.0.12",
     "@types/node": "18.15.3",
     "@types/react": "19.2.13",
     "@types/react-dom": "19.2.3",
-    "aws-sdk": "^2.1693.0",
     "bootstrap": "^5.3.8",
-    "eslint": "^9.39.2",
+    "eslint": "^9.39.4",
     "next": "16.1.6",
-    "nodemailer": "^6.10.1",
     "react": "19.2.4",
     "react-bootstrap": "^2.10.10",
     "react-dom": "19.2.4",
@@ -32,7 +31,6 @@
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
-    "@types/nodemailer": "^6.4.22",
     "eslint-config-next": "16.1.6"
   },
   "packageManager": "pnpm@9.7.0+sha512.dc09430156b427f5ecfc79888899e1c39d2d690f004be70e05230b72cb173d96839587545d09429b55ac3c429c801b4dc3c0e002f653830a420fa2dd4e3cf9cf",
