@@ -13,7 +13,7 @@ export default async function POST(req: Request) {
   });
 
   // Conditionally add an additional prefix to the message
-  const testPrefix = process.env.BRANCH === 'production' ? '' : '[TEST MESSAGE] ';
+  const testPrefix = process.env.BRANCH === 'main' ? '' : '[TEST MESSAGE] ';
 
   const emailSubject = testPrefix + "Memorial Tribute/Honoring Request: " + body.type + " - " + body.name;
   const emailBody = `<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
@@ -48,6 +48,7 @@ export default async function POST(req: Request) {
     </html>        
   `;
 
+  console.log(process.env);
   console.log("Sending email with params:", {
     Source: process.env.MEMORIAL_FROM_EMAIL,
     ToAddresses: [process.env.MEMORIAL_TO_EMAIL],
