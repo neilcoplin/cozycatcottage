@@ -1,7 +1,7 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { SESClient, SendEmailCommand } from "@aws-sdk/client-ses";
 
-export default async function POST(req: Request) {
+export default async function POST(req: NextRequest, res: NextResponse) {
   const body = JSON.parse(req.body?.toString() || "{}");
 
   const client = new SESClient({
@@ -15,14 +15,15 @@ export default async function POST(req: Request) {
   // Conditionally add an additional prefix to the message
   const testPrefix = process.env.AWS_BRANCH === 'main' ? '' : '[TEST MESSAGE] ';
 
-  const emailSubject = testPrefix + "Memorial Tribute/Honoring Request: " + body.type + " - " + body.name;
-  const emailBody = `<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+  const header = testPrefix + (body.type === "in memory of" ? "Memorial Tribute" : "Honoring Request" );
+  const emailSubject = header + " for " + body.name;
+  const htmlBody = `<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
     <html>
       <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       </head>
       <body>
-      <h1>${testPrefix}Memorial Tribute/Honoring Request</h1>
+      <h1>${header}</h1>
       <p>Gift ${body.type}: ${body.name}<br />
       Amount: $${body.amount} via ${body.donationMethod}</p>
 
@@ -47,13 +48,37 @@ export default async function POST(req: Request) {
       </body>
     </html>        
   `;
+  const textBody = `${testPrefix}Memorial Tribute/Honoring Request
+
+      Gift ${body.type}: ${body.name}
+      Amount: $${body.amount} via ${body.donationMethod}
+
+      From:
+      ${body.fromName}
+      ${body.fromStreet}
+      ${body.fromCity}, ${body.fromState} ${body.fromZip}
+      email: ${body.fromEmail}
+      phone: ${body.fromPhone}
+
+      To:
+      ${body.toName}
+      ${body.toStreet}
+      ${body.toCity}, ${body.toState} ${body.toZip}
+      email: ${body.toEmail}
+
+      Personalized Message:
+      ${body.personalizedMessage}
+
+      Signature Text:
+      ${body.signatureText}
+  `;
 
   console.log(process.env);
   console.log("Sending email with params:", {
     Source: process.env.MEMORIAL_FROM_EMAIL,
     ToAddresses: [process.env.MEMORIAL_TO_EMAIL],
     Subject: emailSubject,
-    Body: emailBody
+    Body: htmlBody
   });
   const params = {
     Source: process.env.MEMORIAL_FROM_EMAIL!,
@@ -63,8 +88,13 @@ export default async function POST(req: Request) {
     Message: {
       Subject: { Data: emailSubject },
       Body: {
+        Html: {
+          Data: htmlBody,
+          Charset: "UTF-8"
+        },
         Text: {
-          Data: emailBody
+          Data: textBody,
+          Charset: "UTF-8"
         }
       }
     }
@@ -72,9 +102,13 @@ export default async function POST(req: Request) {
 
   try {
     await client.send(new SendEmailCommand(params));
-    return NextResponse.json({ success: true });
+    res.status(200).json({ ok: true });
+    // return NextResponse.json({ success: true });
   } catch (err) {
     console.error(err);
-    return NextResponse.json({ error: "Email failed" }, { status: 500 });
+    res.status(500).json({
+        ok: false, 
+        msg: "Failed to send."
+    });
   }
 }
