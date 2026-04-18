@@ -73,12 +73,11 @@ export default async function POST(req: NextApiRequest, res: NextApiResponse) {
       ${body.signatureText}
   `;
 
-  console.log(process.env);
   console.log("Sending email with params:", {
     Source: process.env.MEMORIAL_FROM_EMAIL,
     ToAddresses: [process.env.MEMORIAL_TO_EMAIL],
     Subject: emailSubject,
-    Body: htmlBody
+    Body: textBody
   });
   const params = {
     Source: process.env.MEMORIAL_FROM_EMAIL!,
