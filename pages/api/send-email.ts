@@ -1,7 +1,7 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextApiRequest, NextApiResponse } from "next";
 import { SESClient, SendEmailCommand } from "@aws-sdk/client-ses";
 
-export default async function POST(req: NextRequest, res: NextResponse) {
+export default async function POST(req: NextApiRequest, res: NextApiResponse) {
   const body = JSON.parse(req.body?.toString() || "{}");
 
   const client = new SESClient({
