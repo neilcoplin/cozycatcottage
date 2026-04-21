@@ -104,7 +104,6 @@ export default function MeetTheTeam(props:any) {
                   <li>Madison Bell</li>
                   <li>Tracy Craine</li>
                   <li>Meryl Lu</li>
-                  <li>Emma Waldron</li>
                   <li>Kassidy Williams</li>
                 </ul>
               </Col>

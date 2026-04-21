@@ -53,7 +53,7 @@ export default function HappyTails(props:any) {
                   <h2>Giselle, an FELV+ beauty beating the odds</h2>
                   <p>Giselle, her three siblings, and mama were rescued from a neighborhood in Hilliard and Cozy Cat Cottage took them in. Giselle&apos;s mama and siblings went into a foster home and when they were big enough they went back to Cozy Cat Cottage to get spayed and neutered. They were almost ready to go up for adoption when their FIV/FELV test came back positive. Sadly, Giselle, her brother, and her mom all tested positive for Feline Leukemia Virus (FeLV). Giselle and her brother were adopted into the same home and their mom was adopted by another family. While Giselle&apos;s brother passed away at eight years old, Giselle continues to thrive in her home and will turn nine this year. In the past FELV was considered a death sentence, but the truth is some FeLV kittens can live for many years. Giselle is living proof that every cat deserves a chance.</p>
 
-                  <Link href="/fiv-and-felv">Learn more about Feline Immunodeficiency Virus (FIV)</Link>
+                  <Link href="/fiv-and-felv">Learn more about Feline Leukemia Virus (FeLV)</Link>
                 </Col>
                 <Col md={5} xl={4}>
                   <Image fluid src="/img/giselle.jpg" alt="Giselle" />

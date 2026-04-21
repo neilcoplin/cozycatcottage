@@ -42,7 +42,7 @@ export default function AdoptionProcess(props:any) {
                   <li>Cats Over One Year: $90.00</li>
                 </ul>
 
-                <p><strong>We accept payment for adoption fees in cash or check.</strong></p>
+                <p><strong>We accept payment for adoption fees in cash or check.  Paypal and Venmo are also accepted for an additional $5 surcharge.</strong></p>
 
                 <h3>Welcome home!</h3>
                 <p>Congratulations! Please be sure to bring a pet carrier with you to our adoption center. We will meet with you briefly to complete the adoption paperwork. This includes an adoption waiver, adoption contract, a resource packet and the remainder of or payment in full of the adoption fee.</p>

@@ -15,7 +15,7 @@ export default function Fundraisers(props:any) {
           <Stack gap={3} className="top-padding">
             <Container fluid="md" className="center">
               <h1>Cozy Cat Cottage events and fundraisers</h1>
-              <p>Your attendance and support help us continue our mission to save lives and protect the journeys of felines throughout Central Ohio. Stay up to date with the latest events and fundraisers by joining our email list or by following us on <a href="https://www.facebook.com/groups/cozycat/?ref=bookmarks" target="_blank" rel="noreferrer">Facebook</a> or <a href="https://www.instagram.com/cozycatcottageac/" target="_blank" rel="noreferrer">Instagram</a>.</p>
+              <p>Your attendance and support help us continue our mission to save lives and protect the journeys of felines throughout Central Ohio. Stay up to date with the latest events and fundraisers by joining our email list or by following us on <a href="https://www.facebook.com/profile.php?id=61575442927037" target="_blank" rel="noreferrer">Facebook</a> or <a href="https://www.instagram.com/cozycatcottageac/" target="_blank" rel="noreferrer">Instagram</a>.</p>
 
               <MailingList />
             </Container>
@@ -27,14 +27,14 @@ export default function Fundraisers(props:any) {
                   <p>Calling all golfers to attend our <a href="https://www.cozycatgolf.org/" target="_blank" rel="noreferrer">annual golf outing virtually or in-person</a>.</p>
 
                   <h2>Kitten Showers</h2>
-                  <p>Traditionally held in the spring at the beginning of &ldquo;kitten season&rdquo;, Kitten Showers raise much-needed funds and supplies necessary to care for our neonatal kittens and critically sick or injured kittens and mama cats. Refreshments are served and you might catch a glimpse of newborn kittens! Check our <a href="https://www.facebook.com/groups/cozycat/?ref=bookmarks" target="_blank" rel="noreferrer">Facebook page</a> or make sure you&apos;re on our email list to stay up to date on dates for the next Kitten Shower.</p>
+                  <p>Traditionally held in the spring at the beginning of &ldquo;kitten season&rdquo;, Kitten Showers raise much-needed funds and supplies necessary to care for our neonatal kittens and critically sick or injured kittens and mama cats. Refreshments are served and you might catch a glimpse of newborn kittens! Check our <a href="https://www.facebook.com/profile.php?id=61575442927037" target="_blank" rel="noreferrer">Facebook page</a> or make sure you&apos;re on our email list to stay up to date on dates for the next Kitten Shower.</p>
                   <p>Looking for another way to help kittens? <Link href="/foster">Learn more about our fostering program</Link>.</p>
 
                   <h2>Pet Photos with the Easter Bunny</h2>
-                  <p>Just like Santa, the Easter Bunny is ready to pose with your pet. Prints and digital files are available for immediate purchase and 100% of all proceeds benefit Cozy Cat Cottage. Check out our <a href="https://www.facebook.com/groups/cozycat/?ref=bookmarks" target="_blank" rel="noreferrer">Facebook page</a> or join our email list to keep up with the Easter Bunny&apos;s schedule. All pets are welcome.</p>
+                  <p>Just like Santa, the Easter Bunny is ready to pose with your pet. Prints and digital files are available for immediate purchase and 100% of all proceeds benefit Cozy Cat Cottage. Check out our <a href="https://www.facebook.com/profile.php?id=61575442927037" target="_blank" rel="noreferrer">Facebook page</a> or join our email list to keep up with the Easter Bunny&apos;s schedule. All pets are welcome.</p>
 
                   <h2>Festivals, Halloween, Valentine&apos;s Day parties and more</h2>
-                  <p>Cozy Cat Cottage exhibits at local festivals and hosts a variety of other parties at the shelter. Check out our <a href="https://www.facebook.com/groups/cozycat/?ref=bookmarks" target="_blank" rel="noreferrer">Facebook page</a> or join our email list to keep up-to-date!</p>
+                  <p>Cozy Cat Cottage exhibits at local festivals and hosts a variety of other parties at the shelter. Check out our <a href="https://www.facebook.com/profile.php?id=61575442927037" target="_blank" rel="noreferrer">Facebook page</a> or join our email list to keep up-to-date!</p>
                 </Col>
                 <Col sm={12} md={4}>
                   <figure>

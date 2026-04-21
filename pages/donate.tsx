@@ -90,7 +90,7 @@ export default function Donate(props:any) {
               <p>In place of party favors, couples can make a donation to Cozy Cat Cottage and/or include a donation jar on the gift table.</p>
 
               <h3>Donate your birthday on Facebook</h3>
-              <p>Getting ready to celebrate a birthday? In place of gifts, ask your friends and family to make a monetary donation to Cozy Cat Cottage or bring an item from our <a href="https://www.amazon.com/gp/registry/wishlist/2CUSJYUAAK03C" target="_blank" rel="noreferrer">Amazon Wish List</a> to your party!</p>
+              <p>Getting ready to celebrate a birthday? In place of gifts, ask your friends and family to make a monetary donation to Cozy Cat Cottage or bring an item from our <a href="https://www.amazon.com/gp/registry/wishlist/2CUSJYUAAK03C" target="_blank" rel="noreferrer">Amazon Wish List</a> or our <a href="https://www.chewy.com/g/cozy-cat-cottage-adoption-center_b65806677#wish-list&wishlistsortby=DEFAULT/" target="_blank">Chewy Wish List</a> to your party!</p>
             </Container>
           </Stack>
           <Container fluid="true" className="dark-notice center">
