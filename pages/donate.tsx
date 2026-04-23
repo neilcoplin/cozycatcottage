@@ -24,7 +24,7 @@ export default function Donate(props:any) {
               <Row xs={1} md={2}>
                 <Col>
                   <h2>Financial Support</h2>
-                  <p>Our costs preparing 200 cats and kittens for adoption in 2023.</p>
+                  <p>Our costs preparing 200 cats and kittens for adoption in 2025.</p>
                   <ul>
                     <li>$300 - Rabies vaccinations</li>
                     <li>$700 - Microchips</li>
@@ -70,7 +70,7 @@ export default function Donate(props:any) {
               Cozy Cat Cottage Adoption Center IRS tax ID: 31-1622554<br />
               We are a 501(c)(3) tax-exempt charitable organization.</p>
 
-              <p>For questions on including Cozy Cat Cottage Adoption Center in your planned giving, please contact us at <a href="mailto:cozycatcottageadoption@gmail.com">cozycatcottageadoption@gmail.com</a>.</p>
+              <p>For questions on including Cozy Cat Cottage Adoption Center in your planned giving, please contact us at <a href="mailto:information@cozycatcottage.org">information@cozycatcottage.org</a>.</p>
             </Container>
 
             <Container fluid="md">
@@ -90,7 +90,7 @@ export default function Donate(props:any) {
               <p>In place of party favors, couples can make a donation to Cozy Cat Cottage and/or include a donation jar on the gift table.</p>
 
               <h3>Donate your birthday on Facebook</h3>
-              <p>Getting ready to celebrate a birthday? In place of gifts, ask your friends and family to make a monetary donation to Cozy Cat Cottage or bring an item from our <a href="https://www.amazon.com/gp/registry/wishlist/2CUSJYUAAK03C" target="_blank" rel="noreferrer">Amazon Wish List</a> to your party!</p>
+              <p>Getting ready to celebrate a birthday? In place of gifts, ask your friends and family to make a monetary donation to Cozy Cat Cottage or bring an item from our <a href="https://www.amazon.com/gp/registry/wishlist/2CUSJYUAAK03C" target="_blank" rel="noreferrer">Amazon Wish List</a> or our <a href="https://www.chewy.com/g/cozy-cat-cottage-adoption-center_b65806677#wish-list&wishlistsortby=DEFAULT/" target="_blank">Chewy Wish List</a> to your party!</p>
             </Container>
           </Stack>
           <Container fluid="true" className="dark-notice center">

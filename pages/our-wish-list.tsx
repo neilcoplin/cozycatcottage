@@ -28,17 +28,19 @@ export default function OurWishList(props:any) {
                   <ul>
                     <li>Paper towels</li>
                     <li>33 gallon or larger trash bags</li>
+                    <li>13 and 33 gallon flex stretch type trash bags</li>
                     <li>HE (high-efficiency) laundry soap packets</li>
                     <li>Clorox bleach, <strong>unscented only</strong> and must say <strong>99% disinfectant</strong></li>
                     <li>Mr. Clean (yellow) antibacterial cleaner</li>
+                    <li>Disinfectant wipes</li>
                   </ul>
                 </Col>
                 <Col sm={6} md={4}>
                   <h2>Food &amp; litter</h2>
                   <ul>
-                    <li>Dry: Purina Pro Plan, Purina Complete (blue bag), Purina Kitten Chow (yellow bag) and Purina Kitten Chow Naturals</li>
-                    <li>Gerber strained chicken baby food (for sick kittens)</li>
-                    <li>KMR liquid nursing formula</li>
+                    <li>Dry: Purina Naturals Adult, Iams Kitten, and Purina Kitten Chow Naturals</li>
+                    <li>Canned/Wet: Friskies, Iams, and Fancy Feast</li>
+                    <li>Gerber Stage 2 Chicken and gravy</li>
                     <li>Litter: Tidy Cat or Fresh Step (scooping) and any brand of <strong>non-clumping</strong> clay litter</li>
                   </ul>
                 </Col>
@@ -46,7 +48,11 @@ export default function OurWishList(props:any) {
                   <h2>Misc</h2>
                   <ul>
                     <li>Aluminum cans for recycling</li>
-                    <li>Gift Cards: Pet Supplies Plus, Target, Walmart, Meijers, PetSmart, Petco, Krogers, Giant Eagle</li>
+                    <li>Gift Cards: Pet Supplies Plus, Target, Walmart, Meijers, PetSmart, Petco, Kroger, Giant Eagle</li>
+                    <li>Newspaper</li>
+                    <li>2 pocket folders</li>
+                    <li>HP 972 Printer Cartridges</li>
+                    <li>Used printer cartridges (for recycling)</li>
                   </ul>
                 </Col>
               </Row>

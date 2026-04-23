@@ -6,7 +6,7 @@ frontend:
         - npm install
     build:
       commands:
-        - env | grep -e SES_ACCESS_KEY -e SES_SECRET_ACCESS_KEY -e BRANCH >> .env.production
+        - env | grep -e SES_ACCESS_KEY -e SES_SECRET_ACCESS_KEY -e MEMORIAL_FROM_EMAIL -e MEMORIAL_TO_EMAIL >> .env.production
         - node --version
         - npm run build
   artifacts:

@@ -5,7 +5,7 @@ import { Image, Nav, Navbar, NavDropdown } from "react-bootstrap";
 export default function Header() {
   return (
     <Navbar bg="light" expand="lg" className={styles.header}>
-      <Navbar.Brand href="/"><Image src="/img/ccc-logo.png" alt="Cozy Cat Cottage Adoption Center" width="250" /></Navbar.Brand>
+      <Navbar.Brand href="/"><Image src="/img/logo-long-transparent.png" alt="Cozy Cat Cottage Adoption Center" width="250" /></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" className={styles.navToggler} />
         <Navbar.Collapse id="basic-navbar-nav">
           <NavDropdown title="Adopt">

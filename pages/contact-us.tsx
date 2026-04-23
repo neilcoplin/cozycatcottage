@@ -35,7 +35,7 @@ export default function ContactUs(props:any) {
                     <h2>Visit us</h2>
                     <p>10344 Sawmill Road<br />
                     Powell, Ohio 43065<br />
-                    <a href="mailto:cozycatcottageadoption@gmail.com">Email us</a><br />
+                    <a href="mailto:information@cozycatcottage.org">Email us</a><br />
                     <a href="tel:+16143368510">614.336.8510</a> (phone)<br />
                     614.336.8515 (fax)
                     </p>
@@ -56,7 +56,7 @@ export default function ContactUs(props:any) {
               </Col>
               <Col xs={12} md={8}>
                 <h2>Ways to connect</h2>
-                <p><strong>Due to high call volume we are unable to return messages.</strong>  Please email <a href="mailto:cozycatcottageadoption@gmail.com">cozycatcottageadoption@gmail.com</a> or post your question or comments on our <a href="https://www.facebook.com/groups/cozycat/" target="_blank" rel="noreferrer">Facebook page</a>. Our admins and our members are very active and re-spond quickly. You will need to request to join the Facebook group before you can post. You can also follow Cozy Cat Cottage on <a href="https://www.instagram.com/cozycatcottageac/" target="_blank" rel="noreferrer">Instagram</a>!</p>
+                <p><strong>Due to high call volume we are unable to return messages.</strong>  Please email <a href="mailto:information@cozycatcottage.org">information@cozycatcottage.org</a> or post your question or comments on our <a href="https://www.facebook.com/groups/cozycat/" target="_blank" rel="noreferrer">Facebook page</a>. Our admins and our members are very active and re-spond quickly. You will need to request to join the Facebook group before you can post. You can also follow Cozy Cat Cottage on <a href="https://www.instagram.com/cozycatcottageac/" target="_blank" rel="noreferrer">Instagram</a>!</p>
 
                 <h2>Follow up paperwork</h2>
                 <p>As part of our adoption contract, we require adopted felines to be seen by a veterinarian of the owner&apos;s choosing <strong>within 5 business days of the adoption at the owner&apos;s expense</strong>. This ensures the establishment of the feline with a local veterinarian. <strong>Please email a copy of the check-up veterinary paperwork to <a href="mailto:followup@cozycatcottage.org">followup@cozycatcottage.org</a></strong> or fax to 614.336.8515 within <strong>10 days</strong>.</p>

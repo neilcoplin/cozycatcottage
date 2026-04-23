@@ -28,7 +28,7 @@ export default function Volunteer(props:any) {
                   <p>Every single day these volunteers ensure our kitties thrive in a healthy and clean environment while they await their forever homes. These volunteers distribute food and water, scoop litter boxes, and assist with dishes and laundry. We have two shifts: mornings (Monday - Sunday, 8:30am - noon) and evenings (Monday - Friday, 5:30pm - 7:30pm).</p>
 
                   <h2>Adoption counselors</h2>
-                  <p>These volunteers assist with the adoption process of our kitties both at Cozy Cat Cottage and partner retailers like Pet Supplies Plus, PetSmart and Petco. All adoption counselors must complete our adoption counselor training in addition to general volunteer training.</p>
+                  <p>These volunteers assist with the adoption process of our kitties both at Cozy Cat Cottage and partner retailers like Pet Supplies Plus and PetSmart. All adoption counselors must complete our adoption counselor training in addition to general volunteer training.</p>
 
                   <h2>Fundraiser and event champions</h2>
                   <p>These individuals help organize, promote, and execute fundraising events for Cozy Cat Cottage. They help set up booths at events like craft shows, assist with mailings, hang up flyers and more.</p>

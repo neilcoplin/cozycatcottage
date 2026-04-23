@@ -49,7 +49,7 @@ export default function OurStory(props:any) {
             <Row sm={1} md={2}>
               <Col>
                 <h2>Our impact</h2>
-                <p>We work tirelessly every day to help the central Ohio homeless cat population. Since opening in 1998, we have found forever homes for over 12,000 cats and kittens. In addition to our rescue work, we also partner with individuals and local communities to trap, neuter and return feral cats (also referred to as the T-N-R program) with the intent to properly curb the cat overpopulation.</p>
+                <p>We work tirelessly every day to help the central Ohio homeless cat population. Since opening in 1998, we have found forever homes for over 15,400 cats and kittens. In addition to our rescue work, we also partner with individuals and local communities to trap, neuter and return feral cats (also referred to as the T-N-R program) with the intent to properly curb the cat overpopulation.</p>
 
                 <p>Additionally, Cozy Cat Cottage regularly works with local schools, businesses, and youth programs to provide education on animal welfare, the issues with cat overpopulation, and how the public can help.</p>
               </Col>

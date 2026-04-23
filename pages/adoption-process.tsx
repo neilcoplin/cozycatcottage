@@ -42,12 +42,12 @@ export default function AdoptionProcess(props:any) {
                   <li>Cats Over One Year: $90.00</li>
                 </ul>
 
-                <p><strong>We accept payment for adoption fees in cash or check.</strong></p>
+                <p><strong>We accept payment for adoption fees in cash or check.  Paypal and Venmo are also accepted for an additional $5 surcharge.</strong></p>
 
                 <h3>Welcome home!</h3>
                 <p>Congratulations! Please be sure to bring a pet carrier with you to our adoption center. We will meet with you briefly to complete the adoption paperwork. This includes an adoption waiver, adoption contract, a resource packet and the remainder of or payment in full of the adoption fee.</p>
 
-                <p><strong>As part of our adoption contract, we require adopted felines to be seen by a veterinarian of the owner&apos;s choosing within 5 business days of the adoption at the owner&apos;s expense.</strong> This ensures the establishment of the feline with a local veterinarian. We ask for a copy of the check-up paperwork to be faxed to us at 614.336.8515 within 10 days.</p>
+                <p><strong>As part of our adoption contract, we require adopted felines to be seen by a veterinarian of the owner&apos;s choosing within 5 business days of the adoption at the owner&apos;s expense.</strong> This ensures the establishment of the feline with a local veterinarian. We ask for a copy of the check-up paperwork to be emailed to us at <a href="mailto:followup@cozycatcottage.org">followup@cozycatcottage.org</a> or faxed to us at 614.336.8515 within 10 days.</p>
 
                 <p><i>Please understand that while Cozy Cat Cottage reserves the right to refuse an adoption at any time, adoption applications are considered with the best interests of the animal in mind and should not be construed as any type of reflection upon the applicant.</i></p>
               </Col>
