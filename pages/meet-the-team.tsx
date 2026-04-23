@@ -24,7 +24,7 @@ export default function MeetTheTeam(props:any) {
               <Col sm={8} md={9} xl={10}>
                 <h2>Amy Smerecky</h2>
                 <p className="subtitle">Executive Director</p>
-                <p>Amy has been affiliated with Cozy Cat Cottage for over 15 years.  Amy began volunteering in October 2010 after she moved to Ohio from Georgia.  A lifelong lover of cats, she knew she had found her happy place immediately.  In 2011 she became a member of the medical team and fostered hundreds of cats and kittens.  A few years later, she became the medical team lead, foster home coordinator, and supervised the placement of cats into 3 partner pet stores.  February 1, 2025 Amy became the Executive Director of Cozy Cat Cottage.  Amy resides in New Albany with her husband Joe and their 8 cats Anna, Sam, Holleigh, Owen, Jupiter, Finnegan, Balboa, and Willow who is totally blind.  In her spare time, Amy enjoys watching football, binging TV series, travelling, and going to concerts.</p>
+                <p>Amy has been affiliated with Cozy Cat Cottage for over 15 years.  Amy began volunteering in October 2010 after she moved to Ohio from Georgia.  A lifelong lover of cats, she knew she had found her happy place immediately.  In 2011 she became a member of the medical team and fostered hundreds of cats and kittens.  A few years later, she became the medical team lead, foster home coordinator, and supervised the placement of cats into 3 partner pet stores.  February 1, 2025 Amy became the Executive Director of Cozy Cat Cottage.  Amy resides in New Albany with her husband Joe and their 7 cats Sam, Holleigh, Owen, Jupiter, Finnegan, Balboa, and Willow who is totally blind.  In her spare time, Amy enjoys watching football, binging TV series, travelling, and going to concerts.</p>
               </Col>
             </Row>
           </Container>
@@ -37,7 +37,7 @@ export default function MeetTheTeam(props:any) {
               <Col sm={8} md={9} xl={10}>
                 <h2>Tiffany Kinzer</h2>
                 <p className="subtitle">President</p>
-                <p>Tiffany works as acting Director on Monday nights.  Originally from Lima, she moved to Columbus in 1998 and has ten cats: Toby (FIV+), Frankie, Roman, Paris, Stormy, Gus, CeCe, Henry, Niko, Henry, Mary and Tommy. Tiffany also works full time for St. Jude Children&apos;s Research Hospital as a Philanthropic Advisor.</p>
+                <p>Tiffany works as acting Director on Monday nights.  Originally from Lima, she moved to Columbus in 1998 and has nine cats: Toby (FIV+), Frankie, Roman, Paris, Stormy, CeCe, Henry, Niko, Henry, Mary and Tommy. Tiffany also works full time for St. Jude Children&apos;s Research Hospital as a Philanthropic Advisor.</p>
               </Col>
             </Row>
           </Container>
@@ -50,7 +50,7 @@ export default function MeetTheTeam(props:any) {
               <Col sm={8} md={9} xl={10}>
                 <h2>Beth Hinkle</h2>
                 <p className="subtitle">Vice President</p>
-                <p>Beth serves as Secretary and as an adoption counselor on Saturdays and Thursdays. She is also one of the Grant writers for Cozy Cat Cottage. She, most recently moved here from Pittsburgh, PA in 2013 and since then she has lived in the Columbus area. She has 4 cats, all from CCC. When not at the shelter, she spends her time crafting for her LLC, friends and CCC.</p>
+                <p>Beth serves as Secretary and as an adoption counselor on Saturdays and Thursdays. She is also one of the Grant writers for Cozy Cat Cottage. She, most recently moved here from Pittsburgh, PA in 2013 and since then she has lived in the Columbus area. She has 3 cats, all from CCC. When not at the shelter, she spends her time crafting for her LLC, friends and CCC.</p>
               </Col>
             </Row>
           </Container>
@@ -58,12 +58,25 @@ export default function MeetTheTeam(props:any) {
           <Container fluid="md">
             <Row xs={1} md={2}>
               <Col sm={4} md={3} xl={2}>
-                <Image fluid src="/img/board-jeannie-beyer-loynes.jpg" alt="Photo of Jeannie Beyer Loynes" />
+                {/* <Image fluid src="/img/board-rebecca-kirby.jpg" alt="Photo of Rebecca Kirby" /> */}
               </Col>
               <Col sm={8} md={9} xl={10}>
-                <h2>Jeannie Beyer Loynes</h2>
+                <h2>Rebecca Kirby</h2>
+                <p className="subtitle">Director</p>
+                <p></p>
+              </Col>
+            </Row>
+          </Container>
+            
+          <Container fluid="md">
+            <Row xs={1} md={2}>
+              <Col sm={4} md={3} xl={2}>
+                <Image fluid src="/img/board-jeannie-beyer.jpg" alt="Photo of Jeannie Beyer" />
+              </Col>
+              <Col sm={8} md={9} xl={10}>
+                <h2>Jeannie Beyer</h2>
                 <p className="subtitle">Secretary</p>
-                <p>Jeannie serves as a Trustee and works with the medical team on Tuesdays, Wednesday, Fridays and Sundays. Originally from Dallas, Texas, she currently resides in Worthington with 8 cats. George, Sebastian, Scarlett Grace and Hope (hospice foster) are from CCC, Boots, Mickey and Levi were strays and Chloe Belle is from CHA.</p>
+                <p>Jeannie serves as a Trustee and works with the medical team on Tuesdays, Wednesday, Fridays and Sundays. Originally from Dallas, Texas, she currently resides in Dublin with 4 cats: Scarlett Grace, Batman, Yoda and Chloe Belle.</p>
               </Col>
             </Row>
           </Container>
